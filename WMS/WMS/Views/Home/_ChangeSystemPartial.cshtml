@@ -1,0 +1,95 @@
+﻿<script type="text/javascript">
+    $(function () {
+        $('#changeSystem').click(function () {
+            refreshs();
+            $('#cg-changesystem').combogrid('setValue', '').combo('setText', '');
+            $('#dlg-changesystem').dialog('open').dialog('setTitle', '切换系统');
+        });
+    })
+
+    function changeSystemClick() {
+        init_changesystem();
+    }
+
+    function init_changesystem() {
+        $('#cg-changesystem').combogrid({
+            width: 180,
+            panelWidth: 450,
+            url: '/System/GetDetailsSystem/',
+            idField: 'SYSTEM_ID',
+            textField: 'SYSTEM_NAME',
+            mode: 'local',
+            editable: false,
+            fitColumns: true,
+            columns: [[
+					{ field: 'SYSTEM_ID', title: '系统ID', hidden: true, width: 30 },
+					{ field: 'SYSTEM_NAME', title: '系统名称', align: 'left', width: 40 },
+					{ field: 'DESCRIPTION', title: '备注', align: 'left', width: 30 },
+					{ field: 'STATUS', title: '状态', align: 'left', width: 30 }
+				]]
+        });
+    }
+
+    function changeToSystem() {
+        $('#fm-changesystem').form('submit', {
+            url: '/Account/ChangeServer/?FunID=EEB02601-9BF6-412F-A63E-92857BF38638',
+            onSubmit: function () {
+                return $(this).form('validate');
+            },
+            success: function (result) {
+                var result = eval('(' + result + ')');
+                if (result.success) {
+                    $.messager.show({
+                        title: '系统提示',
+                        msg: result.msg
+                    });
+                    $('#dlg-changesystem').dialog('close');
+                    location.href = result.data;
+                } else {
+                    $.messager.confirm('系统提示', result.msg);
+                }
+            }
+        });
+    }
+    function refreshs() {
+        var ipAdress = document.getElementById('ipAdress').value;
+        var userName = document.getElementById('userNames').value;
+        $.getJSON('/User/GetUserIp/?userName=' + userName, function (data) {
+            if (data != ipAdress) {
+                alert('此账户已经在其他地方登录，本处登陆已经失效！');
+                $.messager.show({
+                    timeout: 0,
+                    width: 300,
+                    height: 130,
+                    title: '登陆账号失效！',
+                    msg: '此账户已经在其他地方登录，本处登陆已经失效！'
+                });
+                location.href = '/Account/LogOff';
+            }
+        })
+    }
+</script>
+
+<div id="dlg-changesystem" class="easyui-dialog" modal="true" style="width:290px;height:140px;padding:2px 2px"
+		closed="true" buttons="#dlg-buttons-changesystem">
+    <div class="easyui-layout" fit="true">
+        <div region="center" border="false" style="padding:10px 10px;background:#fff;border:1px solid #ccc; " >   
+            <form id="fm-changesystem" method="post"> 
+                <table width="250">
+                  <tr>
+				        <td>系统</td>
+				        <td colspan="3"align="left">
+                        <input name="SystemId" type="text" id="cg-changesystem" />                               
+                        </td>
+                  </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="dlg-buttons-changesystem">
+@*	<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="changeToSystem()">确定</a>
+	<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg-changesystem').dialog('close')">取消</a>*@
+      <input type="button"  onclick="changeToSystem()"  onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btok" value="确定"/>
+       <input type="button"  onclick="javascript:$('#dlg-changesystem').dialog('close')" onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btcance" value="取消"/>
+</div>

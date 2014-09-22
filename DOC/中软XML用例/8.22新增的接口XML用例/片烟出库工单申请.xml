@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Msg>
+  <Head>
+    <InterfaceCode>HNZY_ESB_XCMES_PFK_YLTC_GDSQ</InterfaceCode>
+    <InterfaceDescription>片烟出库工单申请</InterfaceDescription>
+    <MsgID></MsgID>
+    <Source>XCPFK</Source>
+    <MsgMark>HNZY_ESB_XCMES_PFK_YLTC_GDSQ</MsgMark>
+    <WsMethod>PFK_YLTC_GDSQ</WsMethod>
+    <Date>2014-03-13 10:10:00</Date>
+    <Cryp></Cryp>
+    <User></User>
+    <StateCode>600</StateCode>
+    <StateDesription>正常发送</StateDesription>
+    <DataDefine>
+      <!-- 描述工单取消表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLTC_GDSQ_M">
+        <FieldItem FieldName="TECH_CD" Caption="工艺段编码" FieldType="CHAR" FieldLength="40" Remark="必传" isPrimaryKey="True" />
+      </Table>
+    </DataDefine>
+  </Head>
+  <Data>
+    <DataTable TableName ="T_PFK_YLTC_GDSQ_M">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="TECH_CD"  FieldValue="1020" />
+        </Header>
+      </Row>
+    </DataTable>
+  </Data>
+</Msg>

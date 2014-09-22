@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Msg>
+  <Head>
+    <InterfaceCode>HNZY_ESB_XCMES_PFK_YLTC_GDGJ</InterfaceCode>
+    <InterfaceDescription>片烟出库工单归集</InterfaceDescription>
+    <MsgID></MsgID>
+    <Source>XCPFK</Source>
+    <MsgMark>HNZY_ESB_XCMES_PFK_YLTC_GDGJ</MsgMark>
+    <WsMethod>PFK_YLTC_GDGJ</WsMethod>
+    <Date>2014-03-13 10:10:00</Date>
+    <Cryp></Cryp>
+    <User></User>
+    <StateCode>600</StateCode>
+    <StateDesription>正常发送</StateDesription>
+    <DataDefine>
+      <!-- 描述工单归集表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLTC_GDGJ_M">
+        <FieldItem FieldName="WO_NO" Caption="片烟出库工单号" FieldType="CHAR" FieldLength="30" Remark="必传" isPrimaryKey="True" />
+        <FieldItem FieldName="MAT_CD" Caption="牌号编码" FieldType="CHAR" FieldLength="30" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="ACTUAL_BOM_VER_NO" Caption="配方版本号" FieldType="CHAR" FieldLength="30" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="MODULE_NO" Caption="模块号" FieldType="CHAR" FieldLength="10" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="WO_START_DATE_TIME" Caption="工单开始时间" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="WO_END_DATE_TIME" Caption="工单结束时间" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="OUTBOUND_START_TIME" Caption="出库开始时间" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="OUTBOUND_END_TIME" Caption="出库结束时间" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+      </Table>
+      <!-- 描述工单归集信息表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLTC_GDGJ_D">
+        <FieldItem FieldName="WO_NO" Caption="工单号" FieldType="CHAR" FieldLength="30" Remark="必传(外键，复合主键)" isPrimaryKey="True" />
+        <FieldItem FieldName="BAR_CODE" Caption="烟箱条码" FieldType="CHAR" FieldLength="60" Remark="必传(复合主键)" isPrimaryKey="False" />
+        <FieldItem FieldName="LEAF_NO" Caption="原料代码" FieldType="CHAR" FieldLength="50" Remark="必传(复合主键)" isPrimaryKey="False" />
+        <FieldItem FieldName="LEAF_NAME" Caption="烟叶名称" FieldType="CHAR" FieldLength="100" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="LEAF_AREA" Caption="烟叶产地" FieldType="CHAR" FieldLength="100" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="LEAF_YEAR" Caption="烟叶年份" FieldType="CHAR" FieldLength="4" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="LEAF_GRADE" Caption="烟叶等级" FieldType="CHAR" FieldLength="10" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="LEAF_TYPE" Caption="烟叶类型" FieldType="CHAR" FieldLength="10" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="LEAF_STANDARD" Caption="烟包规格" FieldType="CHAR" FieldLength="20" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="IS_MERGE_FLAG" Caption="是否合包" FieldType="CHAR" FieldLength="4" Remark="必传(1表示合包，0表示不合包)" isPrimaryKey="False" />
+        <FieldItem FieldName="AMOUNT_KG" Caption="公斤数" FieldType="NUMBER" FieldLength="12.4" Remark="必传(单位：kg)" isPrimaryKey="False" />
+        <FieldItem FieldName="ACTUAL_OUT_ORDER" Caption="实际出库顺序" FieldType="INTEGER" FieldLength="" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="PURCHASE_BATCH" Caption="采购批次号" FieldType="CHAR" FieldLength="20" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="IN_FACTORY_CHECK_BATCH_NO" Caption="原料入厂检验批次" FieldType="CHAR" FieldLength="28" Remark="必传" isPrimaryKey="False" />
+      </Table>
+    </DataDefine>
+  </Head>
+  <Data>
+    <DataTable TableName ="T_PFK_YLTC_GDGJ_M">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="WO_NO"  FieldValue="wo20101" />
+          <DataItem FieldName="MAT_CD"  FieldValue="32016" />
+          <DataItem FieldName="ACTUAL_BOM_VER_NO"  FieldValue="11325" />
+          <DataItem FieldName="MODULE_NO"  FieldValue="12" />
+          <DataItem FieldName="WO_START_DATE_TIME"  FieldValue="2014-3-19 15:19:18" />
+          <DataItem FieldName="WO_END_DATE_TIME"  FieldValue="2014-3-20 15:19:23" />
+          <DataItem FieldName="OUTBOUND_START_TIME"  FieldValue="2014-3-18 15:19:34" />
+          <DataItem FieldName="OUTBOUND_END_TIME"  FieldValue="2014-3-19 15:19:41" />
+        </Header>
+      </Row>
+    </DataTable>
+    <DataTable TableName ="T_PFK_YLTC_GDGJ_D">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="WO_NO"  FieldValue="wo20101" />
+          <DataItem FieldName="BAR_CODE"  FieldValue="" />
+          <DataItem FieldName="LEAF_NO"  FieldValue="" />
+          <DataItem FieldName="LEAF_NAME"  FieldValue="" />
+          <DataItem FieldName="LEAF_AREA"  FieldValue="云南" />
+          <DataItem FieldName="LEAF_YEAR"  FieldValue="11" />
+          <DataItem FieldName="LEAF_GRADE"  FieldValue="" />
+          <DataItem FieldName="LEAF_TYPE"  FieldValue="" />
+          <DataItem FieldName="LEAF_STANDARD"  FieldValue="" />
+          <DataItem FieldName="IS_MERGE_FLAG"  FieldValue="1" />
+          <DataItem FieldName="AMOUNT_KG"  FieldValue="195" />
+          <DataItem FieldName="ACTUAL_OUT_ORDER"  FieldValue="" />
+          <DataItem FieldName="PURCHASE_BATCH"  FieldValue="" />
+          <DataItem FieldName="IN_FACTORY_CHECK_BATCH_NO"  FieldValue="" />
+        </Header>
+      </Row>
+    </DataTable>
+  </Data>
+</Msg>

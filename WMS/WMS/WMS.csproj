@@ -1,0 +1,1658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C4760409-C228-49D9-A91C-5BB8EF773B95}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WMS</RootNamespace>
+    <AssemblyName>WMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\THOK.Common.Ef\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport, Version=2013.4.1.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\work - 副本\WMS\bin\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars, Version=2013.4.1.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\work - 副本\WMS\bin\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor, Version=2013.4.1.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\work - 副本\WMS\bin\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Web, Version=2013.4.1.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\work - 副本\WMS\bin\FastReport.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>..\Libraries\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.0.30714, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\Libraries\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.0.208.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\Libraries\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\Libraries\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.5.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\THOK.Common.NPOI\bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="THOK.Wms.DbModel">
+      <HintPath>..\THOK.Wms.DbModel\bin\Debug\THOK.Wms.DbModel.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivator, Version=1.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivator.1.4.4\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\DontDropDbJustCreateTablesIfModelChangedStart.cs" />
+    <Compile Include="ContentReport\PDF\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentReport\PDF\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Authorize\AuthorizeController.cs" />
+    <Compile Include="Controllers\Authorize\ExceptionalLogController.cs" />
+    <Compile Include="Controllers\Authorize\FunctionController.cs" />
+    <Compile Include="Controllers\Authorize\HelpContentController.cs" />
+    <Compile Include="Controllers\Authorize\HelpController.cs" />
+    <Compile Include="Controllers\Authorize\HelpEditController.cs" />
+    <Compile Include="Controllers\Authorize\LoginLogController.cs" />
+    <Compile Include="Controllers\Authorize\ModuleController.cs" />
+    <Compile Include="Controllers\Authorize\RoleController.cs" />
+    <Compile Include="Controllers\Authorize\RolePermissionController.cs" />
+    <Compile Include="Controllers\Authorize\ServerAdmin\CityController.cs" />
+    <Compile Include="Controllers\Authorize\ServerAdmin\ServerController.cs" />
+    <Compile Include="Controllers\Authorize\SystemController.cs" />
+    <Compile Include="Controllers\Authorize\SystemEventLogController.cs" />
+    <Compile Include="Controllers\Authorize\SystemParameterInfo\ParameterSetController.cs" />
+    <Compile Include="Controllers\Authorize\UserController.cs" />
+    <Compile Include="Controllers\Authorize\UserPermissionController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Wms\Base\BillTypeController.cs" />
+    <Compile Include="Controllers\Wms\Base\CarController.cs" />
+    <Compile Include="Controllers\Wms\Base\CigaretteController.cs" />
+    <Compile Include="Controllers\Wms\Base\CraneController.cs" />
+    <Compile Include="Controllers\Wms\Base\ProductCategoryController.cs" />
+    <Compile Include="Controllers\Wms\Base\ProductController.cs" />
+    <Compile Include="Controllers\Wms\Base\ProductGradeController.cs" />
+    <Compile Include="Controllers\Wms\Base\ProductionLineController.cs" />
+    <Compile Include="Controllers\Wms\Base\ProductOriginalController.cs" />
+    <Compile Include="Controllers\Wms\Base\SysBillTargetController.cs" />
+    <Compile Include="Controllers\Wms\Base\SysTableStateController.cs" />
+    <Compile Include="Controllers\Wms\Base\UnitController.cs" />
+    <Compile Include="Controllers\Wms\Base\UnitCategoryController.cs" />
+    <Compile Include="Controllers\Wms\BillPrintController.cs" />
+    <Compile Include="Controllers\Wms\MES\PrepareplanController.cs" />
+    <Compile Include="Controllers\Wms\WarehouseInfo\AreaController.cs" />
+    <Compile Include="Controllers\Wms\WarehouseInfo\CellController.cs" />
+    <Compile Include="Controllers\Wms\WarehouseInfo\DefaultProductSetController.cs" />
+    <Compile Include="Controllers\Wms\WarehouseInfo\ShelfController.cs" />
+    <Compile Include="Controllers\Wms\WarehouseInfo\Warehouse2Controller.cs" />
+    <Compile Include="Controllers\Wms\WarehouseInfo\WarehouseController.cs" />
+    <Compile Include="Controllers\Wms\WMS\CellStateSearchController.cs" />
+    <Compile Include="Controllers\Wms\WMS\DirectProductController.cs" />
+    <Compile Include="Controllers\Wms\WMS\DirectProductSearchController.cs" />
+    <Compile Include="Controllers\Wms\WMS\FeedingController.cs" />
+    <Compile Include="Controllers\Wms\WMS\FeedingSearchController.cs" />
+    <Compile Include="Controllers\Wms\WMS\FillBillController.cs" />
+    <Compile Include="Controllers\Wms\WMS\FormulaController.cs" />
+    <Compile Include="Controllers\Wms\WMS\InventoryController.cs" />
+    <Compile Include="Controllers\Wms\WMS\InventorySearchController.cs" />
+    <Compile Include="Controllers\Wms\WMS\InventoryWorkController.cs" />
+    <Compile Include="Controllers\Wms\WMS\InvertedTreasuryController.cs" />
+    <Compile Include="Controllers\Wms\WMS\MoveStockController.cs" />
+    <Compile Include="Controllers\Wms\WMS\MoveStockWorkController.cs" />
+    <Compile Include="Controllers\Wms\WMS\PalletStockInController.cs" />
+    <Compile Include="Controllers\Wms\WMS\PalletStockOutController.cs" />
+    <Compile Include="Controllers\Wms\WMS\ProductDetailsController.cs" />
+    <Compile Include="Controllers\Wms\WMS\ProductLedgerController.cs" />
+    <Compile Include="Controllers\Wms\WMS\ProductMonthlyController.cs" />
+    <Compile Include="Controllers\Wms\WMS\ReplaceController.cs" />
+    <Compile Include="Controllers\Wms\WMS\SamplingController.cs" />
+    <Compile Include="Controllers\Wms\WMS\SamplingSearchController.cs" />
+    <Compile Include="Controllers\Wms\WMS\SamplingWorkController.cs" />
+    <Compile Include="Controllers\Wms\WMS\Schedule2Controller.cs" />
+    <Compile Include="Controllers\Wms\WMS\ScheduleController.cs" />
+    <Compile Include="Controllers\Wms\WMS\ScheduleSearchController.cs" />
+    <Compile Include="Controllers\Wms\WMS\StockDifferController.cs" />
+    <Compile Include="Controllers\Wms\WMS\StockDifferSearchController.cs" />
+    <Compile Include="Controllers\Wms\WMS\StockDifferWorkController.cs" />
+    <Compile Include="Controllers\Wms\WMS\StockInBillController.cs" />
+    <Compile Include="Controllers\Wms\WMS\StockIntoSearchController.cs" />
+    <Compile Include="Controllers\Wms\WMS\StockInWorkController.cs" />
+    <Compile Include="Controllers\Wms\WMS\StockMoveSearchController.cs" />
+    <Compile Include="Controllers\Wms\WMS\StockOutBillController.cs" />
+    <Compile Include="Controllers\Wms\WMS\StockOutSearchController.cs" />
+    <Compile Include="Controllers\Wms\WMS\StockOutWorkController.cs" />
+    <Compile Include="Controllers\Wms\WMS\StorageSearchController.cs" />
+    <Compile Include="Controllers\Wms\WMS\StoreSearchController.cs" />
+    <Compile Include="Controllers\Wms\WMS\WorkSearchController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\DataEntities.cs" />
+    <Compile Include="Security\EFRoleProvider.cs" />
+    <Compile Include="Security\FormsAuthenticationService.cs" />
+    <Compile Include="Security\FormsAuthorizeAttribute.cs" />
+    <Compile Include="Security\IFormsAuthenticationService.cs" />
+    <Compile Include="Security\NonAuthorizeAttribute.cs" />
+    <Compile Include="Security\ServiceFactory.cs" />
+    <Compile Include="Security\SystemEventLogAttribute.cs" />
+    <Compile Include="Security\SystemEventLogFactory.cs" />
+    <Compile Include="Security\TokenAclAuthorizeAttribute.cs" />
+    <Compile Include="Service References\WMSSV\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ContentReport\PDF\WebForm1.aspx" />
+    <Content Include="Content\Images\banner.jpg" />
+    <Content Include="Content\Images\copy2.png" />
+    <Content Include="Content\Images\login_bg.jpg" />
+    <Content Include="Content\Images\login_bg02.jpg" />
+    <Content Include="Content\Images\noscript.gif" />
+    <Content Include="Content\Images\top_bg.jpg" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\changelog.txt" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\easyloader.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\jquery-1.7.2.min.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\jquery.easyui.min.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\licence_gpl.txt" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\license_commercial.txt" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-af.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-bg.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-ca.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-cs.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-cz.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-da.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-de.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-en.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-es.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-fr.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-nl.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-pt_BR.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-ru.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-tr.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-zh_CN.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\locale\easyui-lang-zh_TW.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.accordion.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.calendar.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.combo.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.combobox.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.combogrid.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.combotree.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.datagrid.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.datebox.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.datetimebox.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.dialog.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.draggable.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.droppable.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.form.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.layout.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.linkbutton.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.menu.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.menubutton.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.messager.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.numberbox.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.numberspinner.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.pagination.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.panel.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.parser.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.progressbar.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.propertygrid.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.resizable.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.searchbox.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.slider.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.spinner.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.splitbutton.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.tabs.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.timespinner.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.tree.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.treegrid.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.validatebox.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\plugins\jquery.window.js" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\readme.txt" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\accordion.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\calendar.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\combo.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\combobox.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\datagrid.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\datebox.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\dialog.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\easyui.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\accordion_collapse.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\accordion_expand.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\blank.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\button_a_bg.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\button_plain_hover.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\button_span_bg.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\calendar_nextmonth.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\calendar_nextyear.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\calendar_prevmonth.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\calendar_prevyear.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\combo_arrow.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\datagrid_header_bg.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\datagrid_row_collapse.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\datagrid_row_expand.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\datagrid_sort_asc.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\datagrid_sort_desc.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\datagrid_title_bg.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\datebox_arrow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\layout_arrows.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\menu.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\menu_downarrow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\menu_rightarrow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\menu_sep.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\menu_split_downarrow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\messager_error.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\messager_info.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\messager_question.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\messager_warning.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\pagination_first.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\pagination_last.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\pagination_load.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\pagination_loading.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\pagination_next.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\pagination_prev.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\panel_loading.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\panel_title.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\panel_tools.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\panel_tool_collapse.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\panel_tool_expand.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\searchbox_button.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\slider_handle.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\spinner_arrow_down.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\spinner_arrow_up.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tabs_active.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tabs_close.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tabs_enabled.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tabs_leftarrow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tabs_rightarrow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tree_arrows.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tree_checkbox_0.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tree_checkbox_1.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tree_checkbox_2.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tree_dnd_no.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tree_dnd_yes.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tree_elbow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tree_file.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tree_folder.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tree_folder_open.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\tree_loading.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\validatebox_pointer.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\images\validatebox_warning.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\layout.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\linkbutton.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\menu.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\menubutton.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\messager.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\pagination.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\panel.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\progressbar.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\propertygrid.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\searchbox.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\slider.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\spinner.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\splitbutton.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\tabs.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\tree.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\validatebox.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\default\window.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\accordion.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\calendar.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\combo.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\combobox.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\datagrid.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\datebox.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\dialog.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\easyui.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\accordion_collapse.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\accordion_expand.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\blank.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\button_a_bg.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\button_plain_hover.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\button_span_bg.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\calendar_nextmonth.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\calendar_nextyear.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\calendar_prevmonth.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\calendar_prevyear.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\combo_arrow.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\datagrid_header_bg.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\datagrid_row_collapse.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\datagrid_row_expand.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\datagrid_sort_asc.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\datagrid_sort_desc.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\datagrid_title_bg.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\datebox_arrow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\layout_arrows.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\menu.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\menu_downarrow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\menu_rightarrow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\menu_sep.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\menu_split_downarrow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\messager_error.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\messager_info.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\messager_question.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\messager_warning.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\pagination_first.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\pagination_last.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\pagination_load.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\pagination_loading.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\pagination_next.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\pagination_prev.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\panel_loading.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\panel_title.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\panel_tools.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\panel_tool_collapse.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\panel_tool_expand.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\searchbox_button.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\slider_handle.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\spinner_arrow_down.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\spinner_arrow_up.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tabs_close.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tabs_enabled.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tabs_leftarrow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tabs_rightarrow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tree_arrows.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tree_checkbox_0.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tree_checkbox_1.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tree_checkbox_2.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tree_dnd_no.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tree_dnd_yes.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tree_elbow.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tree_file.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tree_folder.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tree_folder_open.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\tree_loading.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\validatebox_pointer.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\images\validatebox_warning.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\layout.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\linkbutton.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\menu.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\menubutton.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\messager.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\pagination.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\panel.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\progressbar.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\propertygrid.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\searchbox.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\slider.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\spinner.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\splitbutton.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\tabs.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\tree.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\validatebox.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\gray\window.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icon.css" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\back.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\blank.gif" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\cancel.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\cut.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\edit_add.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\edit_remove.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\filesave.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\help.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\mini_add.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\mini_edit.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\mini_refresh.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\no.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\ok.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\pencil.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\print.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\redo.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\reload.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\search.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\sum.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\tip.png" />
+    <Content Include="Content\Scripts\jquery-easyui-1.3\themes\icons\undo.png" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\jquery-1.4.4.min.js" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\jquery.ztree.all-3.3.js" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\jquery.ztree.all-3.3.min.js" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\jquery.ztree.core-3.3.js" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\jquery.ztree.core-3.3.min.js" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\jquery.ztree.excheck-3.3.js" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\jquery.ztree.excheck-3.3.min.js" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\jquery.ztree.exedit-3.3.js" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\jquery.ztree.exedit-3.3.min.js" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\jquery.ztree.exhide-3.3.js" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\jquery.ztree.exhide-3.3.min.js" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\diy\1_close.png" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\diy\1_open.png" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\diy\2.png" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\diy\3.png" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\diy\4.png" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\diy\5.png" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\diy\6.png" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\diy\7.png" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\diy\8.png" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\diy\9.png" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\line_conn.gif" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\loading.gif" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\zTreeStandard.gif" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\img\zTreeStandard.png" />
+    <Content Include="Content\Scripts\JQuery-zTree-v3.3\zTreeStyle\zTreeStyle.css" />
+    <Content Include="Content\Scripts\jquery.ajaxsetup.js" />
+    <Content Include="Content\Scripts\jquery.asyncProcessing.js" />
+    <Content Include="Content\Scripts\jquery.fullscreen.js" />
+    <Content Include="Content\Scripts\jquery.json.js" />
+    <Content Include="Content\Scripts\json2.js" />
+    <Content Include="Content\Scripts\jthok-ui\JDiv.js" />
+    <Content Include="Content\Scripts\jthok-ui\leftmenu.js" />
+    <Content Include="Content\Scripts\mykeyboardshortcuts.js" />
+    <Content Include="Content\Scripts\Native_FullScreen.js" />
+    <Content Include="Content\Scripts\xheditor1.1.14\common.css" />
+    <Content Include="Content\Scripts\xheditor1.1.14\jquery\jquery-1.4.4.min.js" />
+    <Content Include="Content\Scripts\xheditor1.1.14\jquery\jquery-1.4.4.src.js" />
+    <Content Include="Content\Scripts\xheditor1.1.14\serverscript\asp\ubb2html.asp" />
+    <Content Include="Content\Scripts\xheditor1.1.14\src\ubb.js" />
+    <Content Include="Content\Scripts\xheditor1.1.14\src\xheditor-1.1.14-en.js" />
+    <Content Include="Content\Scripts\xheditor1.1.14\src\xheditor-1.1.14-zh-cn.js" />
+    <Content Include="Content\Scripts\xheditor1.1.14\src\xheditor-1.1.14-zh-tw.js" />
+    <Content Include="Content\Scripts\xheditor1.1.14\upload.aspx" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor-1.1.14-en.min.js" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor-1.1.14-zh-cn.min.js" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor-1.1.14-zh-tw.min.js" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\angry.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\awkward.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\bye.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\config.txt" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\crazy.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\cry.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\curse.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\cute.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\despise.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\doubt.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\envy.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\fastcry.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\knock.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\laugh.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\mad.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\ohmy.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\panic.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\proud.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\quiet.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\sad.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\shutup.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\shy.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\sleep.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\smile.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\struggle.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\titter.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\tongue.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\wail.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\default\wronged.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\alien.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\angel.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\angry.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\bandit.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\biglaugh.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\blink.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\blush.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\config.txt" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\cool.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\cry.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\depres.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\devil.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\glare.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\heart.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\joyful.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\kiss.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\laugh.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\magician.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\ninja.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\pinch.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\police.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\sad.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\sick.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\sideways.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\sleep.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\smile.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\surprised.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\tongue.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\unsure.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\w00t.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\whistling.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\wondering.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\ipb\wub.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\1.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\10.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\11.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\12.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\13.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\14.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\15.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\16.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\17.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\18.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\19.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\2.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\20.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\21.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\22.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\23.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\24.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\25.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\26.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\27.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\28.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\29.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\3.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\30.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\31.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\32.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\33.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\34.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\35.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\36.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\37.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\38.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\39.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\4.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\40.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\5.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\6.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\7.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\8.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\msn\9.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\angry.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\bad.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\blush.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\brokenheart.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\bye.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\coffee.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\config.txt" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\cool.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\cry.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\curse.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\cute.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\devil.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\envy.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\gift.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\good.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\kiss.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\laugh.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\love.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\music.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\question.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\rose.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\sad.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\shocked.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\shout.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\sick.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\sleepy.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\smile.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\soccer.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\sweat.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\tired.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\tongue.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\victory.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_emot\pidgin\wink.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\multiupload\img\add.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\multiupload\img\bg1.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\multiupload\img\bg2.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\multiupload\img\btnbg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\multiupload\img\btnbgr.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\multiupload\img\clear.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\multiupload\img\progressbg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\multiupload\img\start.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\multiupload\multiupload.css" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\multiupload\multiupload.html" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\multiupload\multiupload.js" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\multiupload\swfupload\swfupload.js" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\multiupload\swfupload\swfupload.swf" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_plugins\ubb.min.js" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\blank.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\iframe.css" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\anchor.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\close.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\flash.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\icons.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\loading.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\progress.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\progressbg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\tag-address.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\tag-div.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\tag-h1.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\tag-h2.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\tag-h3.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\tag-h4.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\tag-h5.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\tag-h6.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\tag-p.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\tag-pre.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\waiting.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\wmp.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\img\wordimg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\default\ui.css" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\iframe.css" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\anchor.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\close.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\flash.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\icons.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\loading.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\progress.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\progressbg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\tag-address.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\tag-div.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\tag-h1.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\tag-h2.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\tag-h3.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\tag-h4.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\tag-h5.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\tag-h6.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\tag-p.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\tag-pre.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\waiting.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\wmp.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\img\wordimg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\nostyle\ui.css" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\iframe.css" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\anchor.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\buttonbg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\close.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\flash.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\icons.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\loading.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\progress.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\progressbg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\tag-address.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\tag-div.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\tag-h1.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\tag-h2.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\tag-h3.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\tag-h4.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\tag-h5.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\tag-h6.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\tag-p.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\tag-pre.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\waiting.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\wmp.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\img\wordimg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007blue\ui.css" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\iframe.css" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\anchor.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\buttonbg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\close.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\flash.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\icons.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\loading.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\progress.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\progressbg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\tag-address.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\tag-div.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\tag-h1.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\tag-h2.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\tag-h3.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\tag-h4.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\tag-h5.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\tag-h6.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\tag-p.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\tag-pre.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\waiting.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\wmp.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\img\wordimg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\o2007silver\ui.css" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\iframe.css" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\anchor.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\buttonbg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\close.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\flash.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\icons.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\loading.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\progress.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\progressbg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\tag-address.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\tag-div.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\tag-h1.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\tag-h2.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\tag-h3.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\tag-h4.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\tag-h5.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\tag-h6.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\tag-p.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\tag-pre.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\titlebg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\waiting.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\wmp.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\img\wordimg.gif" />
+    <Content Include="Content\Scripts\xheditor1.1.14\xheditor_skin\vista\ui.css" />
+    <Content Include="Content\themes\base\css\css.css" />
+    <Content Include="Content\themes\base\default.css" />
+    <Content Include="Content\themes\base\icon.css" />
+    <Content Include="Content\themes\base\icons\2Menu_Help.png" />
+    <Content Include="Content\themes\base\icons\2Menu_Jurisdiction.png" />
+    <Content Include="Content\themes\base\icons\2Menu_ServerDevice.png" />
+    <Content Include="Content\themes\base\icons\2Menu_SysLog.png" />
+    <Content Include="Content\themes\base\icons\2Son_Cities.png" />
+    <Content Include="Content\themes\base\icons\2Son_HelpContents.png" />
+    <Content Include="Content\themes\base\icons\2Son_HelpEdit.png" />
+    <Content Include="Content\themes\base\icons\2Son_HelpIndex.png" />
+    <Content Include="Content\themes\base\icons\2Son_LoginLog.png" />
+    <Content Include="Content\themes\base\icons\2Son_ModuleJurisdiction.png" />
+    <Content Include="Content\themes\base\icons\2Son_RoleJurisdiction.png" />
+    <Content Include="Content\themes\base\icons\2Son_ServerComputer.png" />
+    <Content Include="Content\themes\base\icons\2Son_SysJurisdiction.png" />
+    <Content Include="Content\themes\base\icons\2Son_UserJurisdiction.png" />
+    <Content Include="Content\themes\base\icons\2Son_WorkLog.png" />
+    <Content Include="Content\themes\base\icons\2Son_WrongLog.png" />
+    <Content Include="Content\themes\base\icons\accept.png" />
+    <Content Include="Content\themes\base\icons\allsearch.png" />
+    <Content Include="Content\themes\base\icons\back.png" />
+    <Content Include="Content\themes\base\icons\BillType.gif" />
+    <Content Include="Content\themes\base\icons\BillType.png" />
+    <Content Include="Content\themes\base\icons\blank.gif" />
+    <Content Include="Content\themes\base\icons\browse.gif" />
+    <Content Include="Content\themes\base\icons\cancel.png" />
+    <Content Include="Content\themes\base\icons\car.png" />
+    <Content Include="Content\themes\base\icons\CellStateSearch.png" />
+    <Content Include="Content\themes\base\icons\copy2.png" />
+    <Content Include="Content\themes\base\icons\Crane.png" />
+    <Content Include="Content\themes\base\icons\cut.png" />
+    <Content Include="Content\themes\base\icons\DirectProduct.gif" />
+    <Content Include="Content\themes\base\icons\edit_add.png" />
+    <Content Include="Content\themes\base\icons\edit_remove.png" />
+    <Content Include="Content\themes\base\icons\filesave.png" />
+    <Content Include="Content\themes\base\icons\Formula.gif" />
+    <Content Include="Content\themes\base\icons\help.png" />
+    <Content Include="Content\themes\base\icons\Menu_CheckBill.png" />
+    <Content Include="Content\themes\base\icons\Menu_Cigarette.png" />
+    <Content Include="Content\themes\base\icons\Menu_DeliverCustomer.ico" />
+    <Content Include="Content\themes\base\icons\Menu_DeliverLine.ico" />
+    <Content Include="Content\themes\base\icons\Menu_delivery.ico" />
+    <Content Include="Content\themes\base\icons\Menu_Organization.png" />
+    <Content Include="Content\themes\base\icons\Menu_ProductQuality.jpg" />
+    <Content Include="Content\themes\base\icons\Menu_Research.png" />
+    <Content Include="Content\themes\base\icons\Menu_Sort.png" />
+    <Content Include="Content\themes\base\icons\Menu_StockDiffer.png" />
+    <Content Include="Content\themes\base\icons\Menu_StockInto.png" />
+    <Content Include="Content\themes\base\icons\Menu_StockMove.png" />
+    <Content Include="Content\themes\base\icons\Menu_StockOut.png" />
+    <Content Include="Content\themes\base\icons\Menu_Warehouse.png" />
+    <Content Include="Content\themes\base\icons\Menu_WarehouseM.png" />
+    <Content Include="Content\themes\base\icons\mini_add.png" />
+    <Content Include="Content\themes\base\icons\mini_edit.png" />
+    <Content Include="Content\themes\base\icons\mini_refresh.png" />
+    <Content Include="Content\themes\base\icons\MoveStock.gif" />
+    <Content Include="Content\themes\base\icons\no.png" />
+    <Content Include="Content\themes\base\icons\ok.png" />
+    <Content Include="Content\themes\base\icons\onebit_23.png" />
+    <Content Include="Content\themes\base\icons\onebit_24.png" />
+    <Content Include="Content\themes\base\icons\pencil.png" />
+    <Content Include="Content\themes\base\icons\preductstyle.gif" />
+    <Content Include="Content\themes\base\icons\print.png" />
+    <Content Include="Content\themes\base\icons\productgrade.png" />
+    <Content Include="Content\themes\base\icons\productinfo.gif" />
+    <Content Include="Content\themes\base\icons\ProductOriginal.gif" />
+    <Content Include="Content\themes\base\icons\redo.png" />
+    <Content Include="Content\themes\base\icons\reload.png" />
+    <Content Include="Content\themes\base\icons\SamplingSearch.gif" />
+    <Content Include="Content\themes\base\icons\Schedule.gif" />
+    <Content Include="Content\themes\base\icons\search.png" />
+    <Content Include="Content\themes\base\icons\shut_down.png" />
+    <Content Include="Content\themes\base\icons\son_Bill_Check.png" />
+    <Content Include="Content\themes\base\icons\son_Bill_Type.jpg" />
+    <Content Include="Content\themes\base\icons\Son_CellAnalysis.jpg" />
+    <Content Include="Content\themes\base\icons\son_CheckBill.png" />
+    <Content Include="Content\themes\base\icons\son_CheckBillAllot.png" />
+    <Content Include="Content\themes\base\icons\son_CheckBillMake.png" />
+    <Content Include="Content\themes\base\icons\son_CheckBillWork.png" />
+    <Content Include="Content\themes\base\icons\son_CigaretteBrand.jpg" />
+    <Content Include="Content\themes\base\icons\son_CigaretteInfo.png" />
+    <Content Include="Content\themes\base\icons\son_CigaretteSupplier.jpg" />
+    <Content Include="Content\themes\base\icons\son_CigaretteUnit.png" />
+    <Content Include="Content\themes\base\icons\son_CigaretteUnitList.png" />
+    <Content Include="Content\themes\base\icons\son_Company.png" />
+    <Content Include="Content\themes\base\icons\Son_deliveryDis.ico" />
+    <Content Include="Content\themes\base\icons\son_Department.png" />
+    <Content Include="Content\themes\base\icons\son_DifferBill.png" />
+    <Content Include="Content\themes\base\icons\son_Employee.png" />
+    <Content Include="Content\themes\base\icons\son_Job.png" />
+    <Content Include="Content\themes\base\icons\son_MoveBill.png" />
+    <Content Include="Content\themes\base\icons\son_MoveBillAllot.png" />
+    <Content Include="Content\themes\base\icons\son_MoveBillWork.png" />
+    <Content Include="Content\themes\base\icons\Son_ProductWarning.jpg" />
+    <Content Include="Content\themes\base\icons\son_SortInfo.png" />
+    <Content Include="Content\themes\base\icons\son_SortOrder.png" />
+    <Content Include="Content\themes\base\icons\son_SortOrderc.png" />
+    <Content Include="Content\themes\base\icons\son_SortWork.png" />
+    <Content Include="Content\themes\base\icons\son_StockArea.png" />
+    <Content Include="Content\themes\base\icons\son_StockAreaDownline.png" />
+    <Content Include="Content\themes\base\icons\son_StockDayBill.png" />
+    <Content Include="Content\themes\base\icons\son_StockIntoBill.png" />
+    <Content Include="Content\themes\base\icons\son_StockIntoBillAllot.png" />
+    <Content Include="Content\themes\base\icons\son_StockIntoBillWork.png" />
+    <Content Include="Content\themes\base\icons\son_StockNow.png" />
+    <Content Include="Content\themes\base\icons\son_StockOldAll.png" />
+    <Content Include="Content\themes\base\icons\son_StockOlddetails.png" />
+    <Content Include="Content\themes\base\icons\son_StockOutBill.png" />
+    <Content Include="Content\themes\base\icons\son_StockOutBillAllot.png" />
+    <Content Include="Content\themes\base\icons\son_StockOutBillWork.png" />
+    <Content Include="Content\themes\base\icons\son_StockPlace.png" />
+    <Content Include="Content\themes\base\icons\son_Warehouse.png" />
+    <Content Include="Content\themes\base\icons\sum.png" />
+    <Content Include="Content\themes\base\icons\tabicons.png" />
+    <Content Include="Content\themes\base\icons\tip.png" />
+    <Content Include="Content\themes\base\icons\undo.png" />
+    <Content Include="Content\themes\base\icons\warehouse.png" />
+    <Content Include="Content\themes\base\icons\WorkSearch.gif" />
+    <Content Include="Content\themes\base\images\2Menu_Help.png" />
+    <Content Include="Content\themes\base\images\2Menu_Jurisdiction.png" />
+    <Content Include="Content\themes\base\images\2Menu_ServerDevice.png" />
+    <Content Include="Content\themes\base\images\2Menu_SysLog.png" />
+    <Content Include="Content\themes\base\images\2Son_Cities.png" />
+    <Content Include="Content\themes\base\images\2Son_HelpContents.png" />
+    <Content Include="Content\themes\base\images\2Son_HelpEdit.png" />
+    <Content Include="Content\themes\base\images\2Son_HelpIndex.png" />
+    <Content Include="Content\themes\base\images\2Son_LoginLog.png" />
+    <Content Include="Content\themes\base\images\2Son_ModuleJurisdiction.png" />
+    <Content Include="Content\themes\base\images\2Son_RoleJurisdiction.png" />
+    <Content Include="Content\themes\base\images\2Son_ServerComputer.png" />
+    <Content Include="Content\themes\base\images\2Son_SysJurisdiction.png" />
+    <Content Include="Content\themes\base\images\2Son_UserJurisdiction.png" />
+    <Content Include="Content\themes\base\images\2Son_WorkLog.png" />
+    <Content Include="Content\themes\base\images\2Son_WrongLog.png" />
+    <Content Include="Content\themes\base\images\accept.png" />
+    <Content Include="Content\themes\base\images\back.png" />
+    <Content Include="Content\themes\base\images\bg.gif" />
+    <Content Include="Content\themes\base\images\blank.gif" />
+    <Content Include="Content\themes\base\images\browse.gif" />
+    <Content Include="Content\themes\base\images\cancel.png" />
+    <Content Include="Content\themes\base\images\copy2.png" />
+    <Content Include="Content\themes\base\images\cut.png" />
+    <Content Include="Content\themes\base\images\down.png" />
+    <Content Include="Content\themes\base\images\editbg.png" />
+    <Content Include="Content\themes\base\images\editbg2.png" />
+    <Content Include="Content\themes\base\images\edit_add.png" />
+    <Content Include="Content\themes\base\images\edit_remove.png" />
+    <Content Include="Content\themes\base\images\filesave.png" />
+    <Content Include="Content\themes\base\images\flag.png" />
+    <Content Include="Content\themes\base\images\help.png" />
+    <Content Include="Content\themes\base\images\Menu_CheckBill.png" />
+    <Content Include="Content\themes\base\images\Menu_Cigarette.png" />
+    <Content Include="Content\themes\base\images\Menu_DeliverCustomer.ico" />
+    <Content Include="Content\themes\base\images\Menu_DeliverLine.ico" />
+    <Content Include="Content\themes\base\images\Menu_delivery.ico" />
+    <Content Include="Content\themes\base\images\Menu_Organization.png" />
+    <Content Include="Content\themes\base\images\Menu_ProductQuality.jpg" />
+    <Content Include="Content\themes\base\images\Menu_Research.png" />
+    <Content Include="Content\themes\base\images\Menu_Sort.png" />
+    <Content Include="Content\themes\base\images\Menu_StockDiffer.png" />
+    <Content Include="Content\themes\base\images\Menu_StockInto.png" />
+    <Content Include="Content\themes\base\images\Menu_StockMove.png" />
+    <Content Include="Content\themes\base\images\Menu_StockOut.png" />
+    <Content Include="Content\themes\base\images\Menu_Warehouse.png" />
+    <Content Include="Content\themes\base\images\Menu_WarehouseM.png" />
+    <Content Include="Content\themes\base\images\mini_add.png" />
+    <Content Include="Content\themes\base\images\mini_edit.png" />
+    <Content Include="Content\themes\base\images\mini_refresh.png" />
+    <Content Include="Content\themes\base\images\no.png" />
+    <Content Include="Content\themes\base\images\node.png" />
+    <Content Include="Content\themes\base\images\ok.png" />
+    <Content Include="Content\themes\base\images\onebit_23.png" />
+    <Content Include="Content\themes\base\images\onebit_24.png" />
+    <Content Include="Content\themes\base\images\pencil.png" />
+    <Content Include="Content\themes\base\images\print.png" />
+    <Content Include="Content\themes\base\images\redo.png" />
+    <Content Include="Content\themes\base\images\reload.png" />
+    <Content Include="Content\themes\base\images\search.png" />
+    <Content Include="Content\themes\base\images\shut_down.png" />
+    <Content Include="Content\themes\base\images\son_Bill_Check.png" />
+    <Content Include="Content\themes\base\images\son_Bill_Type.jpg" />
+    <Content Include="Content\themes\base\images\Son_CellAnalysis.jpg" />
+    <Content Include="Content\themes\base\images\son_CheckBill.png" />
+    <Content Include="Content\themes\base\images\son_CheckBillAllot.png" />
+    <Content Include="Content\themes\base\images\son_CheckBillMake.png" />
+    <Content Include="Content\themes\base\images\son_CheckBillWork.png" />
+    <Content Include="Content\themes\base\images\son_CigaretteBrand.jpg" />
+    <Content Include="Content\themes\base\images\son_CigaretteInfo.png" />
+    <Content Include="Content\themes\base\images\son_CigaretteSupplier.jpg" />
+    <Content Include="Content\themes\base\images\son_CigaretteUnit.png" />
+    <Content Include="Content\themes\base\images\son_CigaretteUnitList.png" />
+    <Content Include="Content\themes\base\images\son_Company.png" />
+    <Content Include="Content\themes\base\images\Son_deliveryDis.ico" />
+    <Content Include="Content\themes\base\images\son_Department.png" />
+    <Content Include="Content\themes\base\images\son_DifferBill.png" />
+    <Content Include="Content\themes\base\images\son_Employee.png" />
+    <Content Include="Content\themes\base\images\son_Job.png" />
+    <Content Include="Content\themes\base\images\son_MoveBill.png" />
+    <Content Include="Content\themes\base\images\son_MoveBillAllot.png" />
+    <Content Include="Content\themes\base\images\son_MoveBillWork.png" />
+    <Content Include="Content\themes\base\images\Son_ProductWarning.jpg" />
+    <Content Include="Content\themes\base\images\son_SortInfo.png" />
+    <Content Include="Content\themes\base\images\son_SortOrder.png" />
+    <Content Include="Content\themes\base\images\son_SortOrderc.png" />
+    <Content Include="Content\themes\base\images\son_SortWork.png" />
+    <Content Include="Content\themes\base\images\son_StockArea.png" />
+    <Content Include="Content\themes\base\images\son_StockAreaDownline.png" />
+    <Content Include="Content\themes\base\images\son_StockDayBill.png" />
+    <Content Include="Content\themes\base\images\son_StockIntoBill.png" />
+    <Content Include="Content\themes\base\images\son_StockIntoBillAllot.png" />
+    <Content Include="Content\themes\base\images\son_StockIntoBillWork.png" />
+    <Content Include="Content\themes\base\images\son_StockNow.png" />
+    <Content Include="Content\themes\base\images\son_StockOldAll.png" />
+    <Content Include="Content\themes\base\images\son_StockOlddetails.png" />
+    <Content Include="Content\themes\base\images\son_StockOutBill.png" />
+    <Content Include="Content\themes\base\images\son_StockOutBillAllot.png" />
+    <Content Include="Content\themes\base\images\son_StockOutBillWork.png" />
+    <Content Include="Content\themes\base\images\son_StockPlace.png" />
+    <Content Include="Content\themes\base\images\son_Warehouse.png" />
+    <Content Include="Content\themes\base\images\sum.png" />
+    <Content Include="Content\themes\base\images\tabicons.png" />
+    <Content Include="Content\themes\base\images\tabs_close.gif" />
+    <Content Include="Content\themes\base\images\tip.png" />
+    <Content Include="Content\themes\base\images\undo.png" />
+    <Content Include="Content\themes\base\images\up.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <None Include="Service References\WMSSV\AHZY_ESB_WMS_GETSSV.disco" />
+    <None Include="Service References\WMSSV\configuration91.svcinfo" />
+    <None Include="Service References\WMSSV\configuration.svcinfo" />
+    <None Include="Service References\WMSSV\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Service References\WMSSV\AHZY_ESB_WMS_GETSSV.wsdl" />
+    <Content Include="Views\Replace\_UploadPartial.cshtml" />
+    <Content Include="Views\Feeding\_OutbarcodePartial.cshtml" />
+    <Content Include="Views\Shared\_OutreplacePartial.cshtml" />
+    <Content Include="Views\Shared\_CancereplacePartial.cshtml" />
+    <Content Include="Views\StockOutBill\_OutreplacePartial.cshtml" />
+    <Content Include="Views\StockOutBill\_CancereplacePartial.cshtml" />
+    <Content Include="Views\Prepareplan\Index.cshtml" />
+    <Content Include="Views\Prepareplan\_SearchPartial.cshtml" />
+    <Content Include="Views\Feeding\_UploadPartial.cshtml" />
+    <Content Include="Views\StorageSearch\_SearchPartial.cshtml" />
+    <Content Include="Views\StorageSearch\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Scripts\ckfinder\bin\Debug\" />
+    <Folder Include="Content\Scripts\ckfinder\bin\Release\" />
+    <Folder Include="Content\Scripts\ckfinder\plugins\fileeditor\bin\Debug\" />
+    <Folder Include="Content\Scripts\ckfinder\plugins\fileeditor\bin\Release\" />
+    <Folder Include="Content\Scripts\ckfinder\plugins\imageresize\bin\Debug\" />
+    <Folder Include="Content\Scripts\ckfinder\plugins\imageresize\bin\Release\" />
+    <Folder Include="Content\Scripts\ckfinder\plugins\watermark\bin\Debug\" />
+    <Folder Include="Content\Scripts\ckfinder\plugins\watermark\bin\Release\" />
+    <Folder Include="Content\Scripts\ckfinder\userfiles\files\" />
+    <Folder Include="Content\Scripts\ckfinder\userfiles\flash\" />
+    <Folder Include="Content\Scripts\ckfinder\userfiles\images\" />
+    <Folder Include="Models\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Views\Account\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\THOK.Authority.Bll\THOK.Authority.Bll.csproj">
+      <Project>{8375EB8C-20CB-4E3E-BCF4-85E54F61D241}</Project>
+      <Name>THOK.Authority.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOK.Authority.Dal\THOK.Authority.Dal.csproj">
+      <Project>{A8E32F0A-A9F4-4CDD-8C7A-8304CD034070}</Project>
+      <Name>THOK.Authority.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOK.Authority.DbModel\THOK.Authority.DbModel.csproj">
+      <Project>{F7EB9C5D-6082-4DE6-B1C0-740AFF0CFE11}</Project>
+      <Name>THOK.Authority.DbModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOK.Common.Ef\THOK.Common.Ef.csproj">
+      <Project>{59FB8EB5-F5B8-4423-8550-A7819C855CDE}</Project>
+      <Name>THOK.Common.Ef</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOK.Common.NPOI\THOK.Common.NPOI.csproj">
+      <Project>{F13B4CEE-A865-4815-B5DA-65D579FF008F}</Project>
+      <Name>THOK.Common.NPOI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOK.Common.WEBUtil\THOK.Common.WebUtil.csproj">
+      <Project>{EC6DCF36-B010-4E48-88FC-BABC33EBCCFB}</Project>
+      <Name>THOK.Common.WebUtil</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOK.Common\THOK.Common.csproj">
+      <Project>{2F9C4207-F8A0-4E55-A2CB-3514ADC0A437}</Project>
+      <Name>THOK.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOK.Wms.Bll\THOK.Wms.Bll.csproj">
+      <Project>{2B8E7C92-13CA-426C-94DA-7D021EBD504C}</Project>
+      <Name>THOK.Wms.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOK.Wms.Repository\THOK.Wms.Repository.csproj">
+      <Project>{259E5E16-41D8-420F-A11C-72BEE784B5CB}</Project>
+      <Name>THOK.Wms.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Module\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Module\_AddPartial.cshtml" />
+    <Content Include="Views\Module\_DeletePartial.cshtml" />
+    <Content Include="Views\Module\_EditPartial.cshtml" />
+    <Content Include="Views\Module\_FunctionAdd.cshtml" />
+    <Content Include="Views\Module\_FunctionAdminPartial.cshtml" />
+    <Content Include="Views\Module\_SearchPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Authorize\Index.cshtml" />
+    <Content Include="Views\Authorize\_AddPartial.cshtml" />
+    <Content Include="Views\Authorize\_DeletePartial.cshtml" />
+    <Content Include="Views\Authorize\_EditPartial.cshtml" />
+    <Content Include="Views\Authorize\_SearchPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\City\Index.cshtml" />
+    <Content Include="Views\City\_AddPartial.cshtml" />
+    <Content Include="Views\City\_DeletePartial.cshtml" />
+    <Content Include="Views\City\_EditPartial.cshtml" />
+    <Content Include="Views\City\_SearchPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\HelpContent\Index.cshtml" />
+    <Content Include="Views\HelpContent\_AddPartial.cshtml" />
+    <Content Include="Views\HelpContent\_DeletePartial.cshtml" />
+    <Content Include="Views\HelpContent\_EditPartial.cshtml" />
+    <Content Include="Views\HelpContent\_helpPartial1.cshtml" />
+    <Content Include="Views\HelpContent\_helpPartial2.cshtml" />
+    <Content Include="Views\HelpContent\_SearchPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\HelpEdit\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Error.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\PageNotFound.cshtml" />
+    <Content Include="Views\Home\ServerError.cshtml" />
+    <Content Include="Views\Home\Unauthorized.cshtml" />
+    <Content Include="Views\Home\_ChangeCityPartial.cshtml" />
+    <Content Include="Views\Home\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Home\_ChangeServerPartial.cshtml" />
+    <Content Include="Views\Home\_ChangeSystemPartial.cshtml" />
+    <Content Include="Views\Home\_HeaderPartial.cshtml" />
+    <Content Include="Views\Home\_LogonPartial.cshtml" />
+    <Content Include="Views\Home\_MenuPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LoginLog\Index.cshtml" />
+    <Content Include="Views\LoginLog\_SearchPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ParameterSet\Index.cshtml" />
+    <Content Include="Views\ParameterSet\_AddPartial.cshtml" />
+    <Content Include="Views\ParameterSet\_DeletePartial.cshtml" />
+    <Content Include="Views\ParameterSet\_EditPartial.cshtml" />
+    <Content Include="Views\ParameterSet\_SearchPartial.cshtml" />
+    <Content Include="Views\ParameterSet\_SystemNamePartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Role\Index.cshtml" />
+    <Content Include="Views\Role\_AddPartial.cshtml" />
+    <Content Include="Views\Role\_DeletePartial.cshtml" />
+    <Content Include="Views\Role\_EditPartial.cshtml" />
+    <Content Include="Views\Role\_PermissionAdminPartial.cshtml" />
+    <Content Include="Views\Role\_RoleUserPartial.cshtml" />
+    <Content Include="Views\Role\_SearchPartial.cshtml" />
+    <Content Include="Views\Role\_UserAdminPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\RolePermission\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Server\Index.cshtml" />
+    <Content Include="Views\Server\_AddPartial.cshtml" />
+    <Content Include="Views\Server\_DeletePartial.cshtml" />
+    <Content Include="Views\Server\_EditPartial.cshtml" />
+    <Content Include="Views\Server\_SearchPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\System\Index.cshtml" />
+    <Content Include="Views\System\_AddPartial.cshtml" />
+    <Content Include="Views\System\_DeletePartial.cshtml" />
+    <Content Include="Views\System\_EditPartial.cshtml" />
+    <Content Include="Views\System\_SearchPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SystemEventLog\Index.cshtml" />
+    <Content Include="Views\SystemEventLog\_SearchPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\User\_AddPartial.cshtml" />
+    <Content Include="Views\User\_AuthorizePartial.cshtml" />
+    <Content Include="Views\User\_DeletePartial.cshtml" />
+    <Content Include="Views\User\_EditPartial.cshtml" />
+    <Content Include="Views\User\_PermissionAdminPartial.cshtml" />
+    <Content Include="Views\User\_RoleAdminPartial.cshtml" />
+    <Content Include="Views\User\_SearchPartial.cshtml" />
+    <Content Include="Views\User\_UserRolePartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\UserPermission\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_AddPartial.cshtml" />
+    <Content Include="Views\Shared\_AllotPartial.cshtml" />
+    <Content Include="Views\Shared\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\Shared\_AuditPartial.cshtml" />
+    <Content Include="Views\Shared\_BalancePartial.cshtml" />
+    <Content Include="Views\Shared\_DeletePartial.cshtml" />
+    <Content Include="Views\Shared\_DownLoadPartial.cshtml" />
+    <Content Include="Views\Shared\_EditPartial.cshtml" />
+    <Content Include="Views\Shared\_FunctionPartial.cshtml" />
+    <Content Include="Views\Shared\_HelpPartial.cshtml" />
+    <Content Include="Views\Shared\_PrintPartial.cshtml" />
+    <Content Include="Views\Shared\_ScriptPartial.cshtml" />
+    <Content Include="Views\Shared\_SearchPartial.cshtml" />
+    <Content Include="Views\Shared\_SettlePartial.cshtml" />
+    <Content Include="Views\Shared\_TaskPartial.cshtml" />
+    <Content Include="Views\Shared\_ToolPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CellBord\cellbord.cshtml" />
+    <Content Include="Views\Home\_ProductWarningPartial.cshtml" />
+    <Content Include="Views\ExceptionalLog\Index.cshtml" />
+    <Content Include="Views\ExceptionalLog\_SearchPartial.cshtml" />
+    <Content Include="Views\City\_PrintPartial.cshtml" />
+    <Content Include="Views\Warehouse2\Index.cshtml" />
+    <Content Include="Views\Warehouse2\_AddPartial.cshtml" />
+    <Content Include="Views\Warehouse2\_DeletePartial.cshtml" />
+    <Content Include="Views\Warehouse2\_EditPartial.cshtml" />
+    <Content Include="Views\Warehouse2\_PrintPartial.cshtml" />
+    <Content Include="Views\Warehouse2\_SearchPartial.cshtml" />
+    <Content Include="Views\Home\_LogonPartial2.cshtml" />
+    <Content Include="Views\Cigarette\Index.cshtml" />
+    <Content Include="Views\Cigarette\_AddPartial.cshtml" />
+    <Content Include="Views\Cigarette\_EditPartial.cshtml" />
+    <Content Include="Views\Cigarette\_SearchPartial.cshtml" />
+    <Content Include="Views\Cigarette\_PrintPartial.cshtml" />
+    <Content Include="Views\Cigarette\_DeletePartial.cshtml" />
+    <Content Include="Views\Crane\Index.cshtml" />
+    <Content Include="Views\Crane\_AddPartial.cshtml" />
+    <Content Include="Views\Crane\_EditPartial.cshtml" />
+    <Content Include="Views\Crane\_DeletePartial.cshtml" />
+    <Content Include="Views\Crane\_SearchPartial.cshtml" />
+    <Content Include="Views\Car\Index.cshtml" />
+    <Content Include="Views\Car\_AddPartial.cshtml" />
+    <Content Include="Views\Car\_DeletePartial.cshtml" />
+    <Content Include="Views\Car\_EditPartial.cshtml" />
+    <Content Include="Views\Car\_SearchPartial.cshtml" />
+    <Content Include="Views\BillType\Index.cshtml" />
+    <Content Include="Views\BillType\_AddPartial.cshtml" />
+    <Content Include="Views\BillType\_DeletePartial.cshtml" />
+    <Content Include="Views\BillType\_EditPartial.cshtml" />
+    <Content Include="Views\BillType\_SearchPartial.cshtml" />
+    <Content Include="Views\ProductCategory\Index.cshtml" />
+    <Content Include="Views\ProductCategory\_AddPartial.cshtml" />
+    <Content Include="Views\ProductCategory\_DeletePartial.cshtml" />
+    <Content Include="Views\ProductCategory\_EditPartial.cshtml" />
+    <Content Include="Views\ProductCategory\_PrintPartial.cshtml" />
+    <Content Include="Views\ProductCategory\_SearchPartial.cshtml" />
+    <Content Include="Views\Unit\Index.cshtml" />
+    <Content Include="Views\Unit\_AddPartial.cshtml" />
+    <Content Include="Views\Unit\_DeletePartial.cshtml" />
+    <Content Include="Views\Unit\_EditPartial.cshtml" />
+    <Content Include="Views\Unit\_PrintPartial.cshtml" />
+    <Content Include="Views\Unit\_SearchPartial.cshtml" />
+    <Content Include="Views\UnitCategory\Index.cshtml" />
+    <Content Include="Views\UnitCategory\_AddPartial.cshtml" />
+    <Content Include="Views\UnitCategory\_DeletePartial.cshtml" />
+    <Content Include="Views\UnitCategory\_EditPartial.cshtml" />
+    <Content Include="Views\UnitCategory\_PrintPartial.cshtml" />
+    <Content Include="Views\UnitCategory\_SearchPartial.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\_AddPartial.cshtml" />
+    <Content Include="Views\Product\_DeletePartial.cshtml" />
+    <Content Include="Views\Product\_EditPartial.cshtml" />
+    <Content Include="Views\Product\_PrintPartial.cshtml" />
+    <Content Include="Views\Product\_SearchPartial.cshtml" />
+    <Content Include="Views\Formula\Index.cshtml" />
+    <Content Include="Views\Formula\_AddPartial.cshtml" />
+    <Content Include="Views\Formula\_DeletePartial.cshtml" />
+    <Content Include="Views\Formula\_EditPartial.cshtml" />
+    <Content Include="Views\Formula\_ProductPartial.cshtml" />
+    <Content Include="Views\Schedule\Index.cshtml" />
+    <Content Include="Views\Schedule\_AddPartial.cshtml" />
+    <Content Include="Views\Schedule\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\Schedule\_AuditPartial.cshtml" />
+    <Content Include="Views\Schedule\_DeletePartial.cshtml" />
+    <Content Include="Views\Schedule\_EditPartial.cshtml" />
+    <Content Include="Views\Schedule\_PrintPartial.cshtml" />
+    <Content Include="Views\Schedule\_SearchPartial.cshtml" />
+    <Content Include="Views\StockInWork\Index.cshtml" />
+    <Content Include="Views\StockInBill\Index.cshtml" />
+    <Content Include="Views\Schedule2\Index.cshtml" />
+    <Content Include="Views\Schedule2\_SearchPartial.cshtml" />
+    <Content Include="Views\Schedule2\_AddPartial.cshtml" />
+    <Content Include="Views\Schedule2\_DeletePartial.cshtml" />
+    <Content Include="Views\Schedule2\_EditPartial.cshtml" />
+    <Content Include="Views\Schedule2\_AuditPartial.cshtml" />
+    <Content Include="Views\Schedule2\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\Schedule2\_PrintPartial.cshtml" />
+    <Content Include="Views\Shared\_OutstorePartial.cshtml" />
+    <Content Include="Views\Schedule2\_OutstorePartial.cshtml" />
+    <Content Include="Views\StockInBill\_SearchPartial.cshtml" />
+    <Content Include="Views\StockInBill\_AddPartial.cshtml" />
+    <Content Include="Views\StockInBill\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\StockInBill\_AuditPartial.cshtml" />
+    <Content Include="Views\StockInBill\_DeletePartial.cshtml" />
+    <Content Include="Views\StockInBill\_EditPartial.cshtml" />
+    <Content Include="Views\StockInBill\_PrintPartial.cshtml" />
+    <Content Include="Views\StockOutWork\Index.cshtml" />
+    <Content Include="Views\StockOutBill\Index.cshtml" />
+    <Content Include="Views\StockOutBill\_AddPartial.cshtml" />
+    <Content Include="Views\StockOutBill\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\StockOutBill\_AuditPartial.cshtml" />
+    <Content Include="Views\StockOutBill\_DeletePartial.cshtml" />
+    <Content Include="Views\StockOutBill\_EditPartial.cshtml" />
+    <Content Include="Views\StockOutBill\_PrintPartial.cshtml" />
+    <Content Include="Views\StockOutBill\_SearchPartial.cshtml" />
+    <Content Include="Views\StockInBill\_ProductPartial.cshtml" />
+    <Content Include="Views\Shared\_MixPartial.cshtml" />
+    <Content Include="Views\StockInBill\_MixPartial.cshtml" />
+    <Content Include="Views\ProductOriginal\Index.cshtml" />
+    <Content Include="Views\ProductOriginal\_EditPartial.cshtml" />
+    <Content Include="Views\ProductOriginal\_DeletePartial.cshtml" />
+    <Content Include="Views\ProductOriginal\_PrintPartial.cshtml" />
+    <Content Include="Views\ProductOriginal\_SearchPartial.cshtml" />
+    <Content Include="Views\ProductOriginal\_AddPartial.cshtml" />
+    <Content Include="Views\ProductGrade\Index.cshtml" />
+    <Content Include="Views\ProductGrade\_AddPartial.cshtml" />
+    <Content Include="Views\ProductGrade\_DeletePartial.cshtml" />
+    <Content Include="Views\ProductGrade\_EditPartial.cshtml" />
+    <Content Include="Views\ProductGrade\_PrintPartial.cshtml" />
+    <Content Include="Views\ProductGrade\_SearchPartial.cshtml" />
+    <Content Include="Views\Shared\_BarcodePartial.cshtml" />
+    <Content Include="Views\Shared\_ExitPartial.cshtml" />
+    <Content Include="Views\StockInWork\_SearchPartial.cshtml" />
+    <Content Include="Views\StockInWork\_TaskPartial.cshtml" />
+    <Content Include="Views\StockInWork\_BarcodePartial.cshtml" />
+    <Content Include="Views\StockInWork\_ExitPartial.cshtml" />
+    <Content Include="Views\StockOutWork\_TaskPartial.cshtml" />
+    <Content Include="Views\StockOutWork\_SearchPartial.cshtml" />
+    <Content Include="Views\DirectProduct\Index.cshtml" />
+    <Content Include="Views\DirectProduct\_SearchPartial.cshtml" />
+    <Content Include="Views\DirectProduct\_AddPartial.cshtml" />
+    <Content Include="Views\DirectProduct\_DeletePartial.cshtml" />
+    <Content Include="Views\DirectProduct\_EditPartial.cshtml" />
+    <Content Include="Views\DirectProduct\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\DirectProduct\_AuditPartial.cshtml" />
+    <Content Include="Views\DirectProduct\_PrintPartial.cshtml" />
+    <Content Include="Views\Shared\_CopyPartial.cshtml" />
+    <Content Include="Views\Product\_CopyPartial.cshtml" />
+    <Content Include="Views\Formula\_SearchPartial.cshtml" />
+    <Content Include="Views\PalletStockIn\Index.cshtml" />
+    <Content Include="Views\PalletStockOut\Index.cshtml" />
+    <Content Include="Views\PalletStockIn\_AddPartial.cshtml" />
+    <Content Include="Views\PalletStockIn\_DeletePartial.cshtml" />
+    <Content Include="Views\PalletStockIn\_EditPartial.cshtml" />
+    <Content Include="Views\PalletStockIn\_SearchPartial.cshtml" />
+    <Content Include="Views\PalletStockIn\_PrintPartial.cshtml" />
+    <Content Include="Views\PalletStockOut\_PrintPartial.cshtml" />
+    <Content Include="Views\PalletStockOut\_AddPartial.cshtml" />
+    <Content Include="Views\PalletStockOut\_DeletePartial.cshtml" />
+    <Content Include="Views\PalletStockOut\_EditPartial.cshtml" />
+    <Content Include="Views\PalletStockOut\_SearchPartial.cshtml" />
+    <Content Include="Views\PalletStockOut\_ProductPartial.cshtml" />
+    <Content Include="Views\PalletStockIn\_AuditPartial.cshtml" />
+    <Content Include="Views\PalletStockIn\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\PalletStockIn\_TaskPartial.cshtml" />
+    <Content Include="Views\FillBill\Index.cshtml" />
+    <Content Include="Views\FillBill\_AddPartial.cshtml" />
+    <Content Include="Views\FillBill\_BillPartial.cshtml" />
+    <Content Include="Views\FillBill\_BarcodePartial.cshtml" />
+    <Content Include="Views\FillBill\_EditPartial.cshtml" />
+    <Content Include="Views\FillBill\_DeletePartial.cshtml" />
+    <Content Include="Views\FillBill\_PrintPartial.cshtml" />
+    <Content Include="Views\FillBill\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\FillBill\_AuditPartial.cshtml" />
+    <Content Include="Views\FillBill\_SearchPartial.cshtml" />
+    <Content Include="Views\FillBill\_TaskPartial.cshtml" />
+    <Content Include="Views\Inventory\Index.cshtml" />
+    <Content Include="Views\Inventory\_AddPartial.cshtml" />
+    <Content Include="Views\Inventory\_CellPartial.cshtml" />
+    <Content Include="Views\Inventory\_BillPartial.cshtml" />
+    <Content Include="Views\Inventory\_DeletePartial.cshtml" />
+    <Content Include="Views\Inventory\_AuditPartial.cshtml" />
+    <Content Include="Views\Inventory\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\Inventory\_EditPartial.cshtml" />
+    <Content Include="Views\Inventory\_SearchPartial.cshtml" />
+    <Content Include="Views\InventoryWork\Index.cshtml" />
+    <Content Include="Views\Inventory\_PrintPartial.cshtml" />
+    <Content Include="Views\InventoryWork\_TaskPartial.cshtml" />
+    <Content Include="Views\InventoryWork\_SearchPartial.cshtml" />
+    <Content Include="Views\Sampling\Index.cshtml" />
+    <Content Include="Views\SamplingWork\Index.cshtml" />
+    <Content Include="Views\Sampling\_AddPartial.cshtml" />
+    <Content Include="Views\Sampling\_EditPartial.cshtml" />
+    <Content Include="Views\Sampling\_DeletePartial.cshtml" />
+    <Content Include="Views\Sampling\_AuditPartial.cshtml" />
+    <Content Include="Views\Sampling\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\Sampling\_PrintPartial.cshtml" />
+    <Content Include="Views\Sampling\_SearchPartial.cshtml" />
+    <Content Include="Views\SamplingWork\_TaskPartial.cshtml" />
+    <Content Include="Views\Sampling\_BillPartial.cshtml" />
+    <Content Include="Views\Sampling\_CellPartial.cshtml" />
+    <Content Include="Views\SamplingWork\_SearchPartial.cshtml" />
+    <Content Include="Views\MoveStock\Index.cshtml" />
+    <Content Include="Views\MoveStock\_AddPartial.cshtml" />
+    <Content Include="Views\MoveStock\_BillPartial.cshtml" />
+    <Content Include="Views\MoveStock\_CellPartial.cshtml" />
+    <Content Include="Views\MoveStock\_NullCellPartial.cshtml" />
+    <Content Include="Views\MoveStock\_EditPartial.cshtml" />
+    <Content Include="Views\MoveStock\_PrintPartial.cshtml" />
+    <Content Include="Views\MoveStock\_DeletePartial.cshtml" />
+    <Content Include="Views\MoveStock\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\MoveStock\_AuditPartial.cshtml" />
+    <Content Include="Views\MoveStock\_SearchPartial.cshtml" />
+    <Content Include="Views\MoveStockWork\Index.cshtml" />
+    <Content Include="Views\MoveStockWork\_TaskPartial.cshtml" />
+    <Content Include="Views\MoveStockWork\_SearchPartial.cshtml" />
+    <Content Include="Views\Feeding\Index.cshtml" />
+    <Content Include="Views\Feeding\_AddPartial.cshtml" />
+    <Content Include="Views\Feeding\_EditPartial.cshtml" />
+    <Content Include="Views\Feeding\_DeletePartial.cshtml" />
+    <Content Include="Views\Feeding\_PrintPartial.cshtml" />
+    <Content Include="Views\Feeding\_BillPartial.cshtml" />
+    <Content Include="Views\Feeding\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\Feeding\_AuditPartial.cshtml" />
+    <Content Include="Views\Feeding\_OutstockbillPartial.cshtml" />
+    <Content Include="Views\Feeding\_SearchPartial.cshtml" />
+    <Content Include="Views\StockDiffer\Index.cshtml" />
+    <Content Include="Views\Feeding\_TaskPartial.cshtml" />
+    <Content Include="Views\StockDiffer\_AddPartial.cshtml" />
+    <Content Include="Views\StockDiffer\_DeletePartial.cshtml" />
+    <Content Include="Views\StockDiffer\_EditPartial.cshtml" />
+    <Content Include="Views\StockDiffer\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\StockDiffer\_AuditPartial.cshtml" />
+    <Content Include="Views\StockDiffer\_SearchPartial.cshtml" />
+    <Content Include="Views\StockDiffer\_PrintPartial.cshtml" />
+    <Content Include="Views\StockDiffer\_BillPartial.cshtml" />
+    <Content Include="Views\StockDiffer\_ProductPartial.cshtml" />
+    <Content Include="Views\CellStateSearch\Index.cshtml" />
+    <Content Include="Views\StockIntoSearch\Index.cshtml" />
+    <Content Include="Views\StockOutSearch\Index.cshtml" />
+    <Content Include="Views\StockMoveSearch\Index.cshtml" />
+    <Content Include="Views\InventorySearch\Index.cshtml" />
+    <Content Include="Views\FeedingSearch\Index.cshtml" />
+    <Content Include="Views\StockDifferSearch\Index.cshtml" />
+    <Content Include="Views\SamplingSearch\Index.cshtml" />
+    <Content Include="Views\InvertedTreasury\Index.cshtml" />
+    <Content Include="Views\StockIntoSearch\_SearchPartial.cshtml" />
+    <Content Include="Views\StockOutSearch\_PrintPartial.cshtml" />
+    <Content Include="Views\StockIntoSearch\_PrintPartial.cshtml" />
+    <Content Include="Views\StockOutSearch\_SearchPartial.cshtml" />
+    <Content Include="Views\ProductLedger\Index.cshtml" />
+    <Content Include="Views\StockMoveSearch\_SearchPartial.cshtml" />
+    <Content Include="Views\StockMoveSearch\_PrintPartial.cshtml" />
+    <Content Include="Views\SamplingSearch\_SearchPartial.cshtml" />
+    <Content Include="Views\SamplingSearch\_PrintPartial.cshtml" />
+    <Content Include="Views\InventorySearch\_SearchPartial.cshtml" />
+    <Content Include="Views\InventorySearch\_PrintPartial.cshtml" />
+    <Content Include="Views\FeedingSearch\_SearchPartial.cshtml" />
+    <Content Include="Views\FeedingSearch\_PrintPartial.cshtml" />
+    <Content Include="Views\StockDifferSearch\_SearchPartial.cshtml" />
+    <Content Include="Views\StockDifferSearch\_PrintPartial.cshtml" />
+    <Content Include="Views\WorkSearch\Index.cshtml" />
+    <Content Include="Views\WorkSearch\_SearchPartial.cshtml" />
+    <Content Include="Views\WorkSearch\_PrintPartial.cshtml" />
+    <Content Include="Views\InvertedTreasury\_SearchPartial.cshtml" />
+    <Content Include="Views\ProductMonthly\Index.cshtml" />
+    <Content Include="Views\ProductMonthly\_AuditPartial.cshtml" />
+    <Content Include="Views\ProductMonthly\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\ProductMonthly\_AddPartial.cshtml" />
+    <Content Include="Views\ProductMonthly\_SearchPartial.cshtml" />
+    <Content Include="Views\ProductLedger\_SearchPartial.cshtml" />
+    <Content Include="Views\ProductDetails\Index.cshtml" />
+    <Content Include="Views\ProductDetails\_SearchPartial.cshtml" />
+    <Content Include="Views\BillPrint\Index.cshtml" />
+    <Content Include="Views\Formula\_PrintPartial.cshtml" />
+    <Content Include="Views\ProductMonthly\_PrintPartial.cshtml" />
+    <Content Include="Views\Crane\_PrintPartial.cshtml" />
+    <Content Include="Views\Car\_PrintPartial.cshtml" />
+    <Content Include="Views\BillType\_PrintPartial.cshtml" />
+    <Content Include="Views\ProductLedger\_PrintPartial.cshtml" />
+    <Content Include="Views\ProductDetails\_PrintPartial.cshtml" />
+    <Content Include="Views\InvertedTreasury\_PrintPartial.cshtml" />
+    <Content Include="Views\StockDifferWork\Index.cshtml" />
+    <Content Include="Views\ScheduleSearch\Index.cshtml" />
+    <Content Include="Views\ScheduleSearch\_SearchPartial.cshtml" />
+    <Content Include="Views\ScheduleSearch\_PrintPartial.cshtml" />
+    <Content Include="Views\DirectProductSearch\Index.cshtml" />
+    <Content Include="Views\DirectProductSearch\_SearchPartial.cshtml" />
+    <Content Include="Views\DirectProductSearch\_PrintPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ContentReport\Report\balance.frx" />
+    <Content Include="ContentReport\Report\barcodeprint.frx" />
+    <Content Include="ContentReport\Report\directproduct.frx" />
+    <Content Include="ContentReport\Report\errorreport.frx" />
+    <Content Include="ContentReport\Report\feeding.frx" />
+    <Content Include="ContentReport\Report\fillbill.frx" />
+    <Content Include="ContentReport\Report\formulaprint.frx" />
+    <Content Include="ContentReport\Report\inventory.frx" />
+    <Content Include="ContentReport\Report\movestock.frx" />
+    <Content Include="ContentReport\Report\palletstockin.frx" />
+    <Content Include="ContentReport\Report\productdetail.frx" />
+    <Content Include="ContentReport\Report\productledger.frx" />
+    <Content Include="ContentReport\Report\scheduleprint.frx" />
+    <Content Include="ContentReport\Report\stockdiff.frx" />
+    <Content Include="ContentReport\Report\stockinprint.frx" />
+    <Content Include="ContentReport\Report\stockoutprint.frx" />
+    <Content Include="ContentReport\Report\worksearch.frx" />
+    <None Include="ContentReport\PDF\barcodeprint_admin_1.pdf" />
+    <None Include="ContentReport\PDF\barcodeprint_admin_2.pdf" />
+    <None Include="ContentReport\PDF\barcodeprint_admin_3.pdf" />
+    <None Include="ContentReport\PDF\barcodeprint_admin_4.pdf" />
+    <None Include="ContentReport\Report\palletstockout.frx" />
+    <None Include="ContentReport\Report\sampling.frx" />
+    <None Include="Content\Scripts\xheditor1.1.14\serverscript\php\ubb2html.php" />
+    <Content Include="Views\StockDifferWork\_TaskPartial.cshtml" />
+    <Content Include="Views\Role\_PrintPartial.cshtml" />
+    <Content Include="Views\User\_PrintPartial.cshtml" />
+    <Content Include="Views\LoginLog\_PrintPartial.cshtml" />
+    <Content Include="Views\SystemEventLog\_PrintPartial.cshtml" />
+    <Content Include="Views\ExceptionalLog\_PrintPartial.cshtml" />
+    <Content Include="Views\HelpEdit\_SearchPartial.cshtml" />
+    <Content Include="Views\HelpEdit\_helpPartial1.cshtml" />
+    <Content Include="Views\HelpEdit\_helpPartial2.cshtml" />
+    <Content Include="Views\Help\_SearchPartial.cshtml" />
+    <Content Include="Views\Help\_helpPartial2.cshtml" />
+    <Content Include="Views\Help\_helpPartial1.cshtml" />
+    <Content Include="Views\Shared\_CancelPartial.cshtml" />
+    <Content Include="Views\StockOutWork\_CancelPartial.cshtml" />
+    <Content Include="Views\StockInWork\_CancelPartial.cshtml" />
+    <Content Include="Views\Replace\Index.cshtml" />
+    <Content Include="Views\Replace\_SearchPartial.cshtml" />
+    <Content Include="Views\Replace\_AddPartial.cshtml" />
+    <Content Include="Views\StockOutBill\_BillPartial.cshtml" />
+    <Content Include="Views\StockOutBill\_CellPartial.cshtml" />
+    <Content Include="Views\Replace\_BillPartial.cshtml" />
+    <Content Include="Views\Replace\_AntiTrialPartial.cshtml" />
+    <Content Include="Views\Replace\_AuditPartial.cshtml" />
+    <Content Include="Views\Replace\_DeletePartial.cshtml" />
+    <Content Include="Views\Replace\_EditPartial.cshtml" />
+    <Content Include="Views\StoreSearch\Index.cshtml" />
+    <Content Include="Views\StoreSearch\_SearchPartial.cshtml" />
+    <Content Include="Views\Shared\_WbarcodePartial.cshtml" />
+    <Content Include="Views\StockInWork\_WbarcodePartial.cshtml" />
+    <Content Include="Views\Shared\_wflootPartial.cshtml" />
+    <Content Include="Views\StockInBill\_wflootPartial.cshtml" />
+    <Content Include="Views\Feeding\_ProductPartial.cshtml" />
+    <Content Include="Views\MoveStockWork\_CancelPartial.cshtml" />
+    <Content Include="Views\StockDifferWork\_CancelPartial.cshtml" />
+    <Content Include="Views\SamplingWork\_CancelPartial.cshtml" />
+    <Content Include="Views\InventoryWork\_CancelPartial.cshtml" />
+    <Content Include="Views\Feeding\_CancelPartial.cshtml" />
+    <Content Include="Views\ProudctionLine\Index.cshtml" />
+    <Content Include="Views\ProudctionLine\_AddPartial.cshtml" />
+    <Content Include="Views\ProudctionLine\_EditPartial.cshtml" />
+    <Content Include="Views\Shared\_CheckPartial.cshtml" />
+    <Content Include="Views\StockIntoSearch\_CheckPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WMSSV\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7603</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

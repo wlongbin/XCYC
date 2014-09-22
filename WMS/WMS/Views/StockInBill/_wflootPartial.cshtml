@@ -1,0 +1,27 @@
+﻿<script type="text/javascript">
+    //录为平库
+    function wflootClick() {
+        var row = $('#details').datagrid('getSelected');
+        if (row) {
+            if (row.STATE == "3") { //已作业状态下
+                $.getJSON("/StockInBill/wfloot/?BillNo=" + row.BILL_NO, function (json) {
+                    if (json) {
+                        $.messager.show({
+                            title: '提示',
+                            msg: json.success
+                        });
+                    }
+                });
+                $('#SubDetails').datagrid('reload');
+                $('#details').datagrid('reload');
+            }
+            else {
+                $.messager.confirm('提示', '只有状态为作业的单据才可录为平库！');
+            }
+        }
+        else {
+            $.messager.confirm('错误', '没有选择行！');
+        }
+    }
+</script>
+

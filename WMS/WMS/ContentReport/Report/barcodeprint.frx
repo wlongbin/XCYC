@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="10/17/2013 16:25:46" ReportInfo.Modified="07/10/2014 14:21:54" ReportInfo.CreatorVersion="1.9.9.0" PrintSettings.Copies="2">
+  <Dictionary>
+    <ViewDataSource Name="printreport" ReferenceName="printreport" DataType="System.Int32" Enabled="true">
+      <Column Name="PRODUCT_BARCODE" DataType="System.String"/>
+      <Column Name="BILL_NO" DataType="System.String"/>
+      <Column Name="FORMULA_NAME" DataType="System.String"/>
+      <Column Name="CIGARETTE_NAME" DataType="System.String"/>
+      <Column Name="PRODUCT_CODE" DataType="System.String"/>
+      <Column Name="REAL_WEIGHT" DataType="System.Decimal"/>
+      <Column Name="PRODUCT_NAME" DataType="System.String"/>
+      <Column Name="YEARS" DataType="System.String"/>
+      <Column Name="ORIGINAL_NAME" DataType="System.String"/>
+      <Column Name="CATEGORY_NAME" DataType="System.String"/>
+      <Column Name="GRADE_NAME" DataType="System.String"/>
+      <Column Name="STYLE_NAME" DataType="System.String"/>
+      <Column Name="BILL_DATE" DataType="System.DateTime"/>
+      <Column Name="MODULES" DataType="System.String"/>
+      <Column Name="PACKAGECOUNT" DataType="System.Decimal"/>
+      <Column Name="IS_MIX" DataType="System.String"/>
+      <Column Name="ORGINAL_NAME2" DataType="System.String"/>
+      <Column Name="STYLE_NAME2" DataType="System.String"/>
+      <Column Name="GRADENAME2" DataType="System.String"/>
+      <Column Name="YEARS2" DataType="System.String"/>
+      <Column Name="REALWEIGHT2" DataType="System.String"/>
+      <Column Name="ORGINAL_NAME3" DataType="System.String"/>
+      <Column Name="STYLE_NAME3" DataType="System.String"/>
+      <Column Name="GRADENAME3" DataType="System.String"/>
+      <Column Name="YEARS3" DataType="System.String"/>
+      <Column Name="REALWEIGHT3" DataType="System.String"/>
+    </ViewDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="105" PaperHeight="75" LeftMargin="0" TopMargin="0" RightMargin="0" BottomMargin="0" Fill.Color="White">
+    <DataBand Name="Data1" Width="396.9" Height="270.61" DataSource="printreport">
+      <BarcodeObject Name="Barcode1" Left="-6.13" Top="26.42" Width="244.19" Height="244.19" AutoSize="false" DataColumn="printreport.PRODUCT_BARCODE" Text="" ShowText="false" Barcode="QR Code" Barcode.ErrorCorrection="L" Barcode.Encoding="UTF8" Barcode.QuietZone="true"/>
+      <TableObject Name="Table1" Left="9.87" Top="13.98" Width="353.61" Height="18.9">
+        <TableColumn Name="Column1"/>
+        <TableColumn Name="Column2" Width="105.19"/>
+        <TableColumn Name="Column3" Width="41.22"/>
+        <TableColumn Name="Column4" Width="78.4"/>
+        <TableColumn Name="Column5" Width="39.33"/>
+        <TableColumn Name="Column6" Width="23.32"/>
+        <TableRow Name="Row1">
+          <TableCell Name="Cell1" Text="入库批次:" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell2" Text="[printreport.BILL_NO]" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell3" Text="日期:" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell4" Text="[printreport.BILL_DATE]" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell5" Text="模块:" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell6" Text="[printreport.MODULES]" Font="微软雅黑, 9pt, style=Bold"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table2" Left="226.09" Top="44.24" Width="167.69" Height="217.79">
+        <TableColumn Name="Column7" Width="39.69"/>
+        <TableColumn Name="Column8" Width="45.36"/>
+        <TableColumn Name="Column9" Width="45.19"/>
+        <TableColumn Name="Column10" Width="37.45"/>
+        <TableRow Name="Row2" Height="23.82">
+          <TableCell Name="Cell7" Text="混装:" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell8" Text="[printreport.IS_MIX]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell9" VertAlign="Center" Font="宋体, 9pt, style=Bold" ColSpan="2"/>
+          <TableCell Name="Cell10" VertAlign="Center" Font="宋体, 9pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row3" Height="25.7">
+          <TableCell Name="Cell12" Text="牌号:" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell13" Text="[printreport.CIGARETTE_NAME]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold" ColSpan="3"/>
+          <TableCell Name="Cell14" VertAlign="Center" Font="宋体, 9pt, style=Bold"/>
+          <TableCell Name="Cell15" VertAlign="Center" Font="宋体, 9pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row4" Height="25.7">
+          <TableCell Name="Cell17" Text="配方:" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell18" Text="[printreport.FORMULA_NAME]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold" ColSpan="3"/>
+          <TableCell Name="Cell19" VertAlign="Center" Font="宋体, 9pt, style=Bold"/>
+          <TableCell Name="Cell20" VertAlign="Center" Font="宋体, 9pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row5" Height="30.77">
+          <TableCell Name="Cell22" Text="产地:" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell23" Text="[printreport.ORIGINAL_NAME]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell24" Text="[printreport.ORGINAL_NAME2]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell25" Text="[printreport.ORGINAL_NAME3]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row6" Height="30.6">
+          <TableCell Name="Cell27" Text="等级:" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell28" Text="[printreport.GRADE_NAME]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell29" Text="[printreport.GRADENAME2]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell30" Text="[printreport.GRADENAME3]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row7" Height="24.75">
+          <TableCell Name="Cell31" Text="年份:" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell32" Text="[printreport.YEARS]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell33" Text="[printreport.YEARS2]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell34" Text="[printreport.YEARS3]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row8" Height="27.76">
+          <TableCell Name="Cell35" Text="形态:" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell36" Text="[printreport.STYLE_NAME]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell37" Text="[printreport.STYLE_NAME2]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell38" Text="[printreport.STYLE_NAME3]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row9" Height="28.69">
+          <TableCell Name="Cell39" Text="重量:" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell40" Text="[printreport.REAL_WEIGHT]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell41" Text="[printreport.REALWEIGHT2]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+          <TableCell Name="Cell42" Text="[printreport.REALWEIGHT3]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+  </ReportPage>
+</Report>

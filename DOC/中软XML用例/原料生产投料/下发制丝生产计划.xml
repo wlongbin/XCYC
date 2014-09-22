@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Msg>
+  <Head>
+    <InterfaceCode>HNZY_ESB_XCMES_PFK_YLTC_ZSJH</InterfaceCode>
+    <InterfaceDescription>下发制丝生产计划</InterfaceDescription>
+    <MsgID></MsgID>
+    <Source>XCPFK</Source>
+    <MsgMark>HNZY_ESB_XCMES_PFK_YLTC_ZSJH</MsgMark>
+    <WsMethod>PFK_YLTC_ZSJH</WsMethod>
+    <Date>2014-03-13 10:10:00</Date>
+    <Cryp></Cryp>
+    <User></User>
+    <StateCode>600</StateCode>
+    <StateDesription>正常发送</StateDesription>
+    <DataDefine>
+      <!-- 描述表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLTC_ZSJH_M">
+        <FieldItem FieldName="BOM_VER" Caption="配方版本号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="True" />
+        <FieldItem FieldName="WORKSHOP" Caption="车间" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="PRODUCT_DATE" Caption="生产日期" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="BATCH_NO" Caption="制丝批次号" FieldType="CHAR" FieldLength="28" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="BATCH_LITTLE_NO" Caption="制丝子批次号" FieldType="CHAR" FieldLength="28" Remark="必传(制丝集控以子 批次号为准)" isPrimaryKey="False" />
+        <FieldItem FieldName="MAT_CD" Caption="牌号编码" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="ORDER_NO" Caption="生产顺序" FieldType="CHAR" FieldLength="10" Remark="必传(批次与批次之间生产顺序)" isPrimaryKey="False" />
+        <FieldItem FieldName="PUBLISHER" Caption="发布人" FieldType="CHAR" FieldLength="40" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="PUBLISH_DATETIME" Caption="发布时间" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+      </Table>
+    </DataDefine>
+  </Head>
+  <Data>
+    <DataTable TableName ="T_PFK_YLTC_ZSJH_M">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="BOM_VER"  FieldValue="b50101" />
+          <DataItem FieldName="WORKSHOP"  FieldValue="" />
+          <DataItem FieldName="PRODUCT_DATE"  FieldValue="2014-3-19 13:22:40" />
+          <DataItem FieldName="BATCH_NO"  FieldValue="" />
+          <DataItem FieldName="BATCH_LITTLE_NO"  FieldValue="" />
+          <DataItem FieldName="MAT_CD"  FieldValue="11325" />
+          <DataItem FieldName="ORDER_NO"  FieldValue="12" />
+          <DataItem FieldName="PUBLISHER"  FieldValue="张三" />
+          <DataItem FieldName="PUBLISH_DATETIME"  FieldValue="2014-3-19 13:23:30" />
+        </Header>
+      </Row>
+    </DataTable>
+  </Data>
+</Msg>

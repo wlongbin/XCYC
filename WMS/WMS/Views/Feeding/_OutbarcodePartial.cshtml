@@ -1,0 +1,81 @@
+﻿<script type="text/javascript">
+    function barcodeQueryClick() {
+        var outbarcode = $('#barcode').val();
+        var outbill = $('#SCHEDULE_NO').val();
+        $('#outbarcodeDetail').datagrid({ url: '/Feeding/Getoutbarcode/?OutBillNo=' + outbill + '&barcode='+outbarcode });
+        $("#outbarcodeDetail").datagrid('reload');
+    }
+    $(function () {
+        $('#outbarcodeDetail').datagrid({
+            onDblClickRow: function () {
+                barcodesave();
+            }
+        });
+        PGetCigarette();
+        PGetFormula("");
+        setoriginalcomb();
+        setgradecomb("");
+        SetYear();
+    });
+    function barcodesave() {
+        var data = $('#outbarcodeDetail').datagrid('getSelected');
+        if (data) {
+            $('#' + outbarcode).val(data.PRODUCT_BARCODE);
+        }
+        $('#outbarcodeData').dialog('close');
+    }
+</script>
+
+<div id="outbarcodeData" class="easyui-dialog" modal="true" style="width: 980px; height: 500px;
+    padding: 0px 0px" closed="true" buttons="#outbarcodedlgProduct-buttons">
+    <div split="true" border="false" style="width: 966px; height: 430px">
+        <table id="outbarcodeDetail" class="easyui-datagrid" border="false" toolbar="#barcodepbtn-query"
+            singleselect="true"  fit="true" fitcolumns="true" pagination="true" rownumbers="true" pageSize="50">
+            <thead>
+                <tr>
+                   <th field="PRODUCT_BARCODE" width="120">烟包条码</th>
+                    <th field="PRODUCT_CODE" width="100">
+                        产品编码
+                    </th>
+                    <th field="PRODUCT_NAME" width="150">
+                        产品名称
+                    </th>
+                      <th field="GRADE_NAME" width="80">
+                        等级
+                    </th>
+                    <th field="ORIGINAL_NAME" width="100">
+                        原产地
+                    </th>
+                    <th field="YEARS" width="80">
+                        年份
+                    </th>
+                     <th field="REAL_WEIGHT" >重量</th>
+                     <th field="IS_MIX">是否混装</th>
+@*                    <th field="STYLE" width="60">
+                        形态
+                    </th>
+                    <th field="CATEGORY_CODE" width="80">
+                        类别编码
+                    </th>
+                    <th field="CATEGORYNAME" width="60">
+                        类别名称
+                    </th>*@
+                   
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<div id="outbarcodedlgProduct-buttons">
+      <input type="button"  onclick=""  onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btok" value="确定"/>
+       <input type="button"  onclick="javascript:$('#outbarcodeData').dialog('close')" onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btcance" value="取消"/>
+</div>
+<div id="barcodepbtn-query">
+<table>
+<tr>
+    <td>条码:</td>
+    <td><input id="barcode"  style="width: 80px;"/></td>
+ <a href="#" class="easyui-linkbutton" iconcls="icon-search" plain="true" onclick="barcodeQueryClick()" id="barcodeQuery">查询</a>
+ </tr>
+ </table>
+ </div>

@@ -1,0 +1,29 @@
+﻿<script  type="text/javascript">
+//取消函数
+    function cancelClick() { 
+        var row = $('#details').datagrid('getSelected');
+        if (row) {
+            $.messager.confirm('提示', '将取消选中批次任务,是否继续?', function (r) {
+                if (r) {
+                    if (row.STATE < 4) {
+                        $.getJSON("/StockOutWork/Cancetask/?BillNo=" + row.BILL_NO, function (json) {
+                            if (json) {
+                                $.messager.show({
+                                    title: '提示',
+                                    msg: json.success
+                                });
+                            }
+                        });
+                        $('#mixdlg').dialog('close');
+                        $('#details').datagrid('reload');
+                        $('#SubDetails').datagrid('reload');
+                    }
+                }
+            });
+        }
+        else {
+            alert("未选中行");
+        }
+    }
+</script>
+

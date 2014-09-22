@@ -1,0 +1,29 @@
+﻿<script type="text/javascript">
+    $(function () {
+        
+    });
+</script>
+ 
+<div region="center" split="true" border="false">    
+    <table id="details" class="easyui-datagrid"
+        url="/LoginLog/Details/" border="false" singleSelect="true"
+        fit="true" fitColumns="true" toolbar="#tool"  pagination="true" rownumbers="true">
+        <thead>
+            <tr>
+                <th field="LOG_ID"  hidden="true" width="80">登陆编号</th>
+                <th field="USER_USER_ID"  hidden="true" width="80">用户ID</th>
+                <th field="USER_NAME" width="80">用户名</th>
+                <th field="CHINESE_NAME" width="100">用户中文名</th>
+                <th field="SYSTEM_SYSTEM_ID" hidden="true" width="100">系统ID</th>
+                <th field="SYSTEM_NAME" width="120">系统名称</th>
+                <th field="LOGIN_PC" width="80">登陆IP</th>
+                <th field="LOGIN_TIME" width="80">登陆时间</th>
+                <th field="LOGOUT_TIME" width="80">离开时间</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+ 
+
+

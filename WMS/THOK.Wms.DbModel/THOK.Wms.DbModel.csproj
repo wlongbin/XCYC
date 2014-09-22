@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E243AB76-351D-4C97-BFE3-D55E0BA0DECF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>THOK.Wms.DbModel</RootNamespace>
+    <AssemblyName>THOK.Wms.DbModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10715.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BILLREPORT.cs" />
+    <Compile Include="CMD_AREA.cs" />
+    <Compile Include="CMD_BILL_TYPE.cs" />
+    <Compile Include="CMD_CAR.cs" />
+    <Compile Include="CMD_CELL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CMD_CIGARETTE.cs" />
+    <Compile Include="CMD_CRANE.cs" />
+    <Compile Include="CMD_PRODUCT.cs" />
+    <Compile Include="CMD_PRODUCTION_LINE.cs" />
+    <Compile Include="CMD_PRODUCT_CATEGORY.cs" />
+    <Compile Include="CMD_PRODUCT_GRADE.cs" />
+    <Compile Include="CMD_PRODUCT_ORIGINAL.cs" />
+    <Compile Include="CMD_PRODUCT_STYLE.cs" />
+    <Compile Include="CMD_SHELF.cs" />
+    <Compile Include="CMD_UNIT.cs" />
+    <Compile Include="CMD_UNIT_CATEGORY.cs" />
+    <Compile Include="CMD_WAREHOUSE.cs" />
+    <Compile Include="Mapping\BILLREPORTMap.cs" />
+    <Compile Include="Mapping\CMD_AREAMap.cs" />
+    <Compile Include="Mapping\CMD_BILL_TYPEMap.cs" />
+    <Compile Include="Mapping\CMD_CARMap.cs" />
+    <Compile Include="Mapping\CMD_CELLMap.cs" />
+    <Compile Include="Mapping\CMD_CIGARETTEMap.cs" />
+    <Compile Include="Mapping\CMD_CRANEMap.cs" />
+    <Compile Include="Mapping\CMD_PRODUCTION_LINEMap.cs" />
+    <Compile Include="Mapping\CMD_PRODUCTMap.cs" />
+    <Compile Include="Mapping\CMD_PRODUCT_CATEGORYMap.cs" />
+    <Compile Include="Mapping\CMD_PRODUCT_GRADEMap.cs" />
+    <Compile Include="Mapping\CMD_PRODUCT_ORIGINALMap.cs" />
+    <Compile Include="Mapping\CMD_PRODUCT_STYLEMap.cs" />
+    <Compile Include="Mapping\CMD_SHELFMap.cs" />
+    <Compile Include="Mapping\CMD_UNITMap.cs" />
+    <Compile Include="Mapping\CMD_UNIT_CATEGORYMap.cs" />
+    <Compile Include="Mapping\CMD_WAREHOUSEMap.cs" />
+    <Compile Include="Mapping\MES_PREPARER_PLANMap.cs" />
+    <Compile Include="Mapping\PRINTREPORTMap.cs" />
+    <Compile Include="Mapping\SYS_BILL_TARGETMap.cs" />
+    <Compile Include="Mapping\SYS_ERROR_CODEMap.cs" />
+    <Compile Include="Mapping\SYS_TABLE_STATEMap.cs" />
+    <Compile Include="Mapping\VIEW_BILL_MASTMap.cs" />
+    <Compile Include="Mapping\VIEW_STORAGEMap.cs" />
+    <Compile Include="Mapping\WCS_TASKHMap.cs" />
+    <Compile Include="Mapping\WCS_TASKMap.cs" />
+    <Compile Include="Mapping\WCS_TASK_DETAILHMap.cs" />
+    <Compile Include="Mapping\WCS_TASK_DETAILMap.cs" />
+    <Compile Include="Mapping\WMS_BALANCE_DETAILMap.cs" />
+    <Compile Include="Mapping\WMS_BALANCE_MASTERMap.cs" />
+    <Compile Include="Mapping\WMS_BILL_DETAILHMap.cs" />
+    <Compile Include="Mapping\WMS_BILL_DETAILMap.cs" />
+    <Compile Include="Mapping\WMS_BILL_MASTERHMap.cs" />
+    <Compile Include="Mapping\WMS_BILL_MASTERMap.cs" />
+    <Compile Include="Mapping\WMS_FORMULA_DETAILMap.cs" />
+    <Compile Include="Mapping\WMS_FORMULA_MASTERMap.cs" />
+    <Compile Include="Mapping\WMS_PALLET_DETAILMap.cs" />
+    <Compile Include="Mapping\WMS_PALLET_MASTERMap.cs" />
+    <Compile Include="Mapping\WMS_PRODUCTION_DETAILMap.cs" />
+    <Compile Include="Mapping\WMS_PRODUCTION_MASTERMap.cs" />
+    <Compile Include="Mapping\WMS_PRODUCT_STATEHMap.cs" />
+    <Compile Include="Mapping\WMS_PRODUCT_STATEMap.cs" />
+    <Compile Include="Mapping\WMS_REPLACE_DETAILMap.cs" />
+    <Compile Include="Mapping\WMS_REPLACE_MASTERMap.cs" />
+    <Compile Include="Mapping\WMS_SCHEDULEMap.cs" />
+    <Compile Include="Mapping\WMS_SCHEDULE_DETAILMap.cs" />
+    <Compile Include="Mapping\WMS_SCHEDULE_MASTERMap.cs" />
+    <Compile Include="Mapping\WMS_TASKRECORDMap.cs" />
+    <Compile Include="Mapping\WORKSELECTMap.cs" />
+    <Compile Include="MES_PREPARER_PLAN.cs" />
+    <Compile Include="PRINTREPORT.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SYS_BILL_TARGET.cs" />
+    <Compile Include="SYS_ERROR_CODE.cs" />
+    <Compile Include="SYS_TABLE_STATE.cs" />
+    <Compile Include="VIEW_BILL_MAST.cs" />
+    <Compile Include="VIEW_STORAGE.cs" />
+    <Compile Include="WCS_TASK.cs" />
+    <Compile Include="WCS_TASKH.cs" />
+    <Compile Include="WCS_TASK_DETAIL.cs" />
+    <Compile Include="WCS_TASK_DETAILH.cs" />
+    <Compile Include="WMS_BALANCE_DETAIL.cs" />
+    <Compile Include="WMS_BALANCE_MASTER.cs" />
+    <Compile Include="WMS_BILL_DETAIL.cs" />
+    <Compile Include="WMS_BILL_DETAILH.cs" />
+    <Compile Include="WMS_BILL_MASTER.cs" />
+    <Compile Include="WMS_BILL_MASTERH.cs" />
+    <Compile Include="WMS_FORMULA_DETAIL.cs" />
+    <Compile Include="WMS_FORMULA_MASTER.cs" />
+    <Compile Include="WMS_PALLET_DETAIL.cs" />
+    <Compile Include="WMS_PALLET_MASTER.cs" />
+    <Compile Include="WMS_PRODUCTION_DETAIL.cs" />
+    <Compile Include="WMS_PRODUCTION_MASTER.cs" />
+    <Compile Include="WMS_PRODUCT_STATE.cs" />
+    <Compile Include="WMS_PRODUCT_STATEH.cs" />
+    <Compile Include="WMS_REPLACE_DETAIL.cs" />
+    <Compile Include="WMS_REPLACE_MASTER.cs" />
+    <Compile Include="WMS_SCHEDULE.cs" />
+    <Compile Include="WMS_SCHEDULE_DETAIL.cs" />
+    <Compile Include="WMS_SCHEDULE_MASTER.cs" />
+    <Compile Include="WMS_TASKRECORD.cs" />
+    <Compile Include="WORKSELECT.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\THOK.Common.Ef\THOK.Common.Ef.csproj">
+      <Project>{59FB8EB5-F5B8-4423-8550-A7819C855CDE}</Project>
+      <Name>THOK.Common.Ef</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\EntityFramework.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

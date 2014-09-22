@@ -1,0 +1,29 @@
+﻿<script type="text/javascript">
+    //上记录给mes
+    function uploadClick() {
+        var row = $('#details').datagrid('getSelected');
+        if (row) {
+            if (row.STATE == "3") {
+                $.messager.confirm('提示', '确定要上报该记录?', function (r) {
+                    if (r) {
+                        $.getJSON("/Feeding/uploadmes/?BillNo=" + row.BILL_NO, function (result) {
+                            if (result) {
+                                $.messager.show({
+                                    title: '提示',
+                                    msg: result.retruinfo
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+            else {
+                alert('该记录还未作业无法上报！');
+            }
+        }
+        else {
+            alert('没有选择行！');
+        }
+    }
+</script>
+

@@ -1,0 +1,26 @@
+﻿<script type="text/javascript">
+//取消申请
+    function cancereplaceClick() {
+        var row = $('#details').datagrid('getSelected');
+        if (row) {
+            $.messager.confirm('提示', '将向mes发送取消选中批次的申请,是否继续?', function (r) {
+                if (r) {
+                    if (row.STATE < 4) {
+                        $.getJSON("/StockOutBill/canceoutreplace/?billno=" + row.BILL_NO, function (result) {
+                            if (result) {
+                                $.messager.show({
+                                    title: '提示',
+                                    msg: result.retruinfo
+                                });
+                            }
+                        });
+                    }
+                }
+            });
+        }
+        else {
+            alert("未选中行");
+        }
+    }
+</script>
+

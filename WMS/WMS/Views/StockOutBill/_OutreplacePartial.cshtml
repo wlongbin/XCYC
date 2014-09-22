@@ -1,0 +1,58 @@
+﻿<script type="text/javascript">
+    //出库工单申请
+    //    function outreplaceClick() {
+    //        $.messager.confirm('提示', '确定申请出库工单?', function (r) {
+    //            if (r) {
+    //                $.getJSON("/StockOutBill/outreplace/", function (result) {
+    //                    if (result) {
+    //                        $.messager.show({
+    //                            title: '提示',
+    //                            msg: result.retruinfo
+    //                        });
+    //                    }
+    //                });
+    //            }
+    //        });
+    //    }
+    function outreplaceClick() {
+        $('#CHANNEL_NO').val("");
+        $('#dlg-select').dialog('open').dialog('setTitle', '选择');
+
+    }
+
+    function confirm() {
+        var t = $('#CHANNEL_NO').combobox('getValue');
+        $.getJSON("/StockOutBill/outreplace/?channel_no=" + t, function (result) {
+            if (result) {
+                $.messager.show({
+                    title: '提示',
+                    msg: result.retruinfo
+                });
+                $('#dlg-select').datagrid('reload');
+            }
+        });
+        $('#dlg-select').dialog('close');
+        $('#dlg-select').datagrid('reload');
+
+    }
+</script>
+
+<div id="dlg-select" class="easyui-dialog" modal="true" style="width: 190px; height: 150px;
+    padding:5px 5px" closed="true" buttons="#select-buttons">
+    <div region="center" split="true" border="false" style="width: 140px; height:70px">
+    <tr  >
+    <td width="40"  >线   路 : </td>
+      <td  ><select id="CHANNEL_NO" class="easyui-combobox"  name="CHANNEL_NO" style=" width:80px " panelheight="90">
+            <option value=""> 请选择</option>                       
+            <option value="1020A">申请A线</option>
+            <option value="1021B">申请B线</option>
+            <option value="1022C">申请C线</option>
+      </select>
+      </td>
+      </tr>
+    </div>
+</div>
+<div id="select-buttons">
+      <input type="button"  onclick="confirm()"  onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btok" value="确定"/>
+       <input type="button"  onclick="javascript:$('#dlg-select').dialog('close')" onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btcance" value="取消"/>
+</div>

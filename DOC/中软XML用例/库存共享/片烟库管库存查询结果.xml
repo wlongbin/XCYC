@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Msg>
+  <Head>
+    <InterfaceCode>HNZY_ESB_XCMES_PFK_KCGX_KCCX</InterfaceCode>
+    <InterfaceDescription>片烟库管库存查询</InterfaceDescription>
+    <MsgID></MsgID>
+    <Source>XCPFK</Source>
+    <MsgMark>HNZY_ESB_XCMES_PFK_KCGX_KCCX</MsgMark>
+    <WsMethod>PFK_KCGX_KCCX</WsMethod>
+    <Date>2014-03-13 10:10:00</Date>
+    <Cryp></Cryp>
+    <User></User>
+    <StateCode>600</StateCode>
+    <StateDesription>正常发送</StateDesription>
+    <DataDefine>
+      <!-- 描述表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_KCGX_KCCX_D">
+        <FieldItem FieldName="TOBACCO_BOX_BAR_CODE" Caption="烟叶箱条码" FieldType="CHAR" FieldLength="100" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="RAW_MAT_CD" Caption="原料编码" FieldType="CHAR" FieldLength="50" Remark="必传(烟叶编码)" isPrimaryKey="False" />
+        <FieldItem FieldName="MATERIAL_STORAGE" Caption="原料库存" FieldType="NUMBER" FieldLength="12.4" Remark="必传(单位为公斤)" isPrimaryKey="False" />
+        <FieldItem FieldName="LEAF_STANDARD" Caption="烟包规格" FieldType="CHAR" FieldLength="20" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="PURCHASE_BATCH" Caption="采购批次" FieldType="CHAR" FieldLength="20" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="CHECK_BATCH_NO" Caption="检验批次" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="POSITION_TYPE" Caption="位置类型" FieldType="NUMBER" FieldLength="1" Remark="必传(1表示立库货位；2表示在途；3表示在缓存线,4表示在地面缓存库)" isPrimaryKey="False" />
+        <FieldItem FieldName="POSITION" Caption="所在位置" FieldType="CHAR" FieldLength="50" Remark="必传(货位号或缓存线)" isPrimaryKey="False" />
+      </Table>
+    </DataDefine>
+  </Head>
+  <Data>
+    <DataTable TableName ="T_PFK_KCGX_KCCX_D">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="TOBACCO_BOX_BAR_CODE"  FieldValue="0101" />
+          <DataItem FieldName="RAW_MAT_CD"  FieldValue="61293" />
+          <DataItem FieldName="MATERIAL_STORAGE"  FieldValue="293" />
+          <DataItem FieldName="LEAF_STANDARD"  FieldValue="" />
+          <DataItem FieldName="PURCHASE_BATCH"  FieldValue="" />
+          <DataItem FieldName="CHECK_BATCH_NO"  FieldValue="" />
+          <DataItem FieldName="POSITION_TYPE"  FieldValue="2" />
+          <DataItem FieldName="POSITION"  FieldValue="" />
+        </Header>
+      </Row>
+    </DataTable>
+  </Data>
+</Msg>

@@ -1,0 +1,37 @@
+<script type="text/javascript">
+    function editClick() {
+        document.getElementById("userNameError").innerText = "";
+        var row = $('#details').datagrid('getSelected');
+        
+    if (row) {
+        $('#dlg').dialog('open').dialog('setTitle', '编辑');
+        $('#fm .easyui-validatebox').validatebox({
+            required: true
+        });
+        $('#fm').form('clear');
+        $('#fm').form('load', row);
+        if (row.IS_LOCK == '1') {
+            $('#c1').combo('setValue', true).combo('setText', row.IS_LOCK);
+        } else {
+            $('#c1').combo('setValue', false).combo('setText', row.IS_LOCK);
+        }
+        if (row.IS_ADMIN == '1') {
+            $('#c2').combo('setValue', true).combo('setText', row.IS_ADMIN);
+        } else {
+            $('#c2').combo('setValue', false).combo('setText', row.IS_ADMIN);
+        }
+        $('form input').removeAttr("disabled");
+        $('form textarea').removeAttr("disabled");
+        $('#c1').combo({
+            hasDownArrow: true
+        });
+        $('#c2').combo({
+            hasDownArrow: true
+        });
+        url = '/User/Edit/?USER_ID=' + row.USER_ID;
+    } else {
+        $.messager.confirm('错误', '没有选择行！');
+    }
+};
+</script>
+   

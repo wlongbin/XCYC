@@ -1,0 +1,130 @@
+﻿<script type="text/javascript">
+    function wbarcodeClick() {
+        var row = $('#details').datagrid('getSelected');
+//        $('#WSubDetails').datagrid('loadData', { total: 0, rows: [] });
+        //        $('#WSubDetails').datagrid({ url: '/StockInWork/GetSubdetail/?page=1&rows=1000&billno=' + row.BILL_NO });
+        if (row.STATE == 3) {
+            $('#dlg-wbarcode').dialog('open').dialog('setTitle', '录条码');
+            loaddata('/StockInWork/GetSubdetail/?page=1&rows=1000&billno=' + row.BILL_NO);
+        }
+        else if (row.STATE < 3) {
+            alert('该记录还未作业无法录条码！')
+        }
+        else {
+            alert("该记录已" + row.STATENAME+"无法录条码");
+        }
+    }
+    function loaddata(url) {
+        $('#WSubDetails').datagrid('loadData', { total: 0, rows: [] });
+        $('#WSubDetails').datagrid({
+            border: false,
+            width: 680,
+            fit: true,
+            fitcolumns: true,
+            rownumbers: true,
+            pagination: false,
+            singleSelect: true,
+            url: url,
+            columns: [[
+                        { field: 'BILL_NO', width: 80, title: '单据编号' },
+                        { field: 'ITEM_NO', width: 40, title: '序号' },
+                        { field: 'PRODUCT_CODE', width: 130, title: '产品代码' },
+                        { field: 'WEIGHT', width: 50, title: '标准重量' },
+                        { field: 'REAL_WEIGHT', width: 60, title: '实际重量' },
+                        { field: 'IS_MIX', width: 50, title: '是否混装', hidden: true },
+                        { field: 'IS_MIXDESC', width: 80, title: '是否混装' },
+                        { field: 'PRODUCT_BARCODE', width: 220, title: '产品条码',
+                            formatter: function (value, row, index) {
+                                if (value == "" || value == null) {
+                                    return "<div><input  id='barcode" + index + "'  style='height:20px; width:210px;'  value=''/></div>";
+                                }
+                                else
+                                    return "<div><input  id='barcode" + index + "'  style='height:20px; width:210px;'  value='" + value + "'/></div>";
+                            }
+                        }
+                    ]]
+        });
+    }
+    //确定按钮事件
+    function Scomfir() {
+        var Rows = $('#WSubDetails').datagrid('getData');
+        var row = $('#details').datagrid('getSelected');
+        var barcodestr = "";
+        for (var i = 0; i < Rows.total; i++) {
+        var barcode = $('#barcode' + i).val();
+            if(barcode!=""){
+                if (barcodestr.search(barcode) == -1)
+                    barcodestr += Rows.rows[i].ITEM_NO + ":" + barcode + ";";
+                else {
+                    alert("条码重复");
+                    return false;
+                }
+            }
+        }
+        $('#detailjson').val(barcodestr);
+        try {
+            $('#fm').form('submit', {
+                url: "/StockInWork/Setbarcode/?billno=" + row.BILL_NO,
+                onSubmit: function () {
+                  
+                },
+                success: function (result) {
+                    var result = eval('(' + result + ')');
+                    if (result.success) {
+                        $.messager.show({
+                            title: '成功',
+                            msg: result.success
+                        });
+                    } else {
+                        $.messager.show({
+                            title: '错误',
+                            msg: result.success
+                        });
+                       
+                    }
+                },
+                error: function (data) { alert(''); }
+            });
+        } catch (ex) { }
+//        $.getJSON("/StockInWork/Setbarcode/?billno=" + row.BILL_NO , function (json) {
+//            if (json) {
+//                $.messager.show({
+//                    title: '提示',
+//                    msg: json.success
+//                });
+//            }
+//        });
+        $('#dlg-wbarcode').dialog('close');
+        $('#SubDetails').datagrid('reload');
+//        alert(barcodestr);
+    }
+</script>
+<div id="dlg-wbarcode" class="easyui-dialog" modal="true" style="width: 700px; height: 500px;padding:2px 2px"
+		closed="true" buttons="#dlg-buttons-wbarcode">
+        <form id="fm"  method="post"><input type="hidden" id="detailjson" name="detailjson" /></form>
+  <div split="true" border="false" style="width: 666px; height: 400px">
+    <table class="easyui-datagrid" border="false" singleSelect="true" id="WSubDetails" url="" 
+        fit="true" fitColumns="true"  pagination="false" rownumbers="true" striped="true">
+@*        <thead>
+            <tr>
+                <th  checkbox="true">选择</th>
+                <th field="BILL_NO" width="100" >单据编号</th>
+                <th field="ITEM_NO" width="40" >序号</th>
+                <th field="PRODUCT_CODE" width="80">产品代码</th>
+                <th field="WEIGHT" width="80" >标准重量</th>
+                <th field="REAL_WEIGHT" width="80" >实际重量</th>
+                <th field="IS_MIX" width="60" hidden="true">是否混装</th>
+                <th field="IS_MIXDESC" width="60">是否混装</th>
+               <th field="PRODUCT_BARCODE" width="200">产品条码</th>
+            </tr>
+        </thead>*@
+    </table>
+  </div>
+</div>
+<div id="dlg-buttons-wbarcode">
+@*	<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="select()">查询</a>
+	<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg-search').dialog('close')">取消</a>*@
+      <input type="button"  onclick="Scomfir()"  onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btok" value="确定"/>
+      <input type="button"  onclick="javascript:$('#dlg-wbarcode').dialog('close')" onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btcance" value="取消"/>
+</div>
+

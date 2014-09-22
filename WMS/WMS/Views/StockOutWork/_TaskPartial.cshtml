@@ -1,0 +1,213 @@
+﻿<script type="text/javascript">
+    var rowindex = -1;
+//    var cellobj = new Object();//存储每种原料要出库的货位
+    var productscell = []; //存储所有原料要出库的货位
+    var oldclickrow;  //用于保存前一次选中的原料行的下标。
+    //作业功能
+    function taskClick() {
+        $('#Dlg_Taskmethod').dialog('open').dialog('setTitle', '作业方式');
+    }
+    //作业方式选择窗体中的按钮事件
+    function comfirm() {
+        $('#Dlg_Taskmethod').dialog('close')
+        var row = $('#details').datagrid('getSelected');
+        var method = $('#taskmethod').combobox('getValue');
+        if (row) {
+            if (row.STATE == "2") { //已审核状态下
+                if (method == "1") { //自动作业
+                    $.getJSON("/StockOutWork/Task/?BillNo=" + row.BILL_NO + '&cigarettecode=' + row.CIGARETTE_CODE + '&formulacode=' + row.FORMULA_CODE + '&batchweight=' + row.BATCH_WEIGHT, function (json) {
+                        if (json) {
+                            $.messager.show({
+                                title: '提示',
+                                msg: json.success
+                            });
+                        }
+                    });
+                    rowindex = $('#details').datagrid('getRowIndex', row);
+                    $('#details').datagrid('reload')
+                    $('#SubDetails').datagrid('reload');
+                }
+                else { //手动作业
+                    $('#Dlg_DetailData').dialog('open').dialog('setTitle', '选择烟包');
+                    $('#Detaildata').datagrid({ url: '/StockOutBill/GetSubDetail/?page=1&rows=100&BillNo=' + row.BILL_NO,
+                        onLoadSuccess: function (data) {
+                            productscell = [];
+                            for (var i = 0; i < data.total; i++) {
+                                var cellobj = new Object();
+                                cellobj.index = i;
+                                cellobj.product = data.rows[i].PRODUCT_CODE;
+                                cellobj.cellstr = "";
+                                cellobj.totalweight = 0;
+                                productscell.push(cellobj);
+                            }
+                        }
+                    });
+                }
+            }
+            else {
+                $.messager.confirm('提示', '该记录已' + row.STATENAME + '不可重复作业！');
+            }
+        }
+        else {
+            $.messager.confirm('错误', '没有选择行！');
+        }
+    }
+    //手动作业框中的确定按钮事件
+    function submitbt() {
+//        savecurentcell();
+        var  allcellstr="";
+        for (var index = 0; index < productscell.length; index++) {
+            if (productscell[index].cellstr != "")
+                allcellstr += productscell[index].cellstr;
+       }
+       var row = $('#details').datagrid('getSelected');
+       $.getJSON("/StockOutWork/TaskSD/?BillNo=" + row.BILL_NO + '&cellstr=' + allcellstr, function (json) {
+           if (json) {
+               $.messager.show({
+                   title: '提示',
+                   msg: json.success
+               });
+           }
+       });
+        
+    }
+    //保存当前原料下，选中的要出库的货位信息
+//    function savecurentcell() {
+//        var celldata = $('#productdata').datagrid('getChecked');
+//        for (var indx = 0; indx < productscell.length; indx++) {
+//            if (productscell[indx].index == oldclickrow) {
+//                productscell[indx].cellstr = "";
+//                for (var n = 0; n < celldata.length; n++) {
+//                    productscell[indx].cellstr += celldata[n].CELL_CODE + ",";
+//                }
+//                break;
+//            }
+//        }
+//    }
+    $(function () {
+        $('#Detaildata').datagrid('options').onClickRow = function (rowindex, rowData) {
+            //            savecurentcell();
+            $('#productdata').datagrid('loadData', { total: 0, rows: [] });
+            var billrow = $('#details').datagrid('getSelected');
+            var detailrow = $('#Detaildata').datagrid('getSelected');
+            if (detailrow) {
+                $('#Tproductcode').val(detailrow.PRODUCT_CODE);
+                $('#Toutweight').val(detailrow.TOTAL_WEIGHT);
+                $('#Tselectweight').val(productscell[rowindex].totalweight);
+                $('#productdata').datagrid('loadData', { total: 0, rows: [] });
+                $('#productdata').datagrid({ url: '/StockOutWork/Getstorage/?cigarettecode=' + billrow.CIGARETTE_CODE + '&formulacode=' + billrow.FORMULA_CODE + '&productcode=' + detailrow.PRODUCT_CODE,
+                    onLoadSuccess: function (data) {
+                        productscell[rowindex].totalweight = 0;
+                        for (var t = 0; t < data.rows.length; t++) {
+                            if (productscell[rowindex].cellstr.search(data.rows[t].CELL_CODE) != -1) {
+                                $('#productdata').datagrid('selectRow', t);
+                            }
+                        }
+                    }
+                });
+            }
+            else {
+                $.messager.show({ title: '系统提示', msg: '失败!请检查原因！' });
+            }
+            oldclickrow = rowindex;
+        }
+        $('#productdata').datagrid('options').onCheck = function (rowindex, rowData) {
+            productscell[oldclickrow].totalweight += rowData.REAL_WEIGHT;
+            if (productscell[oldclickrow].totalweight > $('#Toutweight').val()) {
+                alert("所选的总重量不能超出出库重量");
+                $('#productdata').datagrid('unselectRow', rowindex);
+                return;
+            }
+            if (productscell[oldclickrow].cellstr.search(rowData.CELL_CODE) == -1) {
+                productscell[oldclickrow].cellstr += rowData.CELL_CODE + ",";
+            }
+
+            $('#Tselectweight').val(productscell[oldclickrow].totalweight);
+        }
+        $('#productdata').datagrid('options').onUncheck = function (rowindex, rowData) {
+            //            productscell[oldclickrow].totalweight -= rowData.REAL_WEIGHT;
+            var celldata = $('#productdata').datagrid('getChecked');
+            productscell[oldclickrow].totalweight = 0;
+            for (var i = 0; i < celldata.length; i++) {
+                productscell[oldclickrow].totalweight += celldata[i].REAL_WEIGHT;
+            }
+            $('#Tselectweight').val(productscell[oldclickrow].totalweight);
+            //            alert($('#productdata').datagrid('getChecked')[0].CELL_CODE);
+        }
+    });
+</script>
+<div id="Dlg_Taskmethod" class="easyui-dialog" modal="true" style="width: 190px; height: 100px;
+    padding:5px 5px" closed="true" buttons="#Taskmethoddlg-buttons">
+    <div region="center" split="true" border="false" style="width: 140px; height: 50px">
+      <select id="taskmethod" class="easyui-combobox"  name="taskmethod" style=" width:120px; height:35px;">
+         <option value="1">自动作业</option>
+         <option value="2">手动作业</option>
+      </select>
+    </div>
+</div>
+<div id="Taskmethoddlg-buttons">
+      <input type="button"  onclick="comfirm()"  onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btok" value="确定"/>
+       <input type="button"  onclick="javascript:$('#Dlg_Taskmethod').dialog('close')" onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btcance" value="取消"/>
+</div>
+<div id="Dlg_DetailData" class="easyui-dialog" modal="true" style="width: 790px; height: 500px;
+    padding: 0px 0px" closed="true" buttons="#dlgProduct-buttons">
+    <div region="center" split="true" border="false" style="width: 770px; height: 200px">
+        <table id="Detaildata" class="easyui-datagrid" border="false" toolbar="#Btn_Tip"
+            singleselect="true" fit="true" fitcolumns="false" pagination="false" rownumbers="true">
+            <thead>
+                <tr>
+                    <th field="PRODUCT_CODE" width="100">
+                        产品编码
+                    </th>
+                    <th field="PRODUCT_NAME" width="150">
+                        产品名称
+                    </th>
+                      <th field="GRADE_NAME" width="80">
+                        等级
+                    </th>
+                    <th field="ORIGINAL_NAME" width="100">
+                        原产地
+                    </th>
+                    <th field="YEARS" width="80">
+                        年份
+                    </th>
+                     <th field="TOTAL_WEIGHT" >需出库重量</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+<div region="south" split="true" border="false" style="height: 220px;  border-top-width: 1px;  border-top-style: solid; border-top-width: 1px; border-top-color: 99BBE8;">
+<table id="productdata" class="easyui-datagrid" border="false"  selectOnCheck="true"  
+            singleselect="false" fit="true" fitcolumns="false" pagination="true" rownumbers="true">
+            <thead>
+                <tr>
+                <th checkbox="true">选择</th>
+                <th field="CELL_CODE" width="80">货位号</th>
+                <th field="PRODUCT_CODE" width="130">产品代码</th>
+                <th field="REAL_WEIGHT" width="80">实际重量</th>
+                <th field="IN_DATE" width="80">入库时间</th>
+@*                <th field="PACKAGE_COUNT" width="80">包数</th>*@
+                <th field="PRODUCT_BARCODE" width="160">产品条码</th>
+                <th field="PALLET_CODE" width="60" >托盘RFID</th>
+                <th field="IS_MIXDESC" width="60"  hidden="true">是否混装</th>
+                <th field="IS_MIX" width="60" hidden="true">是否混装</th>
+                </tr>
+            </thead>
+        </table>
+</div>
+</div>
+<div id="dlgProduct-buttons">
+      <input type="button"  onclick="submitbt() "  onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btok" value="确定"/>
+       <input type="button"  onclick="javascript:$('#Dlg_DetailData').dialog('close')" onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btcance" value="取消"/>
+</div>
+<div id="Btn_Tip">
+<table>
+  <tr>
+     <td>原料编码:</td>
+      <td><input type="text" id="Tproductcode" readonly="readonly" style="width: 135px;" /></td>
+      <td>应出库重量:</td><td><input type="text" id="Toutweight" readonly="readonly" style="width: 135px;"/></td>
+      <td>当前选中的总重量:</td><td><input type="text" id="Tselectweight" readonly="readonly" style="width: 135px;"/></td>
+  </tr>
+</table>
+</div>
+

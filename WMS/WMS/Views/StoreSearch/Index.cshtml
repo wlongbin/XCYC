@@ -1,0 +1,58 @@
+﻿<script type="text/javascript">
+    $(function () {
+        $('#details').datagrid('options').onClickRow = function () {
+            $('#SubDetails').datagrid('loadData', { total: 0, rows: [] });
+            var row = $('#details').datagrid('getSelected');
+            if (row) {
+                $('#SubDetails').datagrid({ url: '/StoreSearch/GetSubDetail/?Gradecode=' + row.GRADE_CODE + '&original=' + row.ORIGINAL_CODE + '&year=' + row.YEARS });
+                //                $('#SubDetails').datagrid('reload');
+            }
+            else {
+                $.messager.show({ title: '系统提示', msg: '失败!请检查原因！' });
+            }
+        }
+    });
+
+</script>
+<div region="center" split="true" border="false">    
+    <table id="details" class="easyui-datagrid" url="/StoreSearch/Details/" border="false" singleSelect="true"
+        fit="true" fitColumns="false" toolbar="#tool"  pagination="true" rownumbers="true"  striped="true">
+        <thead>
+            <tr>
+                  <th field="GRADE_CODE" width="60">等级编号</th>
+                <th field="GRADE_NAME" width="150">等级名称</th>
+                <th field="ENGLISH_CODE" width="80">英文代号</th>
+                <th field="USER_CODE" width="80">自定义代号</th>
+                <th field="ORIGINAL_CODE" width="50" hidden="true">原产地代码</th>
+                <th field="ORIGINAL_NAME" width="150">原产地</th>
+                <th field="YEARS" width="70">年份</th>
+                <th field="MEMO" width="80">备注</th>
+                <th field="TOTALPACKAGE" width="90">库存包数</th>
+                <th field="TOTALWEIGHT" width="90">库存重量</th>
+                <th field="USEFULLWEIGHT" width="90">有效重量</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<div region="south" split="true" border="false" style="height: 250px; border-top-style: solid; border-top-width: 1px; border-top-color: 99BBE8;">
+    <table class="easyui-datagrid" border="false" singleSelect="true" id="SubDetails" url="" pageSize="50"
+        fit="true" fitColumns="false" toolbar="#tool"  pagination="true" rownumbers="true" striped="true">
+        <thead>
+            <tr>
+                <th field="CELL_CODE" width="100">所在货位号</th>
+                <th field="CELLSTATU" width="80">货位状态</th>
+                <th field="PRODUCT_BARCODE" width="200">条码</th>
+                <th field="BILL_NO" width="150" >入库单号</th>
+                <th field="BILL_DATE" width="120" >单据日期</th>
+                <th field="CIGARETTE_CODE" width="80" hidden="true">牌号编号</th>
+                <th field="CIGARETTE_NAME" width="150">牌号</th>
+                <th field="FORMULA_CODE" width="80" hidden="true">配方编号</th>
+                <th field="FORMULA_NAME" width="150" >配方</th>
+                <th field="TOTALPACKAGE" width="80">库存包数</th>
+                <th field="TOTALWEIGHT" width="80">库存重量</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+

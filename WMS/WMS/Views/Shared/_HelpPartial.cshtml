@@ -1,0 +1,17 @@
+﻿
+<script type="text/javascript">
+    function helpClick() {
+        $('#dlg-help').dialog('open').dialog('setTitle', '帮助');
+        $.getJSON("/HelpContent/Help/", "helpId=@ViewBag.ModuleID", function (helpContent) {
+            $("#ContentText").empty();
+            HelpTxt = helpContent.CONTENT_TEXT;
+            $(HelpTxt).appendTo("#ContentText");
+        });
+    }
+</Script>
+<div id="dlg-help" class="easyui-dialog" modal="true" style="width:400px;height:300px;padding:2px 2px"
+		closed="true">
+        <div id="ContentText">
+            
+        </div>
+</div>

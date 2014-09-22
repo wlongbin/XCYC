@@ -1,0 +1,38 @@
+﻿<script  type="text/javascript">
+    //校验函数
+    function checkClick() {
+        var row = $('#details').datagrid('getSelected');
+        if (row) {
+            $.messager.confirm('提示', '将校验选中批次任务,是否继续?', function (r) {
+                if (r) {
+                    if (row.STATE == 5) {
+                        $.getJSON("/StockIntoSearch/CheckBill/?BillNo=" + row.BILL_NO, function (json) {
+                            if (json) {
+
+                                if (json.result == "true") {
+                                    $.messager.show({
+                                        title: '提示',
+                                        msg: json.success
+                                    });
+                                }
+                                else {
+                                    $.messager.confirm('提示', json.success + ',请人工核对后校正。', function (r) { });
+                                }
+                            }
+                        });
+                        //                        $('#mixdlg').dialog('close');
+                        $('#details').datagrid('reload');
+                        $('#SubDetails').datagrid('reload');
+                    }
+                    else {
+                        alert("只有完成状态的批次才能校验");
+                    }
+                }
+            });
+        }
+        else {
+            alert("未选中行");
+        }
+    }
+</script>
+
