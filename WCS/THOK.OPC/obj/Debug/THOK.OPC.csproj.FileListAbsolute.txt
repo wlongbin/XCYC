@@ -1,0 +1,7 @@
+E:\HNXC\WCS\THOK.OPC\bin\Debug\THOK.OPC.dll
+E:\HNXC\WCS\THOK.OPC\bin\Debug\THOK.OPC.pdb
+E:\HNXC\WCS\THOK.OPC\bin\Debug\OpcRcw.Comn.dll
+E:\HNXC\WCS\THOK.OPC\bin\Debug\OpcRcw.Da.dll
+E:\HNXC\WCS\THOK.OPC\obj\Debug\THOK.OPC.dll
+E:\HNXC\WCS\THOK.OPC\obj\Debug\THOK.OPC.pdb
+E:\HNXC\WCS\THOK.OPC\obj\Debug\THOK.OPC.csprojResolveAssemblyReference.cache

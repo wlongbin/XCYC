@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A305D90D-4B14-4122-8231-C89216996F47}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>THOK.XC.Process</RootNamespace>
+    <AssemblyName>THOK.XC.Process</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ConvertStringChar.cs" />
+    <Compile Include="Common\Log.cs" />
+    <Compile Include="Dal\BaseDal.cs" />
+    <Compile Include="Dal\BillDal.cs" />
+    <Compile Include="Dal\CellDal.cs" />
+    <Compile Include="Dal\ChannelDal.cs" />
+    <Compile Include="Dal\CraneErrMessageDal.cs" />
+    <Compile Include="Dal\PalletBillDal.cs" />
+    <Compile Include="Dal\ProductStateDal.cs" />
+    <Compile Include="Dal\SysCarAddressDal.cs" />
+    <Compile Include="Dal\SysStationDal.cs" />
+    <Compile Include="Dal\TaskDal.cs" />
+    <Compile Include="Dao\BillDao.cs" />
+    <Compile Include="Dao\CellDao.cs" />
+    <Compile Include="Dao\ChannelDao.cs" />
+    <Compile Include="Dao\CraneErrMessageDao.cs" />
+    <Compile Include="Dao\PalletBillDao.cs" />
+    <Compile Include="Dao\ProductStateDao.cs" />
+    <Compile Include="Dao\SysCarAddressDao.cs" />
+    <Compile Include="Dao\SysStationDao.cs" />
+    <Compile Include="Dao\TaskDao.cs" />
+    <Compile Include="Process_01\PalletOutRequestProcess.cs" />
+    <Compile Include="Process_01\StockInStationProcess.cs" />
+    <Compile Include="Process_01\StockInRequestProcess.cs" />
+    <Compile Include="Process_01\NotReadBarcodeProcess.cs" />
+    <Compile Include="Process_01\PalletOutToStationProcess.cs" />
+    <Compile Include="Process_01\CheckOutToStationProcess.cs" />
+    <Compile Include="Process_01\MoveOutToStationProcess.cs" />
+    <Compile Include="Process_02\CheckProcess.cs" />
+    <Compile Include="Process_02\FeedProcess.cs" />
+    <Compile Include="Process_02\StockOutInCacheProcess.cs" />
+    <Compile Include="Process_02\StockOutLeaveStationProcess.cs" />
+    <Compile Include="Process_02\StockOutSeparateProcess.cs" />
+    <Compile Include="Process_02\PalletToCarStationProcess.cs" />
+    <Compile Include="Process_02\PalletToStationProcess.cs" />
+    <Compile Include="Process_02\PalletInRequestProcess.cs" />
+    <Compile Include="Process_02\StockOutToCarStationProcess.cs" />
+    <Compile Include="Process_02\StockOutCarFinishProcess.cs" />
+    <Compile Include="Process_02\StockOutCacheProcess.cs" />
+    <Compile Include="Process_02\StockOutToUnpackLineProcess.cs" />
+    <Compile Include="Process_Car\CarProcess.cs" />
+    <Compile Include="Process_Crane\CraneProcess1.cs" />
+    <Compile Include="Process_Crane\CraneProcessM.cs" />
+    <Compile Include="Process_Crane\CraneProcess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\THOK.CRANE\THOK.CRANE.csproj">
+      <Project>{2B122925-2701-4C34-ADAB-A463CC2E3797}</Project>
+      <Name>THOK.CRANE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOK.MCP\THOK.MCP.csproj">
+      <Project>{D162AF5E-4A8A-4FEB-AAD2-4E7143CB38A7}</Project>
+      <Name>THOK.MCP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOK.Util\THOK.Util.csproj">
+      <Project>{BD58139F-8D92-44B9-91B8-851441EB9E18}</Project>
+      <Name>THOK.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\THOK.Webservice\THOK.Webservice.csproj">
+      <Project>{C5D9B183-BCB1-4356-9069-D2139D889F44}</Project>
+      <Name>THOK.Webservice</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

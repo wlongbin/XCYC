@@ -1,0 +1,13 @@
+E:\HNXC\WCS\THOK.XC.Process\bin\Release\THOK.XC.Process.dll
+E:\HNXC\WCS\THOK.XC.Process\bin\Release\THOK.XC.Process.pdb
+E:\HNXC\WCS\THOK.XC.Process\bin\Release\THOK.CRANE.dll
+E:\HNXC\WCS\THOK.XC.Process\bin\Release\THOK.MCP.dll
+E:\HNXC\WCS\THOK.XC.Process\bin\Release\THOK.Util.dll
+E:\HNXC\WCS\THOK.XC.Process\bin\Release\THOK.CRANE.pdb
+E:\HNXC\WCS\THOK.XC.Process\bin\Release\THOK.MCP.pdb
+E:\HNXC\WCS\THOK.XC.Process\bin\Release\THOK.Util.pdb
+E:\HNXC\WCS\THOK.XC.Process\obj\Release\THOK.XC.Process.csprojResolveAssemblyReference.cache
+E:\HNXC\WCS\THOK.XC.Process\obj\Release\THOK.XC.Process.dll
+E:\HNXC\WCS\THOK.XC.Process\obj\Release\THOK.XC.Process.pdb
+E:\HNXC\WCS\THOK.XC.Process\bin\Release\THOK.Webservice.dll
+E:\HNXC\WCS\THOK.XC.Process\bin\Release\THOK.Webservice.pdb

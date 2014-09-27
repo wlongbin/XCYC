@@ -1,0 +1,4 @@
+E:\HNXC\WCS\THOK.TCP\bin\Debug\THOK.TCP.dll
+E:\HNXC\WCS\THOK.TCP\bin\Debug\THOK.TCP.pdb
+E:\HNXC\WCS\THOK.TCP\obj\Debug\THOK.TCP.dll
+E:\HNXC\WCS\THOK.TCP\obj\Debug\THOK.TCP.pdb

@@ -1,0 +1,6 @@
+E:\HNXC\WCS\THOK.MCP\bin\Debug\THOK.MCP.dll
+E:\HNXC\WCS\THOK.MCP\bin\Debug\THOK.MCP.pdb
+E:\HNXC\WCS\THOK.MCP\obj\Debug\THOK.MCP.View.MonitorView.resources
+E:\HNXC\WCS\THOK.MCP\obj\Debug\THOK.MCP.dll
+E:\HNXC\WCS\THOK.MCP\obj\Debug\THOK.MCP.pdb
+E:\HNXC\WCS\THOK.MCP\obj\Debug\THOK.MCP.csproj.GenerateResource.Cache

@@ -1,0 +1,4 @@
+E:\HNXC\WCS\THOK.Util\bin\Debug\THOK.Util.dll
+E:\HNXC\WCS\THOK.Util\bin\Debug\THOK.Util.pdb
+E:\HNXC\WCS\THOK.Util\obj\Debug\THOK.Util.dll
+E:\HNXC\WCS\THOK.Util\obj\Debug\THOK.Util.pdb

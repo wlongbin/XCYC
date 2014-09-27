@@ -1,0 +1,4 @@
+2014-07-03 09:15 :  ItemName:02_2_C01_3 Value: 0
+2014-07-03 09:15 :  ItemName:02_2_C01_1 Value: System.Int32[]
+2014-07-03 09:15 :  ItemName:02_2_C01_2 Value: System.Int64[]
+2014-07-03 09:15 :  ItemName:02_2_C01_3 Value: 0

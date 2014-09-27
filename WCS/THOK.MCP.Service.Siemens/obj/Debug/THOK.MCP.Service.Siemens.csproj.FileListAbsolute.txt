@@ -1,0 +1,11 @@
+E:\HNXC\WCS\THOK.MCP.Service.Siemens\bin\Debug\THOK.MCP.Service.Siemens.dll
+E:\HNXC\WCS\THOK.MCP.Service.Siemens\bin\Debug\THOK.MCP.Service.Siemens.pdb
+E:\HNXC\WCS\THOK.MCP.Service.Siemens\bin\Debug\THOK.MCP.dll
+E:\HNXC\WCS\THOK.MCP.Service.Siemens\bin\Debug\THOK.OPC.dll
+E:\HNXC\WCS\THOK.MCP.Service.Siemens\bin\Debug\THOK.MCP.pdb
+E:\HNXC\WCS\THOK.MCP.Service.Siemens\bin\Debug\THOK.OPC.pdb
+E:\HNXC\WCS\THOK.MCP.Service.Siemens\obj\Debug\THOK.MCP.Service.Siemens.dll
+E:\HNXC\WCS\THOK.MCP.Service.Siemens\obj\Debug\THOK.MCP.Service.Siemens.pdb
+E:\HNXC\WCS\THOK.MCP.Service.Siemens\bin\Debug\OpcRcw.Comn.dll
+E:\HNXC\WCS\THOK.MCP.Service.Siemens\bin\Debug\OpcRcw.Da.dll
+E:\HNXC\WCS\THOK.MCP.Service.Siemens\obj\Debug\THOK.MCP.Service.Siemens.csprojResolveAssemblyReference.cache

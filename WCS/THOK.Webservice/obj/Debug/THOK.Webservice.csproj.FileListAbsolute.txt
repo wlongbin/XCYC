@@ -1,0 +1,5 @@
+E:\HNXC\WCS\THOK.Webservice\bin\Debug\THOK.Webservice.dll
+E:\HNXC\WCS\THOK.Webservice\bin\Debug\THOK.Webservice.pdb
+E:\HNXC\WCS\THOK.Webservice\obj\Debug\THOK.Webservice.dll
+E:\HNXC\WCS\THOK.Webservice\obj\Debug\THOK.Webservice.pdb
+E:\HNXC\WCS\THOK.Webservice\obj\Debug\THOK.Webservice.csprojResolveAssemblyReference.cache

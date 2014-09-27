@@ -1,0 +1,4 @@
+E:\HNXC\WCS\THOK.Webservice\bin\Release\THOK.Webservice.dll
+E:\HNXC\WCS\THOK.Webservice\bin\Release\THOK.Webservice.pdb
+E:\HNXC\WCS\THOK.Webservice\obj\Release\THOK.Webservice.dll
+E:\HNXC\WCS\THOK.Webservice\obj\Release\THOK.Webservice.pdb

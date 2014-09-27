@@ -1,0 +1,9 @@
+E:\HNXC\WCS\THOK.MCP.Service.TCP\bin\Debug\THOK.MCP.Service.TCP.dll
+E:\HNXC\WCS\THOK.MCP.Service.TCP\bin\Debug\THOK.MCP.Service.TCP.pdb
+E:\HNXC\WCS\THOK.MCP.Service.TCP\bin\Debug\THOK.MCP.dll
+E:\HNXC\WCS\THOK.MCP.Service.TCP\bin\Debug\THOK.MCP.pdb
+E:\HNXC\WCS\THOK.MCP.Service.TCP\obj\Debug\THOK.MCP.Service.TCP.dll
+E:\HNXC\WCS\THOK.MCP.Service.TCP\obj\Debug\THOK.MCP.Service.TCP.pdb
+E:\HNXC\WCS\THOK.MCP.Service.TCP\bin\Debug\THOK.TCP.dll
+E:\HNXC\WCS\THOK.MCP.Service.TCP\bin\Debug\THOK.TCP.pdb
+E:\HNXC\WCS\THOK.MCP.Service.TCP\obj\Debug\THOK.MCP.Service.TCP.csprojResolveAssemblyReference.cache

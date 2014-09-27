@@ -1,0 +1,5 @@
+E:\HNXC\WCS\THOK.ParamUtil\bin\Debug\THOK.ParamUtil.dll
+E:\HNXC\WCS\THOK.ParamUtil\bin\Debug\THOK.ParamUtil.pdb
+E:\HNXC\WCS\THOK.ParamUtil\obj\Debug\ResolveAssemblyReference.cache
+E:\HNXC\WCS\THOK.ParamUtil\obj\Debug\THOK.ParamUtil.dll
+E:\HNXC\WCS\THOK.ParamUtil\obj\Debug\THOK.ParamUtil.pdb

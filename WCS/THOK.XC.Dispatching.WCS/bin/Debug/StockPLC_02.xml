@@ -1,0 +1,236 @@
+﻿<?xml version='1.0' ?>
+<Config>
+	<OPCServer ConnectionString="OPC.SimaticNET">
+		<OPCGroup GroupName="DefaultGroup" GroupString="S7:[PLC02]" UpdateRate="350">
+  <!--<OPCServer ConnectionString="OPC.SimaticNET">
+    <OPCGroup GroupName="DefaultGroup" GroupString="S7:[@LOCALSERVER]" UpdateRate="350">-->
+      <OPCItem ItemName="abc2" ClientHandler="190" OPCItemName="DB70,INT1152,1"  ItemType="READ"/>
+      <!--二层入库请求-->
+      <OPCItem ItemName="02_1_359_1" ClientHandler="1" OPCItemName="DB70,INT930,1" ItemType="READ"/>
+      <OPCItem ItemName="02_1_359_2" ClientHandler="2" OPCItemName="DB70,INT932,1" ItemType="READ" IsActive="false"/>
+      <!--二层入库小车站台写-->
+      <OPCItem ItemName="02_2_301_1" ClientHandler="3" OPCItemName="DB60,INT0,3"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_301_2" ClientHandler="4" OPCItemName="DB60,CHAR8,290"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_301_3" ClientHandler="5" OPCItemName="DB60,INT298,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_305_1" ClientHandler="6" OPCItemName="DB60,INT1200,3"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_305_2" ClientHandler="7" OPCItemName="DB60,CHAR1208,290"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_305_3" ClientHandler="8" OPCItemName="DB60,INT1498,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_309_1" ClientHandler="9" OPCItemName="DB60,INT2400,3"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_309_2" ClientHandler="10" OPCItemName="DB60,CHAR2408,90"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_309_3" ClientHandler="11" OPCItemName="DB60,INT2698,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_313_1" ClientHandler="12" OPCItemName="DB60,INT3600,3"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_313_2" ClientHandler="13" OPCItemName="DB60,CHAR3608,290"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_313_3" ClientHandler="14" OPCItemName="DB60,INT3898,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_317_1" ClientHandler="15" OPCItemName="DB60,INT4800,3"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_317_2" ClientHandler="16" OPCItemName="DB60,CHAR4808,290"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_317_3" ClientHandler="17" OPCItemName="DB60,INT5098,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_323_1" ClientHandler="18" OPCItemName="DB60,INT6600,3"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_323_2" ClientHandler="19" OPCItemName="DB60,CHAR6608,290"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_323_3" ClientHandler="20" OPCItemName="DB60,INT6898,1"  ItemType="WRITE"/>
+      <!--二层小车读-->
+      <OPCItem ItemName="02_1_C01_1" ClientHandler="21" OPCItemName="DB40,INT0,2"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_C01_2" ClientHandler="22" OPCItemName="DB40,DINT4,2"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_C01_3" ClientHandler="23" OPCItemName="DB40,INT12,1"  ItemType="READ" />
+      <OPCItem ItemName="02_1_C02_1" ClientHandler="24" OPCItemName="DB40,INT100,2"  ItemType="READ" IsActive="false" />
+      <OPCItem ItemName="02_1_C02_2" ClientHandler="25" OPCItemName="DB40,DINT104,2"  ItemType="READ" IsActive="false" />
+      <OPCItem ItemName="02_1_C02_3" ClientHandler="26" OPCItemName="DB40,INT112,1"  ItemType="READ" />
+      <OPCItem ItemName="02_1_C03_1" ClientHandler="27" OPCItemName="DB40,INT200,2"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_C03_2" ClientHandler="28" OPCItemName="DB40,DINT204,2"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_C03_3" ClientHandler="29" OPCItemName="DB40,INT212,1"  ItemType="READ" />
+      <OPCItem ItemName="02_1_C04_1" ClientHandler="30" OPCItemName="DB40,INT300,2"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_C04_2" ClientHandler="31" OPCItemName="DB40,DINT304,2"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_C04_3" ClientHandler="32" OPCItemName="DB40,INT312,1"  ItemType="READ" />
+      
+      <!--二层小车写-->
+      <OPCItem ItemName="02_2_C01_1" ClientHandler="33" OPCItemName="DB41,INT0,2"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C01_2" ClientHandler="34" OPCItemName="DB41,DINT4,2"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C01_3" ClientHandler="35" OPCItemName="DB41,INT12,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C02_1" ClientHandler="36" OPCItemName="DB41,INT100,2"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C02_2" ClientHandler="37" OPCItemName="DB41,DINT104,2"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C02_3" ClientHandler="38" OPCItemName="DB41,INT112,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C03_1" ClientHandler="39" OPCItemName="DB41,INT200,2"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C03_2" ClientHandler="40" OPCItemName="DB41,DINT204,2"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C03_3" ClientHandler="41" OPCItemName="DB41,INT212,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C04_1" ClientHandler="42" OPCItemName="DB41,INT300,2"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C04_2" ClientHandler="43" OPCItemName="DB41,DINT304,2"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C04_3" ClientHandler="44" OPCItemName="DB41,INT312,1"  ItemType="WRITE"/>
+      <!--二层入库站台读-->
+      <OPCItem ItemName="02_1_302" ClientHandler="45" OPCItemName="DB70,INT60,1"  ItemType="READ" />
+      <OPCItem ItemName="02_1_306" ClientHandler="46" OPCItemName="DB70,INT170,1"  ItemType="READ" />
+      <OPCItem ItemName="02_1_310" ClientHandler="47" OPCItemName="DB70,INT280,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_314" ClientHandler="48" OPCItemName="DB70,INT390,1"  ItemType="READ" />
+      <OPCItem ItemName="02_1_318" ClientHandler="49" OPCItemName="DB70,INT500,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_324" ClientHandler="50" OPCItemName="DB70,INT710,1"  ItemType="READ" />
+
+      <!--二层出库站台读-->
+      <OPCItem ItemName="02_1_303" ClientHandler="51" OPCItemName="DB50,INT600,1"  ItemType="READ" />
+      <OPCItem ItemName="02_1_307" ClientHandler="52" OPCItemName="DB50,INT1800,1"  ItemType="READ" />
+      <OPCItem ItemName="02_1_311" ClientHandler="53" OPCItemName="DB50,INT3000,1"  ItemType="READ" />
+      <OPCItem ItemName="02_1_315" ClientHandler="54" OPCItemName="DB50,INT4200,1"  ItemType="READ" />
+      <OPCItem ItemName="02_1_319" ClientHandler="55" OPCItemName="DB50,INT5400,1"  ItemType="READ" />
+      <OPCItem ItemName="02_1_321" ClientHandler="56" OPCItemName="DB50,INT6000,1"  ItemType="READ" />
+      
+      <!--二层出库站台写-->
+      <OPCItem ItemName="02_2_303_1" ClientHandler="57" OPCItemName="DB60,INT600,3"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_303_2" ClientHandler="58" OPCItemName="DB60,CHAR608,290"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_303_3" ClientHandler="59" OPCItemName="DB60,INT898,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_307_1" ClientHandler="60" OPCItemName="DB60,INT1800,3"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_307_2" ClientHandler="61" OPCItemName="DB60,CHAR1808,290"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_307_3" ClientHandler="62" OPCItemName="DB60,INT2098,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_311_1" ClientHandler="63" OPCItemName="DB60,INT3000,3"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_311_2" ClientHandler="64" OPCItemName="DB60,CHAR3008,290"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_311_3" ClientHandler="65" OPCItemName="DB60,INT3298,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_315_1" ClientHandler="66" OPCItemName="DB60,INT4200,3"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_315_2" ClientHandler="67" OPCItemName="DB60,CHAR4208,290"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_315_3" ClientHandler="68" OPCItemName="DB60,INT4498,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_319_1" ClientHandler="69" OPCItemName="DB60,INT5400,3"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_319_2" ClientHandler="70" OPCItemName="DB60,CHAR5408,290"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_319_3" ClientHandler="71" OPCItemName="DB60,INT5698,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_321_1" ClientHandler="72" OPCItemName="DB60,INT6000,3"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_321_2" ClientHandler="73" OPCItemName="DB60,CHAR6008,290"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_321_3" ClientHandler="74" OPCItemName="DB60,INT6298,1"  ItemType="WRITE"/>
+
+      <!--二层出库小车站台读-->
+      <OPCItem ItemName="02_1_304_1" ClientHandler="75" OPCItemName="DB70,INT70,2"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_304_2" ClientHandler="76" OPCItemName="DB70,CHAR74,90"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_308_1" ClientHandler="77" OPCItemName="DB70,INT180,2"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_308_2" ClientHandler="78" OPCItemName="DB70,CHAR184,90"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_312_1" ClientHandler="79" OPCItemName="DB70,INT290,2"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_312_2" ClientHandler="80" OPCItemName="DB70,CHAR294,90"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_316_1" ClientHandler="81" OPCItemName="DB70,INT400,2"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_316_2" ClientHandler="82" OPCItemName="DB70,CHAR404,90"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_320_1" ClientHandler="83" OPCItemName="DB70,INT510,2"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_320_2" ClientHandler="84" OPCItemName="DB70,CHAR514,90"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_322_1" ClientHandler="85" OPCItemName="DB70,INT704,2"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_322_2" ClientHandler="86" OPCItemName="DB70,CHAR614,90"  ItemType="READ" IsActive="false"/>
+
+      <!--二层出库小车到达站台-->
+      <OPCItem ItemName="02_2_340_1" ClientHandler="87" OPCItemName="DB60,INT11700,4"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_340_2" ClientHandler="88" OPCItemName="DB60,CHAR11708,230"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_340_3" ClientHandler="89" OPCItemName="DB60,INT11990,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_340_4" ClientHandler="90" OPCItemName="DB60,DINT11992,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_340_5" ClientHandler="91" OPCItemName="DB60,INT11996,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_340_6" ClientHandler="92" OPCItemName="DB60,INT11998,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_360_1" ClientHandler="93" OPCItemName="DB60,INT17700,4"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_360_2" ClientHandler="94" OPCItemName="DB60,CHAR17708,230"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_360_3" ClientHandler="95" OPCItemName="DB60,INT17990,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_360_4" ClientHandler="96" OPCItemName="DB60,DINT17992,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_360_5" ClientHandler="97" OPCItemName="DB60,INT17996,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_360_6" ClientHandler="98" OPCItemName="DB60,INT17998,1"  ItemType="WRITE"/>
+      
+      <!--二层出库小车到达站台条码校验-->
+      <OPCItem ItemName="02_1_340_1" ClientHandler="99" OPCItemName="DB70,INT720,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_340_2" ClientHandler="100" OPCItemName="DB70,INT722,1"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_340_3" ClientHandler="101" OPCItemName="DB70,CHAR724,200"  ItemType="READ" IsActive="false"/>
+      
+      <OPCItem ItemName="02_1_360_1" ClientHandler="102" OPCItemName="DB70,INT940,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_360_2" ClientHandler="103" OPCItemName="DB70,INT942,1"  ItemType="READ" IsActive="false" />
+      <OPCItem ItemName="02_1_360_3" ClientHandler="104" OPCItemName="DB70,CHAR944,200"  ItemType="READ" IsActive="false"/>
+
+      <!--二层出库拆盘完成-->
+      <!--<OPCItem ItemName="02_1_372_1" ClientHandler="102" OPCItemName="DB70,INT1160,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_372_2" ClientHandler="103" OPCItemName="DB70,INT1162,1"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_392_1" ClientHandler="104" OPCItemName="DB70,INT1240,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_392_2" ClientHandler="105" OPCItemName="DB70,INT1242,1"  ItemType="READ" IsActive="false"/>
+
+      <OPCItem ItemName="02_2_372_1" ClientHandler="106" OPCItemName="DB60,INT21300,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_372_2" ClientHandler="107" OPCItemName="DB60,INT21598,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_392_1" ClientHandler="108" OPCItemName="DB60,INT27300,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_392_2" ClientHandler="109" OPCItemName="DB60,INT27598,1"  ItemType="WRITE"/>-->
+
+      <!--二层出库拆盘设备故障-->
+      <OPCItem ItemName="02_1_370" ClientHandler="110" OPCItemName="DB70,INT1150,1"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_390" ClientHandler="111" OPCItemName="DB70,INT1230,1"  ItemType="READ" IsActive="false"/>
+      <!--二层出库进入缓存道-->
+      <OPCItem ItemName="02_1_378_1" ClientHandler="112" OPCItemName="DB70,INT1170,1"  ItemType="READ"/>
+      <!--<OPCItem ItemName="02_1_378_2" ClientHandler="113" OPCItemName="DB70,INT1172,1"  ItemType="READ" IsActive="false"/>-->
+      <OPCItem ItemName="02_1_381_1" ClientHandler="114" OPCItemName="DB70,INT1180,1"  ItemType="READ"/>
+      <!--<OPCItem ItemName="02_1_381_2" ClientHandler="115" OPCItemName="DB70,INT1182,1"  ItemType="READ" IsActive="false"/>-->
+      <OPCItem ItemName="02_1_383_1" ClientHandler="116" OPCItemName="DB70,INT1190,1"  ItemType="READ"/>
+      <!--<OPCItem ItemName="02_1_383_2" ClientHandler="117" OPCItemName="DB70,INT1192,1"  ItemType="READ" IsActive="false"/>-->
+      <OPCItem ItemName="02_1_385_1" ClientHandler="118" OPCItemName="DB70,INT1200,1"  ItemType="READ"/>
+      <!--<OPCItem ItemName="02_1_385_2" ClientHandler="119" OPCItemName="DB70,INT1202,1"  ItemType="READ" IsActive="false"/>-->
+      <OPCItem ItemName="02_1_387_1" ClientHandler="120" OPCItemName="DB70,INT1210,1"  ItemType="READ"/>
+      <!--<OPCItem ItemName="02_1_387_2" ClientHandler="121" OPCItemName="DB70,INT1302,1"  ItemType="READ" IsActive="false"/>-->
+      <OPCItem ItemName="02_1_389_1" ClientHandler="122" OPCItemName="DB70,INT1220,1"  ItemType="READ"/>
+      <!--<OPCItem ItemName="02_1_389_2" ClientHandler="123" OPCItemName="DB70,INT1402,1"  ItemType="READ" IsActive="false"/>-->
+
+      <!--<OPCItem ItemName="02_2_378_1" ClientHandler="124" OPCItemName="DB60,INT23106,1"  ItemType="WRITE"/>-->
+      <OPCItem ItemName="02_2_378_2" ClientHandler="125" OPCItemName="DB60,INT23398,1"  ItemType="WRITE"/>
+      <!--<OPCItem ItemName="02_2_381_1" ClientHandler="126" OPCItemName="DB60,INT24006,1"  ItemType="WRITE"/>-->
+      <OPCItem ItemName="02_2_381_2" ClientHandler="127" OPCItemName="DB60,INT24298,1"  ItemType="WRITE"/>
+      <!--<OPCItem ItemName="02_2_383_1" ClientHandler="128" OPCItemName="DB60,INT24606,1"  ItemType="WRITE"/>-->
+      <OPCItem ItemName="02_2_383_2" ClientHandler="129" OPCItemName="DB60,INT24898,1"  ItemType="WRITE"/>
+      <!--<OPCItem ItemName="02_2_385_1" ClientHandler="130" OPCItemName="DB60,INT25206,1"  ItemType="WRITE"/>-->
+      <OPCItem ItemName="02_2_385_2" ClientHandler="131" OPCItemName="DB60,INT25498,1"  ItemType="WRITE"/>
+      <!--<OPCItem ItemName="02_2_387_1" ClientHandler="132" OPCItemName="DB60,INT25806,1"  ItemType="WRITE"/>-->
+      <OPCItem ItemName="02_2_387_2" ClientHandler="133" OPCItemName="DB60,INT26098,1"  ItemType="WRITE"/>
+      <!--<OPCItem ItemName="02_2_389_1" ClientHandler="134" OPCItemName="DB60,INT26406,1"  ItemType="WRITE"/>-->
+      <OPCItem ItemName="02_2_389_2" ClientHandler="135" OPCItemName="DB60,INT26698,1"  ItemType="WRITE"/>
+
+      <!--二层出库出缓存道-->
+      <OPCItem ItemName="02_1_475" ClientHandler="136" OPCItemName="DB70,INT1270,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_440" ClientHandler="137" OPCItemName="DB70,INT1260,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_412" ClientHandler="138" OPCItemName="DB70,INT1250,1"  ItemType="READ"/>
+
+      <OPCItem ItemName="02_2_475" ClientHandler="139" OPCItemName="DB60,INT52498,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_440" ClientHandler="140" OPCItemName="DB60,INT41998,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_412" ClientHandler="141" OPCItemName="DB60,INT33598,1"  ItemType="WRITE"/>
+      
+      <!--二层出库到达开包线-->
+      <OPCItem ItemName="02_1_250_1" ClientHandler="142" OPCItemName="DB70,INT0,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_250_2" ClientHandler="143" OPCItemName="DB70,INT2,1"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_251_1" ClientHandler="144" OPCItemName="DB70,INT10,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_251_2" ClientHandler="145" OPCItemName="DB70,INT12,1"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_252_1" ClientHandler="146" OPCItemName="DB70,INT20,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_252_2" ClientHandler="147" OPCItemName="DB70,INT22,1"  ItemType="READ" IsActive="false"/>
+      
+      <OPCItem ItemName="02_1_253_1" ClientHandler="148" OPCItemName="DB70,INT30,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_253_2" ClientHandler="149" OPCItemName="DB70,INT32,1"  ItemType="READ" IsActive="false"/>      
+      <OPCItem ItemName="02_1_254_1" ClientHandler="150" OPCItemName="DB70,INT40,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_254_2" ClientHandler="151" OPCItemName="DB70,INT42,1"  ItemType="READ" IsActive="false"/>
+      <OPCItem ItemName="02_1_255_1" ClientHandler="152" OPCItemName="DB70,INT50,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_255_2" ClientHandler="153" OPCItemName="DB70,INT52,1"  ItemType="READ" IsActive="false"/>
+
+      <OPCItem ItemName="02_2_250" ClientHandler="154" OPCItemName="DB60,INT56998,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_251" ClientHandler="155" OPCItemName="DB60,INT57298,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_252" ClientHandler="156" OPCItemName="DB60,INT57598,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_253" ClientHandler="157" OPCItemName="DB60,INT57898,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_254" ClientHandler="158" OPCItemName="DB60,INT58198,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_255" ClientHandler="159" OPCItemName="DB60,INT58498,1"  ItemType="WRITE"/>
+
+      <!--一堆垛机错误号写入-->
+      <OPCItem ItemName="02_2_C01" ClientHandler="160" OPCItemName="DB43,INT0,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C02" ClientHandler="161" OPCItemName="DB43,INT2,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C03" ClientHandler="162" OPCItemName="DB43,INT4,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C04" ClientHandler="163" OPCItemName="DB43,INT6,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C05" ClientHandler="164" OPCItemName="DB43,INT8,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_C06" ClientHandler="165" OPCItemName="DB43,INT10,1"  ItemType="WRITE"/>
+      <!--一紧急补料申请-->
+      <OPCItem ItemName="02_1_F01" ClientHandler="166" OPCItemName="DB70,INT1280,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_F02" ClientHandler="167" OPCItemName="DB70,INT1290,1"  ItemType="READ"/>
+      <OPCItem ItemName="02_1_F03" ClientHandler="168" OPCItemName="DB70,INT1300,1"  ItemType="READ"/>
+      <!--一紧急补料写入-->
+      <OPCItem ItemName="02_2_F01_1" ClientHandler="169" OPCItemName="DB222,INT10,4"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F01_2" ClientHandler="170" OPCItemName="DB222,CHAR18,230"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F01_3" ClientHandler="171" OPCItemName="DB222,INT300,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F01_4" ClientHandler="172" OPCItemName="DB222,DINT302,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F01_5" ClientHandler="173" OPCItemName="DB222,INT306,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F01_6" ClientHandler="174" OPCItemName="DB222,INT308,1"  ItemType="WRITE"/>
+
+      <OPCItem ItemName="02_2_F02_1" ClientHandler="175" OPCItemName="DB222,INT330,4"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F02_2" ClientHandler="176" OPCItemName="DB222,CHAR338,230"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F02_3" ClientHandler="177" OPCItemName="DB222,INT620,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F02_4" ClientHandler="178" OPCItemName="DB222,DINT622,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F02_5" ClientHandler="179" OPCItemName="DB222,INT626,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F02_6" ClientHandler="180" OPCItemName="DB222,INT628,1"  ItemType="WRITE"/>
+
+      <OPCItem ItemName="02_2_F03_1" ClientHandler="181" OPCItemName="DB222,INT650,4"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F03_2" ClientHandler="182" OPCItemName="DB222,CHAR658,230"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F03_3" ClientHandler="183" OPCItemName="DB222,INT940,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F03_4" ClientHandler="184" OPCItemName="DB222,DINT942,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F03_5" ClientHandler="185" OPCItemName="DB222,INT946,1"  ItemType="WRITE"/>
+      <OPCItem ItemName="02_2_F03_6" ClientHandler="186" OPCItemName="DB222,INT948,1"  ItemType="WRITE"/>
+    </OPCGroup>
+  </OPCServer>
+</Config>

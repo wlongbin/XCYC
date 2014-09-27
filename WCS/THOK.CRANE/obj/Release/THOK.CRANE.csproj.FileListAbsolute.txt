@@ -1,0 +1,7 @@
+E:\HNXC\WCS\THOK.CRANE\bin\Release\THOK.CRANE.dll
+E:\HNXC\WCS\THOK.CRANE\bin\Release\THOK.CRANE.pdb
+E:\HNXC\WCS\THOK.CRANE\bin\Release\THOK.MCP.dll
+E:\HNXC\WCS\THOK.CRANE\bin\Release\THOK.MCP.pdb
+E:\HNXC\WCS\THOK.CRANE\obj\Release\THOK.CRANE.csprojResolveAssemblyReference.cache
+E:\HNXC\WCS\THOK.CRANE\obj\Release\THOK.CRANE.dll
+E:\HNXC\WCS\THOK.CRANE\obj\Release\THOK.CRANE.pdb

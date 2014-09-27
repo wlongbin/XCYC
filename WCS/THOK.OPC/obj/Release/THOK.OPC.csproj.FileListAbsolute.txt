@@ -1,0 +1,6 @@
+E:\HNXC\WCS\THOK.OPC\bin\Release\THOK.OPC.dll
+E:\HNXC\WCS\THOK.OPC\bin\Release\THOK.OPC.pdb
+E:\HNXC\WCS\THOK.OPC\bin\Release\OpcRcw.Comn.dll
+E:\HNXC\WCS\THOK.OPC\bin\Release\OpcRcw.Da.dll
+E:\HNXC\WCS\THOK.OPC\obj\Release\THOK.OPC.dll
+E:\HNXC\WCS\THOK.OPC\obj\Release\THOK.OPC.pdb
