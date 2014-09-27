@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Msg>
+  <Head>
+    <InterfaceCode>HNZY_ESB_XCMES_PFK_YLCS</InterfaceCode>
+    <InterfaceDescription>原料测算</InterfaceDescription>
+    <MsgID></MsgID>
+    <Source>XCPFK</Source>
+    <MsgMark>HNZY_ESB_XCMES_PFK_YLCS</MsgMark>
+    <WsMethod>PFK_YLCS</WsMethod>
+    <Date>2014-03-13 10:10:00</Date>
+    <Cryp></Cryp>
+    <User></User>
+    <StateCode>600</StateCode>
+    <StateDesription>正常发送</StateDesription>
+    <DataDefine>
+      <!-- 描述测算结果表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLCS_CSJG_M">
+        <FieldItem FieldName="TOBACCO_MAT_CD" Caption="烟丝或膨胀丝牌号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="True" />
+        <FieldItem FieldName="LACK_BATCH_AMOUNT" Caption="所缺批次数" FieldType="NUMBER" FieldLength="4" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="MATERIAL_CD" Caption="原料编码" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="LACK_MATERIAL_AMOUNT" Caption="所缺原料数量" FieldType="NUMBER FieldLength="10.4" Remark="必传" isPrimaryKey="False" />
+      </Table>
+    </DataDefine>
+  </Head>
+  <Data>
+    <DataTable TableName ="T_PFK_YLCS_CSJG_M">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="TOBACCO_MAT_CD"  FieldValue="" />
+          <DataItem FieldName="LACK_BATCH_AMOUNT"  FieldValue="11" />
+          <DataItem FieldName="MATERIAL_CD"  FieldValue="320101" />
+          <DataItem FieldName="LACK_MATERIAL_AMOUNT"  FieldValue="20" />
+        </Header>
+      </Row>
+    </DataTable>
+  </Data>
+</Msg>

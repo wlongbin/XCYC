@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Msg>
+  <Head>
+    <InterfaceCode>HNZY_ESB_XCMES_PFK_KCGX_KGXX</InterfaceCode>
+    <InterfaceDescription>库管资源信息</InterfaceDescription>
+    <MsgID></MsgID>
+    <Source>XCPFK</Source>
+    <MsgMark>HNZY_ESB_XCMES_PFK_KCGX_KGXX</MsgMark>
+    <WsMethod>PFK_KCGX_KGXX</WsMethod>
+    <Date>2014-03-13 10:10:00</Date>
+    <Cryp></Cryp>
+    <User></User>
+    <StateCode>600</StateCode>
+    <StateDesription>正常发送</StateDesription>
+    <DataDefine>
+      <!-- 描述表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_KCGX_KGXX_M">
+        <FieldItem FieldName="TOTAL_GOODS_AMOUNT" Caption="总货位数" FieldType="NUMBER" FieldLength="4" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="TOTAL_TRAY_AMOUNT" Caption="总托盘数" FieldType="NUMBER" FieldLength="4" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="EMPTY_GOODS_AMOUNT" Caption="空货位数" FieldType="NUMBER" FieldLength="4" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="EMPTY_TRAY_AMOUNT" Caption="空托盘数" FieldType="NUMBER" FieldLength="4" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="USABLE_TRAY_AMOUNT" Caption="可用托盘数" FieldType="NUMBER" FieldLength="4" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="USABLE_GOODS_AMOUNT" Caption="可用货位数" FieldType="NUMBER" FieldLength="4" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="USED_GOODS_AMOUNT" Caption="已用货位数" FieldType="NUMBER" FieldLength="4" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="USED_TRAY_AMOUNT" Caption="已用托盘数" FieldType="NUMBER" FieldLength="4" Remark="必传" isPrimaryKey="False" />
+      </Table>
+    </DataDefine>
+  </Head>
+  <Data>
+    <DataTable TableName ="T_PFK_KCGX_KGXX_M">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="TOTAL_GOODS_AMOUNT"  FieldValue="288" />
+          <DataItem FieldName="TOTAL_TRAY_AMOUNT"  FieldValue="321" />
+          <DataItem FieldName="EMPTY_GOODS_AMOUNT"  FieldValue="68" />
+          <DataItem FieldName="EMPTY_TRAY_AMOUNT"  FieldValue="20" />
+          <DataItem FieldName="USABLE_TRAY_AMOUNT"  FieldValue="301" />
+          <DataItem FieldName="USABLE_GOODS_AMOUNT"  FieldValue="220" />
+          <DataItem FieldName="USED_GOODS_AMOUNT"  FieldValue="301" />
+          <DataItem FieldName="USED_TRAY_AMOUNT"  FieldValue="220" />
+        </Header>
+      </Row>
+    </DataTable>
+  </Data>
+</Msg>

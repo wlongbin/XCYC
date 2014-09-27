@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Msg>
+  <Head>
+    <InterfaceCode>HNZY_ESB_XCMES_PFK_YLCS</InterfaceCode>
+    <InterfaceDescription>原料测算</InterfaceDescription>
+    <MsgID></MsgID>
+    <Source>XCPFK</Source>
+    <MsgMark>HNZY_ESB_XCMES_PFK_YLCS</MsgMark>
+    <WsMethod>PFK_YLCS</WsMethod>
+    <Date>2014-03-13 10:10:00</Date>
+    <Cryp></Cryp>
+    <User></User>
+    <StateCode>600</StateCode>
+    <StateDesription>正常发送</StateDesription>
+    <DataDefine>
+      <!-- 描述测算信息表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLCS_CSXX_M">
+        <FieldItem FieldName="BOM_VER_NO" Caption="配方版本号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="True" />
+        <FieldItem FieldName="BATCH_NO" Caption="批次号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="PRODUCTION_DATE" Caption="生产日期" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="TOBACCO_MAT_CD" Caption="烟丝或膨胀丝牌号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="PLAN_AMOUNT" Caption="计划量" FieldType="NUMBER FieldLength="10.4" Remark="必传" isPrimaryKey="False" />
+      </Table>
+    </DataDefine>
+  </Head>
+  <Data>
+    <DataTable TableName ="T_PFK_YLCS_CSXX_M">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="BOM_VER_NO"  FieldValue="V5111" />
+          <DataItem FieldName="BATCH_NO"  FieldValue="b20101" />
+          <DataItem FieldName="PRODUCTION_DATE"  FieldValue="2014-3-19 13:05:55" />
+          <DataItem FieldName="TOBACCO_MAT_CD"  FieldValue="" />
+          <DataItem FieldName="PLAN_AMOUNT"  FieldValue="20" />
+        </Header>
+      </Row>
+    </DataTable>
+  </Data>
+</Msg>

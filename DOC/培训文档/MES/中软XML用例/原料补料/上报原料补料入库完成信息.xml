@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Msg>
+  <Head>
+    <InterfaceCode>HNZY_ESB_XCMES_PFK_YLBL_BLRK</InterfaceCode>
+    <InterfaceDescription>上报原料补料入库完成信息</InterfaceDescription>
+    <MsgID></MsgID>
+    <Source>XCPFK</Source>
+    <MsgMark>HNZY_ESB_XCMES_PFK_YLBL_BLRK</MsgMark>
+    <WsMethod>PFK_YLBL_BLRK</WsMethod>
+    <Date>2014-03-13 10:10:00</Date>
+    <Cryp></Cryp>
+    <User></User>
+    <StateCode>600</StateCode>
+    <StateDesription>正常发送</StateDesription>
+    <DataDefine>
+      <!-- 描述入库完成信息表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLBL_BLRK_RKXX_M">
+        <FieldItem FieldName="FEED_IN_FINISH_DATE" Caption="补料入库完成日期" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="MATERIAL_FEED_OUT_BILL_NO" Caption="原料补料出库单据号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="FEED_BILL_OUT_DATE" Caption="补料单据出库日期" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="FEED_BILL_MAKERS" Caption="补料单据制定人" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="FEED_REPLACE_APPLY_BILL_NO" Caption="补料替换申请单据号" FieldType="CHAR" FieldLength="500" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="FEED_REPLACE_APPLY_APPLICANT" Caption="补料替换申请人" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="FEED_REPLACE_APPLY_DATE" Caption="补料替换申请时间" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="FEED_CAUSE" Caption="补料原因" FieldType="CHAR" FieldLength="500" Remark="必传(虫咬、霉变、异型包、其它)" isPrimaryKey="False" />
+        <FieldItem FieldName="REMARK" Caption="备注" FieldType="CHAR" FieldLength="500" Remark="非必传" isPrimaryKey="False" />
+      </Table>
+      <!-- 描述烟叶替换明细记录表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLBL_BLRK_THJL_D">
+        <FieldItem FieldName="FEED_REPLACE_APPLY_BILL_NO" Caption="补料替换申请单据号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="True" />
+        <FieldItem FieldName="TROUBLE_MATERIAL_SMOKEBOX_BAR_CODE" Caption="问题原料烟箱条码" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="TROUBLE_MATERIAL_CD" Caption="问题原料编码" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="TROUBLE_MATERIAL_AMOUNT_KG" Caption="问题原料公斤数" FieldType="NUMBER" FieldLength="10.4" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="MATERIAL_FEED_OUT_BILL_NO" Caption="原料补料出库单据号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="AFTER_FEED_NEW_SMOKEBOX_BAR_CODE" Caption="补料后的新烟箱条码" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="AFTER_FEED_NEW_MATERIAL_CD" Caption="补料后的新原料编码" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="FEED_AMOUNT_KG" Caption="补料公斤数" FieldType="NUMBER" FieldLength="10.4" Remark="必传" isPrimaryKey="False" />
+      </Table>
+    </DataDefine>
+  </Head>
+  <Data>
+    <DataTable TableName ="T_PFK_YLBL_BLRK_RKXX_M">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="FEED_IN_FINISH_DATE"  FieldValue="2014-3-19 11:40:24" />
+          <DataItem FieldName="MATERIAL_FEED_OUT_BILL_NO"  FieldValue="" />
+          <DataItem FieldName="FEED_BILL_OUT_DATE"  FieldValue="2014-3-19 12:56:12" />
+          <DataItem FieldName="FEED_BILL_MAKERS"  FieldValue="张三" />
+          <DataItem FieldName="FEED_REPLACE_APPLY_BILL_NO"  FieldValue="张三" />
+          <DataItem FieldName="FEED_REPLACE_APPLY_APPLICANT"  FieldValue="李四" />
+          <DataItem FieldName="FEED_REPLACE_APPLY_DATE"  FieldValue="2014-3-19 12:57:07" />
+          <DataItem FieldName="FEED_CAUSE"  FieldValue="" />
+          <DataItem FieldName="REMARK"  FieldValue="" />
+        </Header>
+      </Row>
+    </DataTable>
+    <DataTable TableName ="T_PFK_YLBL_BLRK_THJL_D">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="FEED_REPLACE_APPLY_BILL_NO"  FieldValue="2310101" />
+          <DataItem FieldName="TROUBLE_MATERIAL_SMOKEBOX_BAR_CODE"  FieldValue="" />
+          <DataItem FieldName="TROUBLE_MATERIAL_CD"  FieldValue="" />
+          <DataItem FieldName="TROUBLE_MATERIAL_AMOUNT_KG"  FieldValue="233" />
+          <DataItem FieldName="MATERIAL_FEED_OUT_BILL_NO"  FieldValue="" />
+          <DataItem FieldName="AFTER_FEED_NEW_SMOKEBOX_BAR_CODE"  FieldValue="" />
+          <DataItem FieldName="AFTER_FEED_NEW_MATERIAL_CD"  FieldValue="" />
+          <DataItem FieldName="FEED_AMOUNT_KG"  FieldValue="128" />
+        </Header>
+      </Row>
+    </DataTable>
+  </Data>
+</Msg>

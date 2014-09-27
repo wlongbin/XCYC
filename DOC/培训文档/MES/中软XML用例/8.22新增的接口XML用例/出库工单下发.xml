@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Msg>
+  <Head>
+    <InterfaceCode>HNZY_ESB_XCMES_PFK_YLTC_GDXF</InterfaceCode>
+    <InterfaceDescription>出库工单下发</InterfaceDescription>
+    <MsgID></MsgID>
+    <Source>XCPFK</Source>
+    <MsgMark>HNZY_ESB_XCMES_PFK_YLTC_GDXF</MsgMark>
+    <WsMethod>PFK_YLTC_GDXF</WsMethod>
+    <Date>2014-03-13 10:10:00</Date>
+    <Cryp></Cryp>
+    <User></User>
+    <StateCode>600</StateCode>
+    <StateDesription>正常发送</StateDesription>
+    <DataDefine>
+      <!-- 描述工单下发表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLTC_GDXF_M">
+        <FieldItem FieldName="WO_NO" Caption="工单号" FieldType="CHAR" FieldLength="30" Remark="必传" isPrimaryKey="True" />
+        <FieldItem FieldName="MAT_CD" Caption="牌号编码" FieldType="CHAR" FieldLength="25" Remark="必传(烟丝或膨胀丝)" isPrimaryKey="False" />
+        <FieldItem FieldName="MAT_NM" Caption="牌号名称" FieldType="CHAR" FieldLength="25" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="BATCH_NO" Caption="制丝生产批次号" FieldType="CHAR" FieldLength="28" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="BOM_VER_NO" Caption="配方版本号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="TECH_CD" Caption="工艺段编码" FieldType="CHAR" FieldLength="20" Remark="必传(叶片段，用于指定投往那个叶片段)" isPrimaryKey="False" />
+        <FieldItem FieldName="TECH_NM" Caption="工艺段名称" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="MODULE_NO" Caption="模块号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+      </Table>
+      <!-- 描述工单下发信息表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLTC_GDXF_D">
+        <FieldItem FieldName="WO_NO" Caption="工单号" FieldType="CHAR" FieldLength="30" Remark="必传" isPrimaryKey="True" />
+        <FieldItem FieldName="LEAF_CD" Caption="烟叶代码" FieldType="CHAR" FieldLength="29" Remark="必传(复合主键)" isPrimaryKey="True" />
+        <FieldItem FieldName="AMOUNT_KG" Caption="公斤数" FieldType="NUMBER" FieldLength="12.4" Remark="必传(单位：kg)" isPrimaryKey="False" />
+        <FieldItem FieldName="OUT_ORDER" Caption="出库序号" FieldType="INTEGER" FieldLength="" Remark="必传" isPrimaryKey="False" />
+      </Table>
+    </DataDefine>
+  </Head>
+  <Data>
+    <DataTable TableName ="T_PFK_YLTC_GDXF_M">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="WO_NO"  FieldValue="wo20101" />
+          <DataItem FieldName="MAT_CD"  FieldValue="32016" />
+          <DataItem FieldName="MAT_NM"  FieldValue="311116" />
+          <DataItem FieldName="BATCH_NO"  FieldValue="" />
+          <DataItem FieldName="BOM_VER_NO"  FieldValue="11325" />
+          <DataItem FieldName="TECH_CD"  FieldValue="" />
+          <DataItem FieldName="TECH_NM"  FieldValue="" />
+          <DataItem FieldName="MODULE_NO"  FieldValue="12" />
+        </Header>
+      </Row>
+    </DataTable>
+    <DataTable TableName ="T_PFK_YLTC_GDXF_D">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="WO_NO"  FieldValue="wo20101" />
+          <DataItem FieldName="LEAF_CD"  FieldValue="32016" />
+          <DataItem FieldName="AMOUNT_KG"  FieldValue="256" />
+          <DataItem FieldName="OUT_ORDER"  FieldValue="11" />
+        </Header>
+      </Row>
+    </DataTable>
+  </Data>
+</Msg>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Msg>
+  <Head>
+    <InterfaceCode>HNZY_ESB_XCMES_PFK_KCGX_KCCX</InterfaceCode>
+    <InterfaceDescription>片烟库管库存查询</InterfaceDescription>
+    <MsgID></MsgID>
+    <Source>XCPFK</Source>
+    <MsgMark>HNZY_ESB_XCMES_PFK_KCGX_KCCX</MsgMark>
+    <WsMethod>PFK_KCGX_KCCX</WsMethod>
+    <Date>2014-03-13 10:10:00</Date>
+    <Cryp></Cryp>
+    <User></User>
+    <StateCode>600</StateCode>
+    <StateDesription>正常发送</StateDesription>
+    <DataDefine>
+      <!-- 描述表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_KCGX_KCCX_M">
+        <FieldItem FieldName="TOBACCO_BOX_BAR_CODE" Caption="烟叶箱条码" FieldType="CHAR" FieldLength="100" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="RAW_MAT_CD" Caption="原料编码" FieldType="CHAR" FieldLength="50" Remark="必传(烟叶编码)" isPrimaryKey="False" />
+      </Table>
+    </DataDefine>
+  </Head>
+  <Data>
+    <DataTable TableName ="T_PFK_KCGX_KCCX_M">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="TOBACCO_BOX_BAR_CODE"  FieldValue="0101" />
+          <DataItem FieldName="RAW_MAT_CD"  FieldValue="61293" />
+        </Header>
+      </Row>
+    </DataTable>
+  </Data>
+</Msg>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Msg>
+  <Head>
+    <InterfaceCode>HNZY_ESB_XCMES_PFK_YLBLTL_XFYLCKD</InterfaceCode>
+    <InterfaceDescription>下发原料综合库出库单</InterfaceDescription>
+    <MsgID></MsgID>
+    <Source>XCPFK</Source>
+    <MsgMark>HNZY_ESB_XCMES_PFK_YLBLTL_XFYLCKD</MsgMark>
+    <WsMethod>PFK_YLBLTL_XFYLCKD</WsMethod>
+    <Date>2014-03-13 10:10:00</Date>
+    <Cryp></Cryp>
+    <User></User>
+    <StateCode>600</StateCode>
+    <StateDesription>正常发送</StateDesription>
+    <DataDefine>
+      <!-- 描述出库信息表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLBLTL_XFYLCKD_CKXX_M">
+        <FieldItem FieldName="BOM_VER_NO" Caption="BOM版本号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="True" />
+        <FieldItem FieldName="RAW_MOVE_STOCK_ORDER_NO" Caption="原料移库单备料单据号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="MOVE_DATE" Caption="移库日期" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="MAT_CD" Caption="牌号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="BATCH_NO" Caption="备料批次号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+      </Table>
+      <!-- 描述备料明细表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLBLTL_XFYLCKD_BLMX_D">
+        <FieldItem FieldName="BOM_VER_NO" Caption="BOM版本号" FieldType="CHAR" FieldLength="30" Remark="必传" isPrimaryKey="True" />
+        <FieldItem FieldName="BATCH_NO" Caption="备料批次号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="MODULE_NO" Caption="模块号" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="BOX_BAR_CODE" Caption="烟箱条码" FieldType="CHAR" FieldLength="120" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="LEAF_CD" Caption="原料编码" FieldType="CHAR" FieldLength="50" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="PURCHASE_BATCH" Caption="采购批次" FieldType="CHAR" FieldLength="20" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="IN_FACTORY_CHECK_BATCH_NO" Caption="入厂检验批次" FieldType="CHAR" FieldLength="28" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="AMOUNT_KG" Caption="公斤数" FieldType="NUMBER" FieldLength="12.4" Remark="必传(计量单位：kg)" isPrimaryKey="False" />
+      </Table>
+    </DataDefine>
+  </Head>
+  <Data>
+    <DataTable TableName ="T_PFK_YLBLTL_XFYLCKD_CKXX_M">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="BOM_VER_NO"  FieldValue="v1102" />
+          <DataItem FieldName="RAW_MOVE_STOCK_ORDER_NO"  FieldValue="" />
+          <DataItem FieldName="MOVE_DATE"  FieldValue="2014-3-19 10:24:04" />
+          <DataItem FieldName="MAT_CD"  FieldValue="2136" />
+          <DataItem FieldName="BATCH_NO"  FieldValue="" />
+        </Header>
+      </Row>
+    </DataTable>
+    <DataTable TableName ="T_PFK_YLBLTL_XFYLCKD_BLMX_D">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="BOM_VER_NO"  FieldValue="v1102" />
+          <DataItem FieldName="BATCH_NO"  FieldValue="" />
+          <DataItem FieldName="MODULE_NO"  FieldValue="" />
+          <DataItem FieldName="BOX_BAR_CODE"  FieldValue="" />
+          <DataItem FieldName="LEAF_CD"  FieldValue="" />
+          <DataItem FieldName="PURCHASE_BATCH"  FieldValue="" />
+          <DataItem FieldName="IN_FACTORY_CHECK_BATCH_NO"  FieldValue="" />
+          <DataItem FieldName="AMOUNT_KG"  FieldValue="21" />
+        </Header>
+      </Row>
+    </DataTable>
+  </Data>
+</Msg>

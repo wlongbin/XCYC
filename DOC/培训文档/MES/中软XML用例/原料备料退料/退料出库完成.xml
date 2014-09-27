@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Msg>
+  <Head>
+    <InterfaceCode>HNZY_ESB_XCMES_PFK_YLBLTL_TLCKWC</InterfaceCode>
+    <InterfaceDescription>退料出库完成</InterfaceDescription>
+    <MsgID></MsgID>
+    <Source>XCPFK</Source>
+    <MsgMark>HNZY_ESB_XCMES_PFK_YLBLTL_TLCKWC</MsgMark>
+    <WsMethod>PFK_YLBLTL_TLCKWC</WsMethod>
+    <Date>2014-03-13 10:10:00</Date>
+    <Cryp></Cryp>
+    <User></User>
+    <StateCode>600</StateCode>
+    <StateDesription>正常发送</StateDesription>
+    <DataDefine>
+      <!-- 描述出库完成信息表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLBLTL_TLCKWC_CKXX_M">
+        <FieldItem FieldName="BACK_STOCK_ORDER_NO" Caption="退库单据号" FieldType="CHAR" FieldLength="30" Remark="必传(复合主键)" isPrimaryKey="True" />
+        <FieldItem FieldName="PLAN_BATCH_NO" Caption="备料计划批次号" FieldType="CHAR" FieldLength="20" Remark="必传(复合主键)" isPrimaryKey="True" />
+        <FieldItem FieldName="OUT_STOCK_TYPEE" Caption="出库类型" FieldType="CHAR" FieldLength="10" Remark="必传(1:批次出库,2:等级出库)" isPrimaryKey="False" />
+        <FieldItem FieldName="OUT_STOCK_DATETIME" Caption="出库时间" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+      </Table>
+      <!-- 描述条码信息表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLBLTL_TLCKWC_TMXX_D">
+        <FieldItem FieldName="PLAN_BATCH_NO" Caption="备料计划批次号" FieldType="CHAR" FieldLength="20" Remark="必传(复合主键)" isPrimaryKey="True" />
+        <FieldItem FieldName="LEAF_CD" Caption="烟叶代码" FieldType="CHAR" FieldLength="30" Remark="必传(复合主键)" isPrimaryKey="True" />
+        <FieldItem FieldName="BOX_BAR_CODE" Caption="烟箱条码" FieldType="CHAR" FieldLength="120" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="AMOUNT_KG" Caption="公斤数" FieldType="NUMBER" FieldLength="12.4" Remark="必传(单位：kg)" isPrimaryKey="False" />
+        <FieldItem FieldName="LEAF_STANDARD" Caption="烟包规格" FieldType="CHAR" FieldLength="20" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="PURCHASE_BATCH" Caption="采购批次" FieldType="CHAR" FieldLength="20" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="IN_FACTORY_CHECK_BATCH_NO" Caption="入厂检验批次" FieldType="CHAR" FieldLength="28" Remark="必传" isPrimaryKey="False" />
+      </Table>
+    </DataDefine>
+  </Head>
+  <Data>
+    <DataTable TableName ="T_PFK_YLBLTL_TLCKWC_CKXX_M">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="BACK_STOCK_ORDER_NO"  FieldValue="" />
+          <DataItem FieldName="PLAN_BATCH_NO"  FieldValue="" />
+          <DataItem FieldName="OUT_STOCK_TYPE"  FieldValue="1" />
+          <DataItem FieldName="OUT_STOCK_DATETIME"  FieldValue="2014-3-19 11:04:32" />
+        </Header>
+      </Row>
+    </DataTable>
+    <DataTable TableName ="T_PFK_YLBLTL_TLCKWC_TMXX_D">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="PLAN_BATCH_NO"  FieldValue="" />
+          <DataItem FieldName="LEAF_CD"  FieldValue="" />
+          <DataItem FieldName="BOX_BAR_CODE"  FieldValue="" />
+          <DataItem FieldName="AMOUNT_KG"  FieldValue="21" />
+          <DataItem FieldName="LEAF_STANDARD"  FieldValue="" />
+          <DataItem FieldName="PURCHASE_BATCH"  FieldValue="" />
+          <DataItem FieldName="IN_FACTORY_CHECK_BATCH_NO"  FieldValue="" />
+        </Header>
+      </Row>
+    </DataTable>
+  </Data>
+</Msg>

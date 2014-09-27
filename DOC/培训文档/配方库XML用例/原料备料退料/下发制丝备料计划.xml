@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Msg>
+  <Head>
+    <InterfaceCode>HNZY_ESB_XCMES_PFK_YLBLTL_XFZSBLJH</InterfaceCode>
+    <InterfaceDescription>下发制丝备料计划</InterfaceDescription>
+    <MsgID></MsgID>
+    <Source>XCPFK</Source>
+    <MsgMark>HNZY_ESB_XCMES_PFK_YLBLTL_XFZSBLJH</MsgMark>
+    <WsMethod>PFK_YLBLTL_XFZSBLJH</WsMethod>
+    <Date>2014-03-13 10:10:00</Date>
+    <Cryp></Cryp>
+    <User></User>
+    <StateCode>600</StateCode>
+    <StateDesription>正常发送</StateDesription>
+    <DataDefine>
+      <!-- 描述表结构：字段名、字段描述、字段类型、字段长度、备注、是否主键 -->
+      <Table TableName="T_PFK_YLBLTL_XFZSBLJH_M">
+        <FieldItem FieldName="PLAN_DATE" Caption="计划日期" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="LATE_PREPARE_DATETIME" Caption="备料最晚到货日期" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="MAT_CD" Caption="牌号编码" FieldType="CHAR" FieldLength="40" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="BATCHES" Caption="批次数" FieldType="NUMBER" FieldLength="4" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="SENDER" Caption="下发人" FieldType="CHAR" FieldLength="40" Remark="必传" isPrimaryKey="False" />
+        <FieldItem FieldName="SEND_DATETIME" Caption="下发时间" FieldType="DATETIME" FieldLength="19" Remark="必传" isPrimaryKey="False" />
+      </Table>
+    </DataDefine>
+  </Head>
+  <Data>
+    <DataTable TableName ="T_PFK_YLBLTL_XFZSBLJH_M">
+      <Row Index="0">
+        <Header Action="Unchange">
+          <DataItem FieldName="PLAN_DATE"  FieldValue="2014-3-19 10:11:10" />
+          <DataItem FieldName="LATE_PREPARE_DATETIME"  FieldValue="2014-4-19 10:12:11" />
+          <DataItem FieldName="MAT_CD"  FieldValue="0287" />
+          <DataItem FieldName="BATCHES"  FieldValue="21" />
+          <DataItem FieldName="SENDER"  FieldValue="张三" />
+          <DataItem FieldName="SEND_DATETIME"  FieldValue="2014-4-19 10:12:11" />
+        </Header>
+      </Row>
+    </DataTable>
+  </Data>
+</Msg>
