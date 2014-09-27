@@ -72,7 +72,9 @@
     <Compile Include="EntityRepository\SysErrorCodeRepository.cs" />
     <Compile Include="EntityRepository\SysTableStateRepository.cs" />
     <Compile Include="EntityRepository\ViewbillmastRepository.cs" />
+    <Compile Include="EntityRepository\ViewCmdProductRepository.cs" />
     <Compile Include="EntityRepository\VIEWSTORAGERepository.cs" />
+    <Compile Include="EntityRepository\ViewWcsTaskRepository.cs" />
     <Compile Include="EntityRepository\WCSTaskDetailHRepository.cs" />
     <Compile Include="EntityRepository\WCSTaskDetailRepository.cs" />
     <Compile Include="EntityRepository\WCSTaskHRepository.cs" />
@@ -121,7 +123,9 @@
     <Compile Include="Interfaces\ISysErrorCodeRepository.cs" />
     <Compile Include="Interfaces\ISysTableStateRepository.cs" />
     <Compile Include="Interfaces\IViewbillmastRepository.cs" />
+    <Compile Include="Interfaces\IViewCmdProductRepository.cs" />
     <Compile Include="Interfaces\IVIEWSTORAGERepository.cs" />
+    <Compile Include="Interfaces\IViewWcsTaskRepository.cs" />
     <Compile Include="Interfaces\IWCSTaskDetailHRepository.cs" />
     <Compile Include="Interfaces\IWCSTaskDetailRepository.cs" />
     <Compile Include="Interfaces\IWCSTaskHRepository.cs" />

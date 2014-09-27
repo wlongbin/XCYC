@@ -97,6 +97,8 @@ namespace THOK.Wms.Repository
             modelBuilder.Configurations.Add(new VIEW_STORAGEMap());
             modelBuilder.Configurations.Add(new VIEW_BILL_MASTMap());
             modelBuilder.Configurations.Add(new MES_PREPARER_PLANMap());
+            modelBuilder.Configurations.Add(new VIEW_WCS_TASKMap());
+            modelBuilder.Configurations.Add(new VIEW_CMD_PRODUCTMap());
 
             
             #endregion

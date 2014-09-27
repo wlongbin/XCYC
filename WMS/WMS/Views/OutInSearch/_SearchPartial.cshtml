@@ -1,0 +1,48 @@
+﻿<script type="text/javascript">
+    function searchClick() {
+        $('#dlg-search input').val("");
+        $('#dlg-search').dialog('open').dialog('setTitle', '查询');
+        $('#IN_DATE').datebox({ editable: false });
+    }
+
+  //查询
+    function Sselect() {
+        var queryParams = $('#details').datagrid('options').queryParams;
+        queryParams.BILL_NO = $('#SBILL_NO').val();
+        queryParams.IN_DATE = $('#IN_DATE').datebox('getValue');
+
+        $('#details').datagrid('options').queryParams = queryParams;
+        $('#details').datagrid({
+            pageNumber: 1
+        });
+        $('#details').datagrid('options').url = "/OutInSearch/Details/";
+        $('#SubDetails').datagrid('loadData', { total: 0, rows: [] });
+        $('#details').datagrid('reload');
+        $('#SubDetails').datagrid('reload');
+        $('#dlg-search').dialog('close');
+        $('#dlg-search input').val("");
+     }
+</script>
+
+
+<div id="dlg-search" class="easyui-dialog" modal="true" style="width:460px;height:160px;padding:2px 2px"
+		closed="true" buttons="#dlg-buttons-search">
+        <div class="easyui-layout" fit="true">
+			<div region="center" border="false" style="padding:10px 10px;background:#fff;border:1px solid #ccc; " >     
+           <table width="400px">
+                      <tr>
+                        <td style="width:50px" align="right">入库编号</td>
+                        <td style="width:138px"><input id="SBILL_NO" style="width:125px"  /></td>
+                        <td style="width:50px" align="right">入库时间</td>
+                        <td style="width:138px"><input id="IN_DATE" style="width:125px" ></td>
+                      </tr>
+                    </table>
+            </div>
+        </div>
+</div>
+
+<div id="dlg-buttons-search">
+      <input type="button"  onclick="Sselect()"  onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btok" value="查询"/>
+      <input type="button"  onclick="javascript:$('#dlg-search').dialog('close')" onmouseover="btmouseup(this)" onmouseout="btmouseout(this)"  class="btcance" value="取消"/>
+</div>
+

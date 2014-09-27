@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report ScriptLanguage="CSharp" ReportInfo.Created="10/17/2013 16:25:46" ReportInfo.Modified="07/10/2014 14:21:54" ReportInfo.CreatorVersion="1.9.9.0" PrintSettings.Copies="2">
+<Report ScriptLanguage="CSharp" ReportInfo.Created="10/17/2013 16:25:46" ReportInfo.Modified="09/25/2014 13:03:32" ReportInfo.CreatorVersion="1.9.9.0" PrintSettings.Copies="2">
   <Dictionary>
     <ViewDataSource Name="printreport" ReferenceName="printreport" DataType="System.Int32" Enabled="true">
       <Column Name="PRODUCT_BARCODE" DataType="System.String"/>
@@ -28,18 +28,19 @@
       <Column Name="GRADENAME3" DataType="System.String"/>
       <Column Name="YEARS3" DataType="System.String"/>
       <Column Name="REALWEIGHT3" DataType="System.String"/>
+      <Column Name="BARCODEID" DataType="System.String"/>
     </ViewDataSource>
   </Dictionary>
-  <ReportPage Name="Page1" PaperWidth="105" PaperHeight="75" LeftMargin="0" TopMargin="0" RightMargin="0" BottomMargin="0" Fill.Color="White">
-    <DataBand Name="Data1" Width="396.9" Height="270.61" DataSource="printreport">
+  <ReportPage Name="Page1" PaperWidth="105" PaperHeight="80" LeftMargin="0" TopMargin="0" RightMargin="0" BottomMargin="0" Fill.Color="White">
+    <DataBand Name="Data1" Width="396.9" Height="283.5" DataSource="printreport">
       <BarcodeObject Name="Barcode1" Left="-6.13" Top="26.42" Width="244.19" Height="244.19" AutoSize="false" DataColumn="printreport.PRODUCT_BARCODE" Text="" ShowText="false" Barcode="QR Code" Barcode.ErrorCorrection="L" Barcode.Encoding="UTF8" Barcode.QuietZone="true"/>
-      <TableObject Name="Table1" Left="9.87" Top="13.98" Width="353.61" Height="18.9">
-        <TableColumn Name="Column1"/>
-        <TableColumn Name="Column2" Width="105.19"/>
-        <TableColumn Name="Column3" Width="41.22"/>
-        <TableColumn Name="Column4" Width="78.4"/>
-        <TableColumn Name="Column5" Width="39.33"/>
-        <TableColumn Name="Column6" Width="23.32"/>
+      <TableObject Name="Table1" Left="0.42" Top="13.98" Width="391.5" Height="18.9">
+        <TableColumn Name="Column1" Width="61.44"/>
+        <TableColumn Name="Column2" Width="138.28"/>
+        <TableColumn Name="Column3" Width="36.51"/>
+        <TableColumn Name="Column4" Width="83.14"/>
+        <TableColumn Name="Column5" Width="44.07"/>
+        <TableColumn Name="Column6" Width="28.06"/>
         <TableRow Name="Row1">
           <TableCell Name="Cell1" Text="入库批次:" Font="微软雅黑, 9pt, style=Bold"/>
           <TableCell Name="Cell2" Text="[printreport.BILL_NO]" Font="微软雅黑, 9pt, style=Bold"/>
@@ -49,9 +50,9 @@
           <TableCell Name="Cell6" Text="[printreport.MODULES]" Font="微软雅黑, 9pt, style=Bold"/>
         </TableRow>
       </TableObject>
-      <TableObject Name="Table2" Left="226.09" Top="44.24" Width="167.69" Height="217.79">
+      <TableObject Name="Table2" Left="226.09" Top="44.24" Width="243.29" Height="217.79">
         <TableColumn Name="Column7" Width="39.69"/>
-        <TableColumn Name="Column8" Width="45.36"/>
+        <TableColumn Name="Column8" Width="120.96"/>
         <TableColumn Name="Column9" Width="45.19"/>
         <TableColumn Name="Column10" Width="37.45"/>
         <TableRow Name="Row2" Height="23.82">
@@ -103,6 +104,8 @@
           <TableCell Name="Cell42" Text="[printreport.REALWEIGHT3]" VertAlign="Center" Font="微软雅黑, 9pt, style=Bold"/>
         </TableRow>
       </TableObject>
+      <TextObject Name="Text1" Left="236.25" Top="264.6" Width="28.35" Height="18.9" Text="ID:" Font="微软雅黑, 9pt, style=Bold"/>
+      <TextObject Name="Text2" Left="264.6" Top="264.6" Width="132.3" Height="18.9" Text="[printreport.BARCODEID]" Font="微软雅黑, 9pt, style=Bold"/>
     </DataBand>
   </ReportPage>
 </Report>

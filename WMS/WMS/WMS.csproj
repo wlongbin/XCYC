@@ -196,6 +196,7 @@
     <Compile Include="Controllers\Wms\WMS\InvertedTreasuryController.cs" />
     <Compile Include="Controllers\Wms\WMS\MoveStockController.cs" />
     <Compile Include="Controllers\Wms\WMS\MoveStockWorkController.cs" />
+    <Compile Include="Controllers\Wms\WMS\OutInSearchController.cs" />
     <Compile Include="Controllers\Wms\WMS\PalletStockInController.cs" />
     <Compile Include="Controllers\Wms\WMS\PalletStockOutController.cs" />
     <Compile Include="Controllers\Wms\WMS\ProductDetailsController.cs" />
@@ -206,7 +207,7 @@
     <Compile Include="Controllers\Wms\WMS\SamplingSearchController.cs" />
     <Compile Include="Controllers\Wms\WMS\SamplingWorkController.cs" />
     <Compile Include="Controllers\Wms\WMS\Schedule2Controller.cs" />
-    <Compile Include="Controllers\Wms\WMS\ScheduleController.cs" />
+    <Compile Include="Views\DirectProduct\ScheduleController.cs" />
     <Compile Include="Controllers\Wms\WMS\ScheduleSearchController.cs" />
     <Compile Include="Controllers\Wms\WMS\StockDifferController.cs" />
     <Compile Include="Controllers\Wms\WMS\StockDifferSearchController.cs" />
@@ -1089,6 +1090,8 @@
     <Content Include="Views\Feeding\_UploadPartial.cshtml" />
     <Content Include="Views\StorageSearch\_SearchPartial.cshtml" />
     <Content Include="Views\StorageSearch\Index.cshtml" />
+    <Content Include="Views\OutInSearch\Index.cshtml" />
+    <Content Include="Views\OutInSearch\_SearchPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Scripts\ckfinder\bin\Debug\" />

@@ -33,5 +33,6 @@ namespace THOK.Wms.DbModel
         public string FORDERBILLNO { get; set; }
         public Nullable<decimal> ORDER_NO { get; set; }
         public string INITIAL_BARCODE { get; set; }
+
     }
 }

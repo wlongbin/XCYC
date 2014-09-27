@@ -71,6 +71,7 @@
     <Compile Include="Interfaces\ICMDUnitCategoryService.cs" />
     <Compile Include="Interfaces\ICMDUnitService.cs" />
     <Compile Include="Interfaces\IMESpreparePlanService.cs" />
+    <Compile Include="Interfaces\IOutInSearchService.cs" />
     <Compile Include="Interfaces\IService.cs" />
     <Compile Include="Interfaces\ISysBillTargetService.cs" />
     <Compile Include="Interfaces\ISysTableStateService.cs" />
@@ -129,6 +130,7 @@
     <Compile Include="Service\CMDProductService.cs" />
     <Compile Include="Interfaces\IWMSReplacemasterService.cs" />
     <Compile Include="Service\MESpreparePlanService.cs" />
+    <Compile Include="Service\OutInSearchService.cs" />
     <Compile Include="Service\ServiceBase.cs" />
     <Compile Include="Service\SysBillTargetService.cs" />
     <Compile Include="Service\SysTableStateService.cs" />
