@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\inetpub\wwwroot\WMSSERVICE" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="C:\inetpub\wwwroot\WMSSERVICE" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/WMSWEBSERVICE.dll" publishTime="09/19/2014 15:08:33" />
+    <file relUrl="bin/WMSWEBSERVICE.pdb" publishTime="09/19/2014 15:08:33" />
+    <file relUrl="XMLTableMap/Business.xml" publishTime="09/16/2014 15:56:03" />
+    <file relUrl="AHZY_ESB_WMS_TRANSSV.asmx" publishTime="07/19/2014 19:42:08" />
+    <file relUrl="Web.config" publishTime="09/16/2014 15:56:17" />
+    <file relUrl="AHZY_ESB_WMS_GETSSV.asmx" publishTime="08/10/2014 15:11:42" />
+    <file relUrl="XMLTableMap/Basic.xml" publishTime="08/15/2014 11:15:42" />
+    <file relUrl="Global.asax" publishTime="07/19/2014 19:40:10" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tables>
+  <!--烟叶产地-->
+  <CMD_PRODUCT_ORIGINAL>
+    <id mapto="DISTRICT_ID">烟叶产地ID</id>
+    <code mapto="ORIGINAL_CODE">烟叶产地代码(wms为地区编号)</code>
+    <name mapto="ORIGINAL_NAME">烟叶产地名称</name>
+    <parent_id mapto="MES_PARENT_ID">上级产地</parent_id>
+    <pricelevel mapto="MES_PRICELEVEL">价区</pricelevel>
+    <status mapto="MES_STATUS">状态</status>
+    <creator mapto="MES_CREATOR">创建人</creator>
+    <createtime mapto="MES_CREATETIME">创建日期</createtime>
+    <modifier mapto="MES_MODIFIER">修改者</modifier>
+    <modifytime mapto="MES_MODIFYTIME">修改日期</modifytime>
+  </CMD_PRODUCT_ORIGINAL>
+  <!--烟叶形态-->
+  <CMD_PRODUCT_STYLE>
+    <id mapto="MES_ID">形态ID</id>
+    <code  mapto="STYLE_NO">形态代码</code>
+    <name mapto="STYLE_NAME">形态名称</name>
+    <status mapto="MES_STATUS">状态2：发布3：停用</status>
+    <creator mapto="MES_CREATOR">创建人</creator>
+    <createtime mapto="MES_CREATETIME">创建日期</createtime>
+    <modifier mapto="MES_MODIFIER">修改者</modifier>
+    <modifytime mapto="MES_MODIFYTIME">修改日期</modifytime>
+  </CMD_PRODUCT_STYLE>
+  <!--烟叶类型-->
+  <CMD_PRODUCT_CATEGORY>
+    <id mapto="MES_ID">烟叶类型ID</id>
+    <code mapto="CATEGORY_CODE">烟叶类型代码</code>
+    <name mapto="CATEGORY_NAME">烟叶类型名称</name>
+    <status mapto="MES_STATUS">状态</status>
+    <creator mapto="MES_CREATOR">创建人</creator>
+    <createtime mapto="MES_CREATETIME">创建日期</createtime>
+    <modifier mapto="MES_MODIFIER">修改者</modifier>
+    <modifytime mapto="MES_MODIFYTIME">修改日期</modifytime>
+  </CMD_PRODUCT_CATEGORY>
+  <!--烟叶等级-->
+  <CMD_PRODUCT_GRADE>
+      <id mapto="MES_ID">烟叶等级ID</id>
+      <code mapto="GRADE_CODE">烟叶等级代码</code>
+      <name mapto="GRADE_NAME">烟叶等级名称</name>
+      <big_clas_id mapto="ENGLISH_CODE">英文代号</big_clas_id>
+      <leaf_type_id mapto="MES_LEAF_TYPE_ID">类型编码</leaf_type_id>
+      <leaf_color_id mapto="MES_LEAF_COLOR_ID">烟叶颜色</leaf_color_id>
+      <leaf_part_id mapto="MES_LEAF_PART_ID">烟叶部位</leaf_part_id>
+      <status mapto="MES_STATUS">状态</status>
+      <creator mapto="MES_CREATOR">创建人</creator>
+      <createtime mapto="MES_CREATETIME">创建日期</createtime>
+      <modifier mapto="MES_MODIFIER">修改者</modifier>
+      <modifytime mapto="MES_MODIFYTIME">修改日期</modifytime>
+  </CMD_PRODUCT_GRADE>
+  <!--烟叶-->
+  <CMD_PRODUCT>
+    <id mapto="ID">烟叶ID</id>
+    <code mapto="PRODUCT_CODE">烟叶编码</code>
+    <name mapto="PRODUCT_NAME">烟叶名称</name>
+    <year mapto="YEARS">年份</year>
+    <leaf_origin_id mapto="ORIGINAL_CODE">烟叶产地</leaf_origin_id>
+    <leaf_type_id mapto="CATEGORY_CODE">烟叶类型</leaf_type_id>
+    <leaf_shape_id mapto="STYLE_NO">烟叶形态</leaf_shape_id>
+    <specification mapto="SPECIFICATION">包装规格</specification>
+    <leaf_level_id mapto="GRADE_CODE">烟叶等级</leaf_level_id>
+    <leaf_other_id mapto="LEAF_OTHER_ID">其他属性</leaf_other_id>
+    <status mapto="STATUS">状态</status>
+  </CMD_PRODUCT>
+    <!--烟丝(wms里为牌号)-->
+  <CMD_CIGARETTE>
+    <id mapto="MES_ID">烟丝ID</id>
+    <code mapto="CIGARETTE_CODE">烟丝代码</code>
+    <name mapto="CIGARETTE_NAME">烟丝名称</name>
+    <versionid mapto="MES_VERSIONID">版本</versionid>
+    <tob_cut_sp mapto="MES_TOB_CUT_SP">烟丝规格</tob_cut_sp>
+    <tob_cut_type mapto="MES_TOB_CUT_TYPE">烟丝型号</tob_cut_type>
+    <status mapto="MES_STATUS">状态(1:草稿,2:发布,3停用)</status>
+    <creator mapto="MES_CREATOR">创建人</creator>
+    <createtime mapto="MES_CREATETIME">创建日期</createtime>
+    <modifier mapto="MES_MODIFIER">修改者</modifier>
+    <modifytime mapto="MES_MODIFYTIME">修改日期</modifytime>
+  </CMD_CIGARETTE>
+</Tables>

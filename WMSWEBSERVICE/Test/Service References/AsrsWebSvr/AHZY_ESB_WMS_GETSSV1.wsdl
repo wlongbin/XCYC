@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://Thok.WMS.Interface/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://Thok.WMS.Interface/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://Thok.WMS.Interface/">
+      <s:element name="HelloWorld">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="billtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="finishdate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StockinFinish">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="billtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="finishdate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StockinFinishResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StockinFinishResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StockbackFinish">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="billtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="finishdate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StockbackFinishResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StockbackFinishResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FeedFinish">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="billtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="finishdate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FeedFinishResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FeedFinishResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StockOutBegin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Startime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StockOutBeginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StockOutBeginResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StockOutEnd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Endtime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StockOutEndResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StockOutEndResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StockOutCollection">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StockOutCollectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StockOutCollectionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FeedingReplace">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Transer" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FeedingReplaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FeedingReplaceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OutStockbillreplace">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="channel_no" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OutStockbillreplaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OutStockbillreplaceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OutStockbilcance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OutStockbilcanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OutStockbilcanceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpenCollection">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpenCollectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpenCollectionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpenBegin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Startime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpenBeginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpenBeginResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpenEnd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Endtime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpenEndResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpenEndResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FeedingSend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BillNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FeedingSendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FeedingSendResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="StockinFinishSoapIn">
+    <wsdl:part name="parameters" element="tns:StockinFinish" />
+  </wsdl:message>
+  <wsdl:message name="StockinFinishSoapOut">
+    <wsdl:part name="parameters" element="tns:StockinFinishResponse" />
+  </wsdl:message>
+  <wsdl:message name="StockbackFinishSoapIn">
+    <wsdl:part name="parameters" element="tns:StockbackFinish" />
+  </wsdl:message>
+  <wsdl:message name="StockbackFinishSoapOut">
+    <wsdl:part name="parameters" element="tns:StockbackFinishResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedFinishSoapIn">
+    <wsdl:part name="parameters" element="tns:FeedFinish" />
+  </wsdl:message>
+  <wsdl:message name="FeedFinishSoapOut">
+    <wsdl:part name="parameters" element="tns:FeedFinishResponse" />
+  </wsdl:message>
+  <wsdl:message name="StockOutBeginSoapIn">
+    <wsdl:part name="parameters" element="tns:StockOutBegin" />
+  </wsdl:message>
+  <wsdl:message name="StockOutBeginSoapOut">
+    <wsdl:part name="parameters" element="tns:StockOutBeginResponse" />
+  </wsdl:message>
+  <wsdl:message name="StockOutEndSoapIn">
+    <wsdl:part name="parameters" element="tns:StockOutEnd" />
+  </wsdl:message>
+  <wsdl:message name="StockOutEndSoapOut">
+    <wsdl:part name="parameters" element="tns:StockOutEndResponse" />
+  </wsdl:message>
+  <wsdl:message name="StockOutCollectionSoapIn">
+    <wsdl:part name="parameters" element="tns:StockOutCollection" />
+  </wsdl:message>
+  <wsdl:message name="StockOutCollectionSoapOut">
+    <wsdl:part name="parameters" element="tns:StockOutCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedingReplaceSoapIn">
+    <wsdl:part name="parameters" element="tns:FeedingReplace" />
+  </wsdl:message>
+  <wsdl:message name="FeedingReplaceSoapOut">
+    <wsdl:part name="parameters" element="tns:FeedingReplaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="OutStockbillreplaceSoapIn">
+    <wsdl:part name="parameters" element="tns:OutStockbillreplace" />
+  </wsdl:message>
+  <wsdl:message name="OutStockbillreplaceSoapOut">
+    <wsdl:part name="parameters" element="tns:OutStockbillreplaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="OutStockbilcanceSoapIn">
+    <wsdl:part name="parameters" element="tns:OutStockbilcance" />
+  </wsdl:message>
+  <wsdl:message name="OutStockbilcanceSoapOut">
+    <wsdl:part name="parameters" element="tns:OutStockbilcanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpenCollectionSoapIn">
+    <wsdl:part name="parameters" element="tns:OpenCollection" />
+  </wsdl:message>
+  <wsdl:message name="OpenCollectionSoapOut">
+    <wsdl:part name="parameters" element="tns:OpenCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpenBeginSoapIn">
+    <wsdl:part name="parameters" element="tns:OpenBegin" />
+  </wsdl:message>
+  <wsdl:message name="OpenBeginSoapOut">
+    <wsdl:part name="parameters" element="tns:OpenBeginResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpenEndSoapIn">
+    <wsdl:part name="parameters" element="tns:OpenEnd" />
+  </wsdl:message>
+  <wsdl:message name="OpenEndSoapOut">
+    <wsdl:part name="parameters" element="tns:OpenEndResponse" />
+  </wsdl:message>
+  <wsdl:message name="FeedingSendSoapIn">
+    <wsdl:part name="parameters" element="tns:FeedingSend" />
+  </wsdl:message>
+  <wsdl:message name="FeedingSendSoapOut">
+    <wsdl:part name="parameters" element="tns:FeedingSendResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AHZY_ESB_WMS_GETSSVSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StockinFinish">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：上报备料入库完成</wsdl:documentation>
+      <wsdl:input message="tns:StockinFinishSoapIn" />
+      <wsdl:output message="tns:StockinFinishSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StockbackFinish">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：上报退料出库完成</wsdl:documentation>
+      <wsdl:input message="tns:StockbackFinishSoapIn" />
+      <wsdl:output message="tns:StockbackFinishSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FeedFinish">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：上报补料入库完成</wsdl:documentation>
+      <wsdl:input message="tns:FeedFinishSoapIn" />
+      <wsdl:output message="tns:FeedFinishSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StockOutBegin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：上报出库工单开始</wsdl:documentation>
+      <wsdl:input message="tns:StockOutBeginSoapIn" />
+      <wsdl:output message="tns:StockOutBeginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StockOutEnd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：上报出库工单结束</wsdl:documentation>
+      <wsdl:input message="tns:StockOutEndSoapIn" />
+      <wsdl:output message="tns:StockOutEndSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StockOutCollection">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：上报出库工单归集</wsdl:documentation>
+      <wsdl:input message="tns:StockOutCollectionSoapIn" />
+      <wsdl:output message="tns:StockOutCollectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FeedingReplace">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：补料替换申请</wsdl:documentation>
+      <wsdl:input message="tns:FeedingReplaceSoapIn" />
+      <wsdl:output message="tns:FeedingReplaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OutStockbillreplace">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能:出库工单申请</wsdl:documentation>
+      <wsdl:input message="tns:OutStockbillreplaceSoapIn" />
+      <wsdl:output message="tns:OutStockbillreplaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OutStockbilcance">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能:出库工单申请取消</wsdl:documentation>
+      <wsdl:input message="tns:OutStockbilcanceSoapIn" />
+      <wsdl:output message="tns:OutStockbilcanceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpenCollection">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能:开包投料信息归集</wsdl:documentation>
+      <wsdl:input message="tns:OpenCollectionSoapIn" />
+      <wsdl:output message="tns:OpenCollectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpenBegin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能:开包投料开始</wsdl:documentation>
+      <wsdl:input message="tns:OpenBeginSoapIn" />
+      <wsdl:output message="tns:OpenBeginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpenEnd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能:开包投料结束</wsdl:documentation>
+      <wsdl:input message="tns:OpenEndSoapIn" />
+      <wsdl:output message="tns:OpenEndSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FeedingSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能:紧急补料信息上报</wsdl:documentation>
+      <wsdl:input message="tns:FeedingSendSoapIn" />
+      <wsdl:output message="tns:FeedingSendSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AHZY_ESB_WMS_GETSSVSoap" type="tns:AHZY_ESB_WMS_GETSSVSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://Thok.WMS.Interface/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StockinFinish">
+      <soap:operation soapAction="http://Thok.WMS.Interface/StockinFinish" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StockbackFinish">
+      <soap:operation soapAction="http://Thok.WMS.Interface/StockbackFinish" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FeedFinish">
+      <soap:operation soapAction="http://Thok.WMS.Interface/FeedFinish" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StockOutBegin">
+      <soap:operation soapAction="http://Thok.WMS.Interface/StockOutBegin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StockOutEnd">
+      <soap:operation soapAction="http://Thok.WMS.Interface/StockOutEnd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StockOutCollection">
+      <soap:operation soapAction="http://Thok.WMS.Interface/StockOutCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FeedingReplace">
+      <soap:operation soapAction="http://Thok.WMS.Interface/FeedingReplace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OutStockbillreplace">
+      <soap:operation soapAction="http://Thok.WMS.Interface/OutStockbillreplace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OutStockbilcance">
+      <soap:operation soapAction="http://Thok.WMS.Interface/OutStockbilcance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpenCollection">
+      <soap:operation soapAction="http://Thok.WMS.Interface/OpenCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpenBegin">
+      <soap:operation soapAction="http://Thok.WMS.Interface/OpenBegin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpenEnd">
+      <soap:operation soapAction="http://Thok.WMS.Interface/OpenEnd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FeedingSend">
+      <soap:operation soapAction="http://Thok.WMS.Interface/FeedingSend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AHZY_ESB_WMS_GETSSVSoap12" type="tns:AHZY_ESB_WMS_GETSSVSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StockinFinish">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/StockinFinish" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StockbackFinish">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/StockbackFinish" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FeedFinish">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/FeedFinish" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StockOutBegin">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/StockOutBegin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StockOutEnd">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/StockOutEnd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StockOutCollection">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/StockOutCollection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FeedingReplace">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/FeedingReplace" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OutStockbillreplace">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/OutStockbillreplace" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OutStockbilcance">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/OutStockbilcance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpenCollection">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/OpenCollection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpenBegin">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/OpenBegin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpenEnd">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/OpenEnd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FeedingSend">
+      <soap12:operation soapAction="http://Thok.WMS.Interface/FeedingSend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AHZY_ESB_WMS_GETSSV">
+    <wsdl:port name="AHZY_ESB_WMS_GETSSVSoap" binding="tns:AHZY_ESB_WMS_GETSSVSoap">
+      <soap:address location="http://10.129.17.7/AHZY_ESB_WMS_GETSSV.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AHZY_ESB_WMS_GETSSVSoap12" binding="tns:AHZY_ESB_WMS_GETSSVSoap12">
+      <soap12:address location="http://10.129.17.7/AHZY_ESB_WMS_GETSSV.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

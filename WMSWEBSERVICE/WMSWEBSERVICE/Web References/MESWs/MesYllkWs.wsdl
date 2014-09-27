@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://Icss.Mes.DI/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://Icss.Mes.DI/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://Icss.Mes.DI/">
+      <s:element name="PFK_YLBLTL_BLRKWC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLBLTL_BLRKWCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_YLBLTL_BLRKWCResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLBLTL_TLCKWC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLBLTL_TLCKWCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_YLBLTL_TLCKWCResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLBL_BLTHSQ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLBL_BLTHSQResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_YLBL_BLTHSQResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLBL_BLRK">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLBL_BLRKResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_YLBL_BLRKResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_GDKS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_GDKSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_YLTC_GDKSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_GDJS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_GDJSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_YLTC_GDJSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_GDGJ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_GDGJResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_YLTC_GDGJResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_KCGX_PFKC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_KCGX_PFKCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_KCGX_PFKCResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_KCGX_KGXX">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_KCGX_KGXXResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_KCGX_KGXXResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_TLKS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_TLKSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_YLTC_TLKSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_TLJS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_TLJSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_YLTC_TLJSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_GDQX">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_GDQXResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_YLTC_GDQXResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_GDKBTLGJ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_GDKBTLGJResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_YLTC_GDKBTLGJResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_GDSQ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_YLTC_GDSQResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_YLTC_GDSQResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_KCGX_YYTH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PFK_KCGX_YYTHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PFK_KCGX_YYTHResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PFK_YLBLTL_BLRKWCSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_YLBLTL_BLRKWC" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLBLTL_BLRKWCSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_YLBLTL_BLRKWCResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLBLTL_TLCKWCSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_YLBLTL_TLCKWC" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLBLTL_TLCKWCSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_YLBLTL_TLCKWCResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLBL_BLTHSQSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_YLBL_BLTHSQ" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLBL_BLTHSQSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_YLBL_BLTHSQResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLBL_BLRKSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_YLBL_BLRK" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLBL_BLRKSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_YLBL_BLRKResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_GDKSSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_GDKS" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_GDKSSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_GDKSResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_GDJSSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_GDJS" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_GDJSSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_GDJSResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_GDGJSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_GDGJ" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_GDGJSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_GDGJResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_KCGX_PFKCSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_KCGX_PFKC" />
+  </wsdl:message>
+  <wsdl:message name="PFK_KCGX_PFKCSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_KCGX_PFKCResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_KCGX_KGXXSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_KCGX_KGXX" />
+  </wsdl:message>
+  <wsdl:message name="PFK_KCGX_KGXXSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_KCGX_KGXXResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_TLKSSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_TLKS" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_TLKSSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_TLKSResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_TLJSSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_TLJS" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_TLJSSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_TLJSResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_GDQXSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_GDQX" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_GDQXSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_GDQXResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_GDKBTLGJSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_GDKBTLGJ" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_GDKBTLGJSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_GDKBTLGJResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_GDSQSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_GDSQ" />
+  </wsdl:message>
+  <wsdl:message name="PFK_YLTC_GDSQSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_YLTC_GDSQResponse" />
+  </wsdl:message>
+  <wsdl:message name="PFK_KCGX_YYTHSoapIn">
+    <wsdl:part name="parameters" element="tns:PFK_KCGX_YYTH" />
+  </wsdl:message>
+  <wsdl:message name="PFK_KCGX_YYTHSoapOut">
+    <wsdl:part name="parameters" element="tns:PFK_KCGX_YYTHResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MesYllkWsSoap">
+    <wsdl:operation name="PFK_YLBLTL_BLRKWC">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：备料入库完成</wsdl:documentation>
+      <wsdl:input message="tns:PFK_YLBLTL_BLRKWCSoapIn" />
+      <wsdl:output message="tns:PFK_YLBLTL_BLRKWCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLBLTL_TLCKWC">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：退料出库完成</wsdl:documentation>
+      <wsdl:input message="tns:PFK_YLBLTL_TLCKWCSoapIn" />
+      <wsdl:output message="tns:PFK_YLBLTL_TLCKWCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLBL_BLTHSQ">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：补料退换申请</wsdl:documentation>
+      <wsdl:input message="tns:PFK_YLBL_BLTHSQSoapIn" />
+      <wsdl:output message="tns:PFK_YLBL_BLTHSQSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLBL_BLRK">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：上报原料补料入库完成信息</wsdl:documentation>
+      <wsdl:input message="tns:PFK_YLBL_BLRKSoapIn" />
+      <wsdl:output message="tns:PFK_YLBL_BLRKSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDKS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：片烟出库工单开始</wsdl:documentation>
+      <wsdl:input message="tns:PFK_YLTC_GDKSSoapIn" />
+      <wsdl:output message="tns:PFK_YLTC_GDKSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDJS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：片烟出库工单结束</wsdl:documentation>
+      <wsdl:input message="tns:PFK_YLTC_GDJSSoapIn" />
+      <wsdl:output message="tns:PFK_YLTC_GDJSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDGJ">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：片烟出库工单归集</wsdl:documentation>
+      <wsdl:input message="tns:PFK_YLTC_GDGJSoapIn" />
+      <wsdl:output message="tns:PFK_YLTC_GDGJSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_KCGX_PFKC">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：配方库存</wsdl:documentation>
+      <wsdl:input message="tns:PFK_KCGX_PFKCSoapIn" />
+      <wsdl:output message="tns:PFK_KCGX_PFKCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_KCGX_KGXX">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：库管资源信息</wsdl:documentation>
+      <wsdl:input message="tns:PFK_KCGX_KGXXSoapIn" />
+      <wsdl:output message="tns:PFK_KCGX_KGXXSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_TLKS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：开包投料开始</wsdl:documentation>
+      <wsdl:input message="tns:PFK_YLTC_TLKSSoapIn" />
+      <wsdl:output message="tns:PFK_YLTC_TLKSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_TLJS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：开包投料结束</wsdl:documentation>
+      <wsdl:input message="tns:PFK_YLTC_TLJSSoapIn" />
+      <wsdl:output message="tns:PFK_YLTC_TLJSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDQX">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：片烟出库工单取消</wsdl:documentation>
+      <wsdl:input message="tns:PFK_YLTC_GDQXSoapIn" />
+      <wsdl:output message="tns:PFK_YLTC_GDQXSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDKBTLGJ">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：片烟出库工单开包投料信息归集</wsdl:documentation>
+      <wsdl:input message="tns:PFK_YLTC_GDKBTLGJSoapIn" />
+      <wsdl:output message="tns:PFK_YLTC_GDKBTLGJSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDSQ">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：片烟出库工单申请</wsdl:documentation>
+      <wsdl:input message="tns:PFK_YLTC_GDSQSoapIn" />
+      <wsdl:output message="tns:PFK_YLTC_GDSQSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PFK_KCGX_YYTH">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">功能：上传烟叶替换记录</wsdl:documentation>
+      <wsdl:input message="tns:PFK_KCGX_YYTHSoapIn" />
+      <wsdl:output message="tns:PFK_KCGX_YYTHSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MesYllkWsSoap" type="tns:MesYllkWsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PFK_YLBLTL_BLRKWC">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_YLBLTL_BLRKWC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLBLTL_TLCKWC">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_YLBLTL_TLCKWC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLBL_BLTHSQ">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_YLBL_BLTHSQ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLBL_BLRK">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_YLBL_BLRK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDKS">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_GDKS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDJS">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_GDJS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDGJ">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_GDGJ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_KCGX_PFKC">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_KCGX_PFKC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_KCGX_KGXX">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_KCGX_KGXX" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_TLKS">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_TLKS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_TLJS">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_TLJS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDQX">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_GDQX" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDKBTLGJ">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_GDKBTLGJ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDSQ">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_GDSQ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_KCGX_YYTH">
+      <soap:operation soapAction="http://Icss.Mes.DI/PFK_KCGX_YYTH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MesYllkWsSoap12" type="tns:MesYllkWsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PFK_YLBLTL_BLRKWC">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_YLBLTL_BLRKWC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLBLTL_TLCKWC">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_YLBLTL_TLCKWC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLBL_BLTHSQ">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_YLBL_BLTHSQ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLBL_BLRK">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_YLBL_BLRK" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDKS">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_GDKS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDJS">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_GDJS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDGJ">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_GDGJ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_KCGX_PFKC">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_KCGX_PFKC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_KCGX_KGXX">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_KCGX_KGXX" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_TLKS">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_TLKS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_TLJS">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_TLJS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDQX">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_GDQX" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDKBTLGJ">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_GDKBTLGJ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_YLTC_GDSQ">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_YLTC_GDSQ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PFK_KCGX_YYTH">
+      <soap12:operation soapAction="http://Icss.Mes.DI/PFK_KCGX_YYTH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MesYllkWs">
+    <wsdl:port name="MesYllkWsSoap" binding="tns:MesYllkWsSoap">
+      <soap:address location="http://10.129.0.71/DI/ExternWsvc/MesYllkWs.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MesYllkWsSoap12" binding="tns:MesYllkWsSoap12">
+      <soap12:address location="http://10.129.0.71/DI/ExternWsvc/MesYllkWs.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

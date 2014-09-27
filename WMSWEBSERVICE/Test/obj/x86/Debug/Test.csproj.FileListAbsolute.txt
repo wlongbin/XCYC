@@ -1,0 +1,10 @@
+H:\WMSWEBSERVICE\Test\bin\Debug\Test.exe
+H:\WMSWEBSERVICE\Test\bin\Debug\Test.pdb
+H:\WMSWEBSERVICE\Test\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\WMSWEBSERVICE\Test\obj\x86\Debug\Test.Properties.Resources.resources
+H:\WMSWEBSERVICE\Test\obj\x86\Debug\GenerateResource.read.1.tlog
+H:\WMSWEBSERVICE\Test\obj\x86\Debug\GenerateResource.write.1.tlog
+H:\WMSWEBSERVICE\Test\obj\x86\Debug\Test.exe
+H:\WMSWEBSERVICE\Test\obj\x86\Debug\Test.pdb
+H:\WMSWEBSERVICE\Test\bin\Debug\Test.exe.config
+H:\WMSWEBSERVICE\Test\obj\x86\Debug\Test.Form1.resources
