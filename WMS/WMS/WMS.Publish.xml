@@ -4,11 +4,13 @@
     <file relUrl="Views/Replace/Index.cshtml" publishTime="04/24/2014 16:01:46" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/jquery.ztree.excheck-3.3.js" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/spinner.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Common.dll" publishTime="09/25/2014 13:44:53" />
+    <file relUrl="bin/THOK.Common.dll" publishTime="09/27/2014 11:07:28" />
     <file relUrl="Content/themes/base/images/mini_add.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/datagrid_row_collapse.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Role/_UserAdminPartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="ContentReport/Report/stockoutprint.frx" publishTime="01/21/2014 09:41:20" />
-    <file relUrl="Content/Images/login_bg02.jpg" publishTime="07/01/2013 10:16:50" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/slider_handle.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Unit/Index.cshtml" publishTime="12/02/2013 09:19:04" />
+    <file relUrl="Views/StockOutBill/_EditPartial.cshtml" publishTime="12/23/2013 09:17:16" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/progress.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Cigarette/_PrintPartial.cshtml" publishTime="12/16/2013 13:49:58" />
     <file relUrl="Content/themes/base/images/Menu_WarehouseM.png" publishTime="07/01/2013 10:16:52" />
@@ -16,19 +18,18 @@
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/slider.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/28.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/wmp.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/themes/base/icons/Menu_DeliverCustomer.ico" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Shared/_TaskPartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/ScheduleSearch/Index.cshtml" publishTime="12/18/2013 16:59:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/crazy.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/tag-pre.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/menu.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Common.pdb" publishTime="09/25/2014 13:44:53" />
+    <file relUrl="bin/THOK.Common.pdb" publishTime="09/27/2014 11:07:28" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/unsure.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Warehouse2/Index.cshtml" publishTime="02/11/2014 11:00:42" />
     <file relUrl="Content/themes/base/images/editbg.png" publishTime="07/08/2013 15:52:28" />
     <file relUrl="Content/themes/base/icons/son_Bill_Type.jpg" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/buttonbg.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/tag-pre.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/ProductGrade/_EditPartial.cshtml" publishTime="08/01/2013 10:22:08" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/bad.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/flash.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/StockDiffer/_EditPartial.cshtml" publishTime="12/20/2013 16:37:54" />
@@ -39,10 +40,11 @@
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/wordimg.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/progressbg.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/son_Employee.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Home/_LogonPartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/multiupload.js" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.parser.js" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/cry.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/tag-h4.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/Inventory/_EditPartial.cshtml" publishTime="12/20/2013 16:24:06" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/combo.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Shared/_MixPartial.cshtml" publishTime="07/31/2013 09:14:24" />
     <file relUrl="Views/Home/_ChangeCityPartial.cshtml" publishTime="09/03/2013 17:59:00" />
     <file relUrl="Views/StockOutBill/_BillPartial.cshtml" publishTime="08/23/2014 14:29:11" />
@@ -50,57 +52,55 @@
     <file relUrl="Content/themes/base/images/2Menu_ServerDevice.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/diy/4.png" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Content/themes/base/images/ui-icons_2e83ff_256x240.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/OutInSearch/_SearchPartial.cshtml" publishTime="05/22/2014 11:11:40" />
+    <file relUrl="Views/OutInSearch/_SearchPartial.cshtml" publishTime="09/27/2014 10:54:15" />
     <file relUrl="Views/ParameterSet/_SystemNamePartial.cshtml" publishTime="09/04/2013 09:58:58" />
+    <file relUrl="Views/Feeding/_AddPartial.cshtml" publishTime="09/05/2014 09:08:52" />
     <file relUrl="Views/MoveStock/_SearchPartial.cshtml" publishTime="02/19/2014 16:04:16" />
     <file relUrl="Views/ProductOriginal/Index.cshtml" publishTime="09/12/2014 13:15:25" />
     <file relUrl="Content/themes/base/icon.css" publishTime="11/27/2013 14:13:04" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/shout.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/themes/base/images/son_SortWork.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/MoveStockWork/_CancelPartial.cshtml" publishTime="07/05/2014 09:42:56" />
     <file relUrl="ContentReport/PDF/WebForm1.aspx" publishTime="07/04/2014 11:42:27" />
     <file relUrl="Content/themes/base/icons/son_Bill_Check.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Authorize/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/calendar_prevmonth.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/MoveStock/Index.cshtml" publishTime="01/07/2014 15:08:20" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tabs_close.gif" publishTime="02/19/2014 09:20:24" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/blush.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/DirectProduct/Index.cshtml" publishTime="09/22/2013 09:09:52" />
-    <file relUrl="bin/THOK.Common.WEBUtil.pdb" publishTime="09/25/2014 13:44:53" />
+    <file relUrl="Views/Web.config" publishTime="07/08/2014 10:26:24" />
+    <file relUrl="bin/THOK.Common.WEBUtil.pdb" publishTime="09/27/2014 11:07:28" />
     <file relUrl="Views/PalletStockIn/_DeletePartial.cshtml" publishTime="09/02/2013 15:44:48" />
     <file relUrl="Views/BillType/_PrintPartial.cshtml" publishTime="12/16/2013 13:49:58" />
     <file relUrl="Views/Feeding/_OutstockbillPartial.cshtml" publishTime="08/25/2014 12:02:28" />
-    <file relUrl="Views/Shared/_AntiTrialPartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/serverscript/asp/ubb2html.asp" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/mini_refresh.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.combogrid.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/undo.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/FillBill/_AddPartial.cshtml" publishTime="07/04/2014 14:18:22" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/messager_question.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/kiss.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/flash.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.validatebox.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/jquery.easyui.min.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/datagrid_row_expand.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tree_checkbox_2.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/System.Web.WebPages.dll" publishTime="01/05/2011 15:45:38" />
     <file relUrl="Views/BillType/_AddPartial.cshtml" publishTime="02/19/2014 15:50:28" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/ui.css" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/2Son_WrongLog.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/Son_CellAnalysis.jpg" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/images/tip.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/FillBill/_PrintPartial.cshtml" publishTime="02/19/2014 16:00:08" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/ubb.min.js" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/pagination_prev.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/ParameterSet/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/DirectProduct/_DeletePartial.cshtml" publishTime="12/20/2013 11:46:38" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.datebox.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/City/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/BillType/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/19.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/pagination_loading.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/calendar_prevmonth.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/40.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/tag-h2.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/Menu_Cigarette.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/menu_sep.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/tag-h6.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="ContentReport/Report/balance.frx" publishTime="01/21/2014 08:49:58" />
-    <file relUrl="Views/Replace/_DeletePartial.cshtml" publishTime="04/24/2014 16:21:00" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/8.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/gift.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/searchbox_button.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/tag-h1.gif" publishTime="01/08/2014 11:06:58" />
@@ -108,22 +108,22 @@
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/accordion_collapse.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/2Son_ServerComputer.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Feeding/_DeletePartial.cshtml" publishTime="12/20/2013 18:01:24" />
-    <file relUrl="Views/Product/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/icons.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/themes/base/images/2Son_LoginLog.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Warehouse2/_AddPartial.cshtml" publishTime="09/04/2013 09:58:56" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/menu_downarrow.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Crane/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
     <file relUrl="Views/UnitCategory/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/26.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/InvertedTreasury/_SearchPartial.cshtml" publishTime="02/27/2014 17:39:02" />
+    <file relUrl="bin/System.Web.Mvc.xml" publishTime="01/04/2011 15:29:22" />
+    <file relUrl="bin/THOK.Wms.Dal.dll" publishTime="09/27/2014 11:07:31" />
     <file relUrl="Views/PalletStockOut/_PrintPartial.cshtml" publishTime="02/19/2014 16:10:18" />
-    <file relUrl="Content/themes/base/images/Menu_StockInto.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="ContentReport/Report/productdetail.frx" publishTime="01/21/2014 09:29:04" />
+    <file relUrl="Views/SystemEventLog/Index.cshtml" publishTime="03/04/2014 15:51:24" />
     <file relUrl="Views/ExceptionalLog/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/linkbutton.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/15.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/datagrid_title_bg.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Prepareplan/_SearchPartial.cshtml" publishTime="08/26/2014 18:39:08" />
+    <file relUrl="Content/themes/base/images/2Son_Cities.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/JQuery-zTree-v3.3/jquery.ztree.exhide-3.3.js" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Views/FillBill/_EditPartial.cshtml" publishTime="09/22/2013 09:09:52" />
+    <file relUrl="Content/themes/base/icons/son_StockArea.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/cut.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Feeding/_BillPartial.cshtml" publishTime="06/30/2014 14:03:15" />
     <file relUrl="Views/Shared/_AuditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
@@ -132,9 +132,7 @@
     <file relUrl="Views/Role/Index.cshtml" publishTime="01/25/2014 15:45:22" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/tired.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Feeding/_UploadPartial.cshtml" publishTime="08/27/2014 10:13:11" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/despise.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/themes/base/images/2Son_HelpContents.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Authority.DbModel.pdb" publishTime="09/25/2014 13:44:55" />
     <file relUrl="Content/themes/base/images/son_Bill_Check.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="bin/Microsoft.Practices.Unity.Interception.dll" publishTime="05/24/2013 14:08:14" />
     <file relUrl="Views/StockDifferSearch/Index.cshtml" publishTime="01/04/2014 16:18:02" />
@@ -142,35 +140,38 @@
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/jquery.ztree.exedit-3.3.js" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Views/Inventory/_AuditPartial.cshtml" publishTime="07/04/2014 14:10:10" />
     <file relUrl="Views/Shared/Error.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Shared/_ScriptPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/ProductMonthly/_SearchPartial.cshtml" publishTime="02/19/2014 16:09:12" />
     <file relUrl="Views/Schedule2/_AddPartial.cshtml" publishTime="12/20/2013 15:44:32" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/menu.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/35.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/spinner.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/mini_refresh.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/searchbox.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/sad.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/tip.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/menu_downarrow.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/son_StockDayBill.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/MoveStock/_NullCellPartial.cshtml" publishTime="09/29/2013 14:42:40" />
     <file relUrl="ContentReport/Report/feeding.frx" publishTime="01/21/2014 09:01:22" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/24.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/Shared/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Unit/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/ninja.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/splitbutton.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/panel_title.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Role/_RoleUserPartial.cshtml" publishTime="09/04/2013 09:58:56" />
     <file relUrl="Views/Module/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/InventorySearch/_PrintPartial.cshtml" publishTime="02/18/2014 16:58:20" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/swfupload/swfupload.swf" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Product/_AddPartial.cshtml" publishTime="07/01/2014 15:01:08" />
     <file relUrl="Content/themes/base/images/son_StockArea.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Shared/_SettlePartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/StockInBill/_AuditPartial.cshtml" publishTime="07/08/2014 14:01:26" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/10.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.timespinner.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/jquery/jquery-1.4.4.src.js" publishTime="01/08/2014 11:06:56" />
-    <file relUrl="Views/Replace/_SearchPartial.cshtml" publishTime="04/15/2014 14:43:52" />
+    <file relUrl="Content/themes/base/images/ui-icons_454545_256x240.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/jquery.ztree.excheck-3.3.min.js" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Content/Scripts/Native_FullScreen.js" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Content/themes/base/images/son_MoveBill.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/icons/edit_remove.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StorageSearch/Index.cshtml" publishTime="09/22/2014 11:18:20" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/messager.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/diy/2.png" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tree_checkbox_2.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/src/xheditor-1.1.14-zh-cn.js" publishTime="01/08/2014 11:06:56" />
@@ -179,18 +180,13 @@
     <file relUrl="Content/Scripts/jquery-easyui-1.3/readme.txt" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.tabs.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/cry.gif" publishTime="01/08/2014 11:06:56" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/icons.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/propertygrid.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/InvertedTreasury/Index.cshtml" publishTime="01/04/2014 16:18:02" />
     <file relUrl="Views/Role/_AddPartial.cshtml" publishTime="09/04/2013 09:58:56" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/menu.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/HelpContent/_AddPartial.cshtml" publishTime="03/05/2014 15:40:24" />
-    <file relUrl="Views/Sampling/_AddPartial.cshtml" publishTime="07/04/2014 14:22:50" />
     <file relUrl="Views/Replace/_EditPartial.cshtml" publishTime="04/24/2014 16:25:32" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/bye.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/button_a_bg.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/22.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/themes/base/images/back.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/SamplingSearch/_PrintPartial.cshtml" publishTime="02/18/2014 17:00:28" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/tag-h1.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/no.png" publishTime="07/01/2013 10:16:52" />
@@ -200,20 +196,21 @@
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/combo_arrow.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/licence_gpl.txt" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-zh_TW.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/StockOutWork/Index.cshtml" publishTime="09/21/2014 10:23:14" />
+    <file relUrl="Views/StockOutWork/Index.cshtml" publishTime="09/27/2014 11:04:34" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-ru.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/WorkSearch/_PrintPartial.cshtml" publishTime="12/02/2013 16:05:44" />
-    <file relUrl="Content/themes/base/icons/allsearch.png" publishTime="04/12/2006 10:18:06" />
+    <file relUrl="Views/Schedule2/_EditPartial.cshtml" publishTime="12/20/2013 15:44:32" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/ui.css" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/MoveStock/_AddPartial.cshtml" publishTime="07/04/2014 14:21:53" />
     <file relUrl="Views/Authorize/_AddPartial.cshtml" publishTime="09/04/2013 09:58:58" />
     <file relUrl="Views/ProductGrade/_DeletePartial.cshtml" publishTime="08/01/2013 10:22:08" />
     <file relUrl="Views/InventoryWork/_TaskPartial.cshtml" publishTime="09/24/2013 17:00:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/pagination_next.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/dialog.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/searchbox.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Shared/_Layout.cshtml" publishTime="02/10/2014 09:53:14" />
     <file relUrl="Content/themes/base/images/pencil.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Replace/_AntiTrialPartial.cshtml" publishTime="04/24/2014 15:35:58" />
+    <file relUrl="Views/StockInWork/_CancelPartial.cshtml" publishTime="07/12/2014 17:25:42" />
     <file relUrl="Content/themes/base/images/Menu_Warehouse.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Inventory/_BillPartial.cshtml" publishTime="04/21/2014 13:16:36" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/mini_add.png" publishTime="07/01/2013 10:16:52" />
@@ -222,17 +219,16 @@
     <file relUrl="Content/themes/base/images/2Son_WrongLog.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Schedule2/_AntiTrialPartial.cshtml" publishTime="07/24/2013 10:47:24" />
     <file relUrl="ContentReport/Report/stockinprint.frx" publishTime="01/21/2014 09:40:50" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/17.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/ok.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/waiting.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Formula/_PrintPartial.cshtml" publishTime="02/19/2014 15:53:08" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/wronged.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/StockDiffer/_DeletePartial.cshtml" publishTime="12/20/2013 16:37:54" />
-    <file relUrl="Views/BillPrint/Index.cshtml" publishTime="01/21/2014 16:02:42" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/tag-pre.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/StockMoveSearch/_PrintPartial.cshtml" publishTime="02/18/2014 17:02:06" />
-    <file relUrl="Content/themes/base/images/son_CheckBillMake.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockInWork/_BarcodePartial.cshtml" publishTime="08/21/2014 10:00:07" />
-    <file relUrl="Views/ProductGrade/_EditPartial.cshtml" publishTime="08/01/2013 10:22:08" />
+    <file relUrl="Content/themes/base/icons/Menu_DeliverCustomer.ico" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Home/_LogonPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Role/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockDifferSearch/_PrintPartial.cshtml" publishTime="02/18/2014 17:01:28" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/panel.css" publishTime="07/01/2013 10:16:52" />
@@ -240,29 +236,29 @@
     <file relUrl="Content/themes/base/images/Menu_StockDiffer.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/CellStateSearch/Index.cshtml" publishTime="01/20/2014 15:14:48" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/cute.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor-1.1.14-en.min.js" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/sick.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/System/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/filesave.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/InventoryWork/_SearchPartial.cshtml" publishTime="02/19/2014 16:01:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/close.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/tree.css" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Home/Unauthorized.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Authorize/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/tongue.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/SamplingWork/_SearchPartial.cshtml" publishTime="02/19/2014 16:04:16" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/mini_edit.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Schedule/Index.cshtml" publishTime="07/17/2013 14:21:08" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tree_loading.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/blank.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/messager_warning.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/img/clear.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/wordimg.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="bin/THOK.Wms.Upload.dll" publishTime="09/25/2014 13:44:58" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/cute.gif" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Content/Images/copy2.png" publishTime="07/12/2013 13:52:44" />
+    <file relUrl="bin/THOK.Wms.Upload.dll" publishTime="09/27/2014 11:07:33" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/33.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/iframe.css" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/datagrid_title_bg.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/upload.aspx" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/ProductGrade/Index.cshtml" publishTime="08/07/2013 09:23:10" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/combo.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Crane/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/ohmy.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/tag-address.gif" publishTime="01/08/2014 11:06:58" />
@@ -271,20 +267,19 @@
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/progressbg.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Help/_helpPartial1.cshtml" publishTime="03/06/2014 15:37:34" />
     <file relUrl="ContentReport/Report/productledger.frx" publishTime="01/21/2014 09:30:14" />
+    <file relUrl="Content/themes/base/icons/2Son_Cities.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/panel_tools.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/tip.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/proud.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/themes/base/images/son_SortInfo.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Common.Entity.dll" publishTime="09/25/2014 13:44:53" />
+    <file relUrl="bin/THOK.Common.Entity.dll" publishTime="09/27/2014 11:07:29" />
     <file relUrl="Content/themes/base/images/editbg2.png" publishTime="08/09/2013 17:12:56" />
     <file relUrl="Content/themes/base/icons/Menu_delivery.ico" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/angel.gif" publishTime="01/08/2014 11:06:56" />
-    <file relUrl="bin/THOK.Wms.Repository.pdb" publishTime="09/25/2014 13:44:56" />
     <file relUrl="Content/themes/base/icons/son_Department.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/reload.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/DirectProductSearch/_PrintPartial.cshtml" publishTime="02/18/2014 16:56:28" />
     <file relUrl="Views/SamplingWork/_TaskPartial.cshtml" publishTime="09/26/2013 09:58:48" />
     <file relUrl="Content/themes/base/icons/sum.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.form.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockDiffer/_BillPartial.cshtml" publishTime="04/21/2014 14:08:26" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tabs_close.gif" publishTime="02/19/2014 09:21:22" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/panel_title.gif" publishTime="07/01/2013 10:16:52" />
@@ -297,45 +292,42 @@
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/diy/1_open.png" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/tag-h3.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/no.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/Microsoft.Practices.Unity.dll" publishTime="05/24/2013 14:08:14" />
+    <file relUrl="Content/themes/base/icons/accept.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/BillType/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
     <file relUrl="Content/themes/base/images/cut.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/SamplingSearch.gif" publishTime="04/09/2006 10:41:48" />
     <file relUrl="Content/themes/base/icons/son_SortWork.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Home/_HeaderPartial.cshtml" publishTime="07/10/2014 10:53:43" />
     <file relUrl="Views/ProductDetails/Index.cshtml" publishTime="11/14/2013 14:03:00" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tree_dnd_yes.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/images/mini_edit.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockOutBill/_AntiTrialPartial.cshtml" publishTime="07/08/2014 14:10:30" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/soccer.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/calendar_nextmonth.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/Menu_CheckBill.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/music.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/Help/Index.cshtml" publishTime="03/10/2014 14:00:02" />
+    <file relUrl="Views/ProductLedger/_PrintPartial.cshtml" publishTime="02/18/2014 16:59:46" />
     <file relUrl="Content/themes/base/images/son_CigaretteUnitList.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Schedule/_PrintPartial.cshtml" publishTime="07/17/2013 16:28:42" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/spinner_arrow_down.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/tag-h6.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/WorkSearch.gif" publishTime="04/09/2006 10:41:40" />
     <file relUrl="Views/FillBill/_DeletePartial.cshtml" publishTime="09/10/2013 10:32:26" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/good.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/MoveStock/_BillPartial.cshtml" publishTime="04/21/2014 15:31:56" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/changelog.txt" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Crane/_PrintPartial.cshtml" publishTime="12/16/2013 13:42:10" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/sweat.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/images/son_StockOldAll.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Inventory/_SearchPartial.cshtml" publishTime="02/19/2014 16:01:16" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/config.txt" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/cancel.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/StockDiffer/_AddPartial.cshtml" publishTime="07/04/2014 14:26:14" />
-    <file relUrl="Views/ProudctionLine/_AddPartial.cshtml" publishTime="07/08/2014 12:24:36" />
+    <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/diy/7.png" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Views/FeedingSearch/_PrintPartial.cshtml" publishTime="02/18/2014 16:57:02" />
     <file relUrl="Views/ProductMonthly/Index.cshtml" publishTime="11/13/2013 10:29:26" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tabs_rightarrow.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/onebit_24.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Wms.Bll.pdb" publishTime="09/25/2014 13:45:38" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/18.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/multiupload.js" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="bin/THOK.Wms.Bll.pdb" publishTime="09/27/2014 11:08:18" />
+    <file relUrl="Content/themes/base/images/2Menu_Help.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/images/shut_down.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Cigarette/Index.cshtml" publishTime="09/11/2014 13:36:13" />
-    <file relUrl="Content/themes/base/icons/son_Company.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/panel.css" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/serverscript/asp/ubb2html.asp" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Views/Replace/_BillPartial.cshtml" publishTime="07/12/2014 13:31:38" />
     <file relUrl="Content/Scripts/xheditor1.1.14/src/xheditor-1.1.14-en.js" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/StockOutBill/_OutreplacePartial.cshtml" publishTime="09/20/2014 16:37:38" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/loading.gif" publishTime="01/08/2014 11:06:58" />
@@ -346,17 +338,16 @@
     <file relUrl="Views/DirectProduct/_AuditPartial.cshtml" publishTime="08/12/2013 16:34:26" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/knock.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="ContentReport/Report/palletstockin.frx" publishTime="01/21/2014 09:22:32" />
+    <file relUrl="Views/Formula/_SearchPartial.cshtml" publishTime="02/19/2014 15:51:16" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.splitbutton.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/tabs.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/img/add.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/StockOutSearch/_SearchPartial.cshtml" publishTime="09/25/2014 13:39:29" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/jquery.ztree.core-3.3.js" publishTime="07/01/2013 10:16:50" />
-    <file relUrl="Content/themes/base/icons/Menu_StockDiffer.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/redo.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/WorkSearch/_SearchPartial.cshtml" publishTime="01/13/2014 17:48:26" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/button_plain_hover.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/City/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Feeding/_CancelPartial.cshtml" publishTime="07/08/2014 14:29:48" />
     <file relUrl="Views/Shared/_wflootPartial.cshtml" publishTime="05/27/2014 10:01:22" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.searchbox.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockOutBill/_AuditPartial.cshtml" publishTime="07/08/2014 14:10:30" />
@@ -367,55 +358,55 @@
     <file relUrl="Content/themes/base/icons/preductstyle.gif" publishTime="12/30/2005 20:46:14" />
     <file relUrl="Content/themes/base/images/onebit_23.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/panel_tools.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/ProductCategory/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/accordion_collapse.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/src/ubb.js" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/themes/base/icons/son_CheckBillWork.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/img/bg2.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/validatebox_warning.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/son_CigaretteUnitList.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/User/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/print.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/img/start.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="bin/WMS.pdb" publishTime="09/25/2014 13:45:39" />
-    <file relUrl="Content/themes/base/images/ok.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="bin/WMS.pdb" publishTime="09/27/2014 11:08:20" />
     <file relUrl="Views/Role/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/buttonbg.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/ProductOriginal/_AddPartial.cshtml" publishTime="09/12/2014 13:11:54" />
     <file relUrl="Content/themes/base/images/son_CheckBillAllot.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Car/_PrintPartial.cshtml" publishTime="12/16/2013 12:02:28" />
     <file relUrl="Content/themes/base/icons/2Menu_SysLog.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/surprised.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tree_checkbox_1.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/2Menu_Jurisdiction.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/icons.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/themes/base/icons/redo.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Server/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="ContentReport/Report/directproduct.frx" publishTime="01/21/2014 08:56:40" />
-    <file relUrl="bin/THOK.Wms.DbModel.dll" publishTime="09/25/2014 13:44:55" />
+    <file relUrl="bin/THOK.Wms.DbModel.dll" publishTime="09/27/2014 11:07:30" />
     <file relUrl="Views/DirectProduct/_AddPartial.cshtml" publishTime="12/20/2013 11:44:04" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/police.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.spinner.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/2Son_ModuleJurisdiction.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockOutBill/_CellPartial.cshtml" publishTime="04/18/2014 16:46:50" />
     <file relUrl="Content/themes/base/icons/son_StockIntoBillAllot.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/car.png" publishTime="03/02/2008 14:20:04" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/panel_tool_expand.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/ParameterSet/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="bin/Microsoft.Web.Infrastructure.dll" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.combogrid.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/progress.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/img/progressbg.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="bin/THOK.Wms.DbModel.pdb" publishTime="09/25/2014 13:44:55" />
+    <file relUrl="bin/THOK.Wms.DbModel.pdb" publishTime="09/27/2014 11:07:30" />
     <file relUrl="Views/Help/_helpPartial2.cshtml" publishTime="03/06/2014 15:37:34" />
-    <file relUrl="bin/THOK.Common.Ef.dll" publishTime="09/25/2014 13:44:52" />
+    <file relUrl="Views/Home/_ChangePasswordPartial.cshtml" publishTime="09/03/2013 17:55:52" />
+    <file relUrl="Content/themes/base/images/Menu_Research.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="bin/THOK.Common.Ef.dll" publishTime="09/27/2014 11:07:27" />
     <file relUrl="Views/Shared/_WbarcodePartial.cshtml" publishTime="05/22/2014 17:01:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/accordion_expand.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/mad.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/line_conn.gif" publishTime="07/01/2013 10:16:50" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/tag-h3.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/window.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/jquery.ztree.core-3.3.min.js" publishTime="07/01/2013 10:16:50" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/pagination_next.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/pagination_last.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/accordion.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/tabs.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/WMS.dll" publishTime="09/25/2014 13:45:39" />
+    <file relUrl="bin/WMS.dll" publishTime="09/27/2014 11:08:20" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tree_folder_open.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tree_folder.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/30.gif" publishTime="01/08/2014 11:06:58" />
@@ -425,13 +416,15 @@
     <file relUrl="Views/ProductMonthly/_PrintPartial.cshtml" publishTime="02/19/2014 16:09:12" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-cs.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/_ViewStart.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/messager_error.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Web.config" publishTime="09/25/2014 13:45:40" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/src/xheditor-1.1.14-zh-tw.js" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/accordion.css" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/waiting.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/Car/_EditPartial.cshtml" publishTime="01/07/2014 11:01:28" />
+    <file relUrl="Web.config" publishTime="09/27/2014 11:08:21" />
+    <file relUrl="Views/ProductOriginal/_DeletePartial.cshtml" publishTime="08/01/2013 09:27:12" />
     <file relUrl="Views/PalletStockIn/_PrintPartial.cshtml" publishTime="02/19/2014 16:09:12" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/w00t.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Unit/_AddPartial.cshtml" publishTime="09/04/2013 09:58:56" />
-    <file relUrl="Content/themes/base/icons/mini_refresh.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/img/btnbgr.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/ProudctionLine/_EditPartial.cshtml" publishTime="07/08/2014 12:24:36" />
     <file relUrl="Views/User/_AuthorizePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/window.css" publishTime="07/01/2013 10:16:52" />
@@ -440,18 +433,19 @@
     <file relUrl="Content/themes/base/icons/2Son_RoleJurisdiction.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/loading.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/images/son_Employee.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/tag-address.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/SamplingWork/_SearchPartial.cshtml" publishTime="02/19/2014 16:04:16" />
     <file relUrl="Views/Crane/_EditPartial.cshtml" publishTime="01/07/2014 11:03:36" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/envy.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="bin/System.Web.Routing.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="Views/Cigarette/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/calendar_nextyear.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.progressbar.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/back.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/ProductCategory/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.window.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/tag-div.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/BillType/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/InventoryWork/_CancelPartial.cshtml" publishTime="07/05/2014 10:10:27" />
-    <file relUrl="bin/THOK.Common.Ef.pdb" publishTime="09/25/2014 13:44:52" />
+    <file relUrl="bin/THOK.Common.Ef.pdb" publishTime="09/27/2014 11:07:27" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/shutup.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/linkbutton.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tree_arrows.gif" publishTime="07/01/2013 10:16:52" />
@@ -461,55 +455,59 @@
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/awkward.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/themes/base/images/son_Warehouse.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/anchor.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/datebox.css" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/FillBill/Index.cshtml" publishTime="11/25/2013 18:01:02" />
     <file relUrl="Views/HelpEdit/_helpPartial2.cshtml" publishTime="03/06/2014 11:01:28" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/5.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/themes/base/images/son_Job.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/User/_RoleAdminPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/datagrid_row_expand.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Authority.Bll.pdb" publishTime="09/25/2014 13:44:57" />
+    <file relUrl="bin/THOK.Authority.Bll.pdb" publishTime="09/27/2014 11:07:32" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/depres.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tabs_rightarrow.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/spinner_arrow_down.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/shocked.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/DirectProduct/_EditPartial.cshtml" publishTime="12/20/2013 11:40:14" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/smile.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/themes/base/icons/Menu_StockInto.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/son_StockNow.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/layout_arrows.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Authority.Bll.dll" publishTime="09/25/2014 13:44:57" />
+    <file relUrl="bin/THOK.Authority.Bll.dll" publishTime="09/27/2014 11:07:32" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/blank.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/config.txt" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/tag-h2.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/StockDifferSearch/_SearchPartial.cshtml" publishTime="02/18/2014 16:19:56" />
     <file relUrl="Content/themes/base/icons/son_CigaretteBrand.jpg" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Module/_FunctionAdminPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/User/_AddPartial.cshtml" publishTime="09/22/2013 11:24:26" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.droppable.js" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Formula/_ProductPartial.cshtml" publishTime="07/02/2014 11:27:54" />
+    <file relUrl="Content/themes/base/images/ui-icons_222222_256x240.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/sleepy.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/magician.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/pagination_load.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Sampling/_BillPartial.cshtml" publishTime="04/21/2014 15:31:56" />
     <file relUrl="Views/Feeding/_OutbarcodePartial.cshtml" publishTime="08/20/2014 16:15:13" />
     <file relUrl="Views/Sampling/_PrintPartial.cshtml" publishTime="02/26/2014 11:52:16" />
-    <file relUrl="bin/System.Web.WebPages.xml" publishTime="12/19/2010 23:59:38" />
-    <file relUrl="Content/Images/copy2.png" publishTime="07/12/2013 13:52:44" />
+    <file relUrl="bin/THOK.Wms.Bll.dll" publishTime="09/27/2014 11:08:18" />
+    <file relUrl="Content/themes/base/images/2Son_HelpEdit.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/StockIntoSearch/Index.cshtml" publishTime="09/25/2014 13:42:14" />
     <file relUrl="Content/themes/base/images/edit_remove.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/icons/filesave.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/images/Menu_delivery.ico" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/spinner_arrow_up.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/icons/2Menu_ServerDevice.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery.asyncProcessing.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/ui.css" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/BillType/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor-1.1.14-zh-cn.min.js" publishTime="01/08/2014 11:06:56" />
     <file relUrl="ContentReport/Report/movestock.frx" publishTime="01/21/2014 09:20:04" />
-    <file relUrl="bin/Ionic.Zip.dll" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Views/ProductMonthly/_AuditPartial.cshtml" publishTime="11/11/2013 11:19:52" />
     <file relUrl="Views/PalletStockOut/_DeletePartial.cshtml" publishTime="09/02/2013 15:49:36" />
     <file relUrl="Views/Formula/Index.cshtml" publishTime="07/08/2014 14:53:40" />
     <file relUrl="Views/Warehouse2/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/sleep.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/themes/base/icons/son_Job.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/tag-h5.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Inventory/_DeletePartial.cshtml" publishTime="12/20/2013 16:34:20" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/panic.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/loading.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/StockOutWork/_CancelPartial.cshtml" publishTime="04/04/2014 17:00:56" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.linkbutton.js" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/icons/Formula.gif" publishTime="12/30/2005 21:11:20" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/laugh.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tree_loading.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/heart.gif" publishTime="01/08/2014 11:06:58" />
@@ -517,30 +515,32 @@
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/32.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/question.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/images/son_StockIntoBillAllot.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/diy/3.png" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Views/User/_UserRolePartial.cshtml" publishTime="09/04/2013 09:58:56" />
     <file relUrl="Views/LoginLog/Index.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/System/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/ProductLedger/_SearchPartial.cshtml" publishTime="02/19/2014 16:14:00" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/messager_question.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/icons.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Home/_LogonPartial2.cshtml" publishTime="07/08/2014 17:29:02" />
     <file relUrl="Views/ProductDetails/_PrintPartial.cshtml" publishTime="12/02/2013 16:05:44" />
     <file relUrl="Content/Images/noscript.gif" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/37.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/wub.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/son_Warehouse.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/StockInBill/Index.cshtml" publishTime="09/21/2014 10:24:42" />
+    <file relUrl="Views/StockInBill/Index.cshtml" publishTime="09/27/2014 11:05:20" />
     <file relUrl="bin/Microsoft.Practices.Unity.Interception.Configuration.dll" publishTime="05/24/2013 14:08:14" />
     <file relUrl="Views/System/Index.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/jquery.ztree.exedit-3.3.min.js" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Views/FillBill/_BillPartial.cshtml" publishTime="06/27/2014 15:37:55" />
-    <file relUrl="Views/MoveStock/_NullCellPartial.cshtml" publishTime="09/29/2013 14:42:40" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tabs_leftarrow.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/ParameterSet/Index.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockOutSearch/_PrintPartial.cshtml" publishTime="02/18/2014 17:02:32" />
     <file relUrl="Content/themes/base/images/son_MoveBillWork.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockDifferWork/_TaskPartial.cshtml" publishTime="03/04/2014 16:42:50" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/laugh.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/38.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/joyful.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="ContentReport/Report/worksearch.frx" publishTime="01/21/2014 09:39:00" />
-    <file relUrl="Content/themes/base/images/cancel.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/no.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Feeding/Index.cshtml" publishTime="07/08/2014 14:53:40" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.slider.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/PalletStockOut/_ProductPartial.cshtml" publishTime="09/04/2013 09:58:58" />
     <file relUrl="Views/Sampling/_DeletePartial.cshtml" publishTime="12/20/2013 16:34:20" />
@@ -550,8 +550,9 @@
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tree_checkbox_0.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/son_StockPlace.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Car/Index.cshtml" publishTime="08/23/2013 15:50:20" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/tag-div.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Schedule/_EditPartial.cshtml" publishTime="02/18/2014 16:19:56" />
-    <file relUrl="bin/Microsoft.Practices.Unity.Configuration.dll" publishTime="05/24/2013 14:08:14" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/datagrid_sort_desc.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockOutWork/_TaskPartial.cshtml" publishTime="08/25/2014 10:54:54" />
     <file relUrl="Views/Schedule2/_DeletePartial.cshtml" publishTime="12/20/2013 15:47:02" />
     <file relUrl="Views/UserPermission/Index.cshtml" publishTime="07/01/2013 10:16:52" />
@@ -559,27 +560,33 @@
     <file relUrl="Views/MoveStock/_PrintPartial.cshtml" publishTime="02/19/2014 16:04:16" />
     <file relUrl="Content/themes/base/images/up.png" publishTime="11/05/2013 15:16:00" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/datagrid_sort_desc.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/icons/onebit_24.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Schedule/_AddPartial.cshtml" publishTime="02/18/2014 16:19:56" />
     <file relUrl="Views/Role/_SearchPartial.cshtml" publishTime="02/28/2014 13:48:30" />
-    <file relUrl="bin/LitJson.dll" publishTime="05/24/2013 14:08:14" />
+    <file relUrl="Views/Shared/_AntiTrialPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/combobox.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Role/_PrintPartial.cshtml" publishTime="03/03/2014 17:44:14" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor-1.1.14-zh-tw.min.js" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/Home/ServerError.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/MoveStock/_AuditPartial.cshtml" publishTime="07/04/2014 14:10:10" />
-    <file relUrl="Views/Shared/_AllotPartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/progressbar.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/sum.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/ProductCategory/Index.cshtml" publishTime="08/07/2013 09:23:10" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/tag-h6.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="bin/LitJson.dll" publishTime="05/24/2013 14:08:14" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.tree.js" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/pagination_next.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/icons/ProductOriginal.gif" publishTime="12/30/2005 20:45:54" />
     <file relUrl="Views/ProudctionLine/Index.cshtml" publishTime="07/07/2014 13:53:31" />
+    <file relUrl="Content/themes/base/images/son_Company.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Shared/_FunctionPartial.cshtml" publishTime="08/22/2014 16:51:06" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/doubt.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/User/_PrintPartial.cshtml" publishTime="03/03/2014 17:58:06" />
     <file relUrl="bin/FastReport.dll" publishTime="04/11/2013 23:09:48" />
+    <file relUrl="Views/ProductDetails/_SearchPartial.cshtml" publishTime="02/19/2014 14:26:56" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/love.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/Menu_Research.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/glare.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/devil.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/StockIntoSearch/Index.cshtml" publishTime="09/25/2014 13:42:14" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/config.txt" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/themes/base/icons/son_StockIntoBillWork.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/progressbg.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/images/Menu_Sort.png" publishTime="07/01/2013 10:16:52" />
@@ -587,71 +594,74 @@
     <file relUrl="Views/Module/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/validatebox.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Images/banner.jpg" publishTime="08/27/2014 10:49:58" />
+    <file relUrl="Views/City/_PrintPartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/DirectProduct/_PrintPartial.cshtml" publishTime="02/19/2014 15:55:42" />
     <file relUrl="Views/Home/About.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-nl.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Wms.Repository.dll" publishTime="09/25/2014 13:44:56" />
+    <file relUrl="Views/StockOutBill/_AddPartial.cshtml" publishTime="08/27/2014 14:40:42" />
+    <file relUrl="bin/THOK.Wms.Repository.dll" publishTime="09/27/2014 11:07:31" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/datagrid_header_bg.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/tabicons.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/27.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/sad.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/edit_add.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Shared/_CopyPartial.cshtml" publishTime="08/23/2013 17:36:42" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/button_span_bg.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Wms.Upload.pdb" publishTime="09/25/2014 13:44:58" />
+    <file relUrl="bin/THOK.Wms.Upload.pdb" publishTime="09/27/2014 11:07:33" />
+    <file relUrl="Content/themes/base/images/filesave.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/PalletStockIn/_AuditPartial.cshtml" publishTime="08/30/2013 16:17:58" />
     <file relUrl="Content/themes/base/images/son_StockOutBillWork.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Sampling/_EditPartial.cshtml" publishTime="12/20/2013 16:34:20" />
     <file relUrl="Views/HelpContent/_helpPartial2.cshtml" publishTime="03/05/2014 15:38:12" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/tongue.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/undo.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/ParameterSet/Index.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-ca.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery.fullscreen.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/icons/2Son_HelpContents.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/ProductGrade/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/titlebg.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/2Son_WorkLog.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/config.txt" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tabs_leftarrow.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="bin/FastReport.Web.dll" publishTime="04/11/2013 21:03:06" />
     <file relUrl="Content/themes/base/images/son_StockIntoBillWork.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Replace/_UploadPartial.cshtml" publishTime="08/27/2014 10:12:09" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/easyui.css" publishTime="08/26/2013 17:34:10" />
-    <file relUrl="Content/themes/base/icons/blank.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/FillBill/_TaskPartial.cshtml" publishTime="09/10/2013 15:09:00" />
+    <file relUrl="ContentReport/Report/formulaprint.frx" publishTime="01/21/2014 09:14:24" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/button_a_bg.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-cz.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/messager_error.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/tag-h5.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/dialog.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/brokenheart.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/images/ui-icons_888888_256x240.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Product/_SearchPartial.cshtml" publishTime="07/01/2014 15:01:08" />
-    <file relUrl="Views/Shared/_OutreplacePartial.cshtml" publishTime="08/22/2014 16:48:40" />
+    <file relUrl="Views/User/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Shared/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/img/btnbg.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/MoveStock.gif" publishTime="12/30/2005 20:45:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tabs_enabled.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/wink.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/themes/base/images/flag.png" publishTime="10/15/2013 08:55:28" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tree_dnd_yes.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/2Son_HelpIndex.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/Menu_ProductQuality.jpg" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/DirectProduct/_DeletePartial.cshtml" publishTime="12/20/2013 11:46:38" />
+    <file relUrl="Content/themes/base/icons/mini_add.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Inventory/_PrintPartial.cshtml" publishTime="02/19/2014 16:01:12" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/calendar_nextyear.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Schedule2/_AuditPartial.cshtml" publishTime="07/24/2013 10:47:24" />
     <file relUrl="Content/themes/base/icons/son_StockOlddetails.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.combo.js" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/StockOutBill/_PrintPartial.cshtml" publishTime="02/19/2014 16:09:12" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-bg.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="ContentReport/Report/barcodeprint.frx" publishTime="09/25/2014 13:10:26" />
-    <file relUrl="Views/Feeding/_PrintPartial.cshtml" publishTime="02/19/2014 16:09:12" />
+    <file relUrl="Content/themes/base/icons/2Menu_ServerDevice.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/tag-h2.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/ProductGrade/_PrintPartial.cshtml" publishTime="12/16/2013 13:49:58" />
+    <file relUrl="Views/SystemEventLog/_PrintPartial.cshtml" publishTime="03/04/2014 08:47:46" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/panel_loading.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/tag-h2.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/StockInWork/_TaskPartial.cshtml" publishTime="07/12/2014 10:34:34" />
     <file relUrl="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockInBill/_DeletePartial.cshtml" publishTime="07/08/2014 14:10:30" />
-    <file relUrl="Content/Scripts/jquery.asyncProcessing.js" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/tag-address.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tree_arrows.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/browse.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/kiss.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Feeding/_SearchPartial.cshtml" publishTime="02/19/2014 16:09:12" />
     <file relUrl="Content/themes/base/icons/son_StockAreaDownline.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/multiupload.html" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/Shared/_DownLoadPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/curse.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/DirectProductSearch/_SearchPartial.cshtml" publishTime="02/19/2014 14:28:22" />
     <file relUrl="Views/InventoryWork/Index.cshtml" publishTime="09/24/2013 15:01:46" />
@@ -660,97 +670,92 @@
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/angry.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/StockDiffer/Index.cshtml" publishTime="01/07/2014 15:08:20" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/tag-h4.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/themes/base/icons/2Son_Cities.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/StockOutBill/Index.cshtml" publishTime="09/25/2014 13:31:47" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/icons.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/StockOutBill/Index.cshtml" publishTime="09/27/2014 11:03:38" />
     <file relUrl="Views/Crane/Index.cshtml" publishTime="08/23/2013 15:47:04" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/blank.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/button_span_bg.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/icons/son_SortInfo.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/tag-h3.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/StockOutBill/_SearchPartial.cshtml" publishTime="09/19/2014 18:13:51" />
     <file relUrl="Views/StockIntoSearch/_PrintPartial.cshtml" publishTime="02/18/2014 17:01:48" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tree_file.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/panel_loading.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/ParameterSet/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
     <file relUrl="Views/Shared/_CancereplacePartial.cshtml" publishTime="08/22/2014 16:50:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/calendar_nextmonth.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/panel_tool_collapse.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/edit_remove.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/PalletStockIn/_EditPartial.cshtml" publishTime="09/22/2013 09:09:52" />
     <file relUrl="Content/themes/base/icons/copy2.png" publishTime="07/12/2013 13:52:44" />
     <file relUrl="Views/PalletStockIn/_SearchPartial.cshtml" publishTime="02/19/2014 16:09:12" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/zTreeStandard.png" publishTime="07/01/2013 10:16:50" />
-    <file relUrl="Content/Images/login_bg.jpg" publishTime="07/01/2013 10:16:50" />
+    <file relUrl="Views/ProductOriginal/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
     <file relUrl="Content/themes/base/icons/son_StockOutBill.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/progressbg.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/datagrid_row_collapse.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/wordimg.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/accordion_expand.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery.ajaxsetup.js" publishTime="11/25/2013 15:08:10" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/panel_tool_collapse.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/close.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/themes/base/icons/mini_add.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/loading.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tree_file.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="bin/Microsoft.Practices.Unity.dll" publishTime="05/24/2013 14:08:14" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/spinner_arrow_up.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="CellBord/cellbord.cshtml" publishTime="09/03/2014 10:25:14" />
     <file relUrl="Content/themes/base/icons/son_CheckBill.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/mykeyboardshortcuts.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/FillBill/Index.cshtml" publishTime="11/25/2013 18:01:02" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tree_folder_open.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/panel_tool_expand.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/ui.css" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/themes/base/images/son_SortOrderc.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/StockDiffer/_AddPartial.cshtml" publishTime="07/04/2014 14:26:14" />
+    <file relUrl="Content/themes/base/icons/onebit_24.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/21.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/StockOutBill/_AddPartial.cshtml" publishTime="08/27/2014 14:40:42" />
-    <file relUrl="bin/log4net.dll" publishTime="05/24/2013 14:08:14" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/shocked.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/City/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Replace/_DeletePartial.cshtml" publishTime="04/24/2014 16:21:00" />
     <file relUrl="Content/themes/base/icons/BillType.png" publishTime="04/12/2006 10:18:02" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-zh_CN.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/layout.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Authority.Dal.dll" publishTime="09/25/2014 13:44:56" />
+    <file relUrl="bin/THOK.Authority.Dal.dll" publishTime="09/27/2014 11:07:31" />
     <file relUrl="Views/Home/_ChangeSystemPartial.cshtml" publishTime="02/18/2014 11:18:00" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/sideways.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-pt_BR.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/son_CigaretteUnit.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/StockInWork/Index.cshtml" publishTime="09/25/2014 13:25:57" />
+    <file relUrl="Views/StockInWork/Index.cshtml" publishTime="09/27/2014 11:05:35" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/envy.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/wmp.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/themes/base/images/help.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/UnitCategory/_PrintPartial.cshtml" publishTime="12/16/2013 13:49:56" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.numberbox.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockDiffer/_AuditPartial.cshtml" publishTime="10/08/2013 16:36:54" />
-    <file relUrl="Views/StockOutBill/_PrintPartial.cshtml" publishTime="02/19/2014 16:09:12" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/wordimg.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Global.asax" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/tag-h6.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/slider.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/zTreeStyle.css" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/wail.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tabs_enabled.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.treegrid.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/productgrade.png" publishTime="03/02/2008 14:20:04" />
     <file relUrl="Views/Module/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/City/_PrintPartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="bin/Microsoft.Practices.Unity.Configuration.dll" publishTime="05/24/2013 14:08:14" />
     <file relUrl="Content/themes/base/icons/search.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/close.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/bye.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/Feeding/_ProductPartial.cshtml" publishTime="08/25/2014 11:56:51" />
     <file relUrl="Content/themes/base/icons/son_SortOrder.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/10.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/menu_split_downarrow.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/icons/Menu_StockMove.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/datagrid_row_expand.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/back.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/calendar_prevyear.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/MoveStock/_EditPartial.cshtml" publishTime="12/20/2013 16:34:20" />
     <file relUrl="Views/HelpEdit/Index.cshtml" publishTime="03/06/2014 10:39:32" />
+    <file relUrl="Views/BillType/Index.cshtml" publishTime="12/09/2013 17:27:08" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/messager.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/icons/ok.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/datagrid_sort_asc.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/pagination_first.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockInBill/_AntiTrialPartial.cshtml" publishTime="07/08/2014 14:10:30" />
-    <file relUrl="Views/StorageSearch/_SearchPartial.cshtml" publishTime="09/22/2014 11:06:40" />
+    <file relUrl="Views/StorageSearch/_SearchPartial.cshtml" publishTime="09/27/2014 10:59:05" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/laugh.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/images/son_CigaretteSupplier.jpg" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/edit_add.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/icons/redo.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/blank.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/victory.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/jquery-1.7.2.min.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/BillType.gif" publishTime="12/30/2005 20:46:08" />
     <file relUrl="Views/UnitCategory/_AddPartial.cshtml" publishTime="09/04/2013 09:58:56" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/waiting.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/datagrid.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/cool.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="ContentReport/Report/fillbill.frx" publishTime="01/21/2014 09:05:46" />
     <file relUrl="Views/StockDiffer/_PrintPartial.cshtml" publishTime="02/19/2014 16:09:12" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/menubutton.css" publishTime="07/01/2013 10:16:52" />
@@ -767,14 +772,14 @@
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/anchor.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/images/son_CigaretteInfo.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/tag-h1.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/Formula/_SearchPartial.cshtml" publishTime="02/19/2014 15:51:16" />
+    <file relUrl="bin/System.Web.WebPages.xml" publishTime="12/19/2010 23:59:38" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/anchor.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Help/_SearchPartial.cshtml" publishTime="03/06/2014 15:43:48" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tree_dnd_no.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/mini_refresh.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Formula/_DeletePartial.cshtml" publishTime="07/04/2014 14:21:18" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/tag-pre.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/tabicons.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/ProductOriginal/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/linkbutton.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Shared/_ExitPartial.cshtml" publishTime="08/07/2013 09:56:36" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tree_checkbox_1.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/Menu_Cigarette.png" publishTime="07/01/2013 10:16:52" />
@@ -784,21 +789,19 @@
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.accordion.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockMoveSearch/_SearchPartial.cshtml" publishTime="02/18/2014 16:19:56" />
     <file relUrl="Content/themes/base/icons/cut.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/sad.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/diy/1_close.png" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Views/HelpContent/_helpPartial1.cshtml" publishTime="09/04/2013 09:58:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/pagination_loading.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-es.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Feeding/Index.cshtml" publishTime="07/08/2014 14:53:40" />
-    <file relUrl="Content/themes/base/icons/Menu_DeliverLine.ico" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/DirectProduct/_PrintPartial.cshtml" publishTime="02/19/2014 15:55:42" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/combo.css" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/FeedingSearch/Index.cshtml" publishTime="01/04/2014 16:18:02" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/38.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/PalletStockIn/_TaskPartial.cshtml" publishTime="09/02/2013 09:32:02" />
     <file relUrl="bin/System.Web.Helpers.xml" publishTime="12/19/2010 23:59:38" />
     <file relUrl="Views/RolePermission/Index.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/calendar_prevyear.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/Menu_ProductQuality.jpg" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/messager.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/4.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/pagination_next.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/calendar_nextmonth.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Authorize/Index.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.combobox.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/23.gif" publishTime="01/08/2014 11:06:58" />
@@ -806,85 +809,81 @@
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/jquery-1.4.4.min.js" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Views/StockDifferWork/_CancelPartial.cshtml" publishTime="07/05/2014 10:10:07" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.menubutton.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/MoveStock/Index.cshtml" publishTime="01/07/2014 15:08:20" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/tag-h3.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/FeedingSearch/_SearchPartial.cshtml" publishTime="02/18/2014 16:19:56" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/splitbutton.css" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/icons/mini_refresh.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockInBill/_MixPartial.cshtml" publishTime="09/22/2013 11:24:26" />
-    <file relUrl="Content/Site.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Car/_SearchPartial.cshtml" publishTime="12/16/2013 11:58:36" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/tag-h3.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/sick.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/ui.css" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/pagination_first.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/Menu_delivery.ico" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/pencil.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/ProductCategory/_PrintPartial.cshtml" publishTime="12/16/2013 13:49:58" />
+    <file relUrl="Views/BillPrint/Index.cshtml" publishTime="01/21/2014 16:02:42" />
+    <file relUrl="Views/Help/Index.cshtml" publishTime="03/10/2014 14:00:02" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/messager_warning.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/pagination_load.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.propertygrid.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Inventory/_PrintPartial.cshtml" publishTime="02/19/2014 16:01:12" />
+    <file relUrl="Content/themes/base/icons/Menu_StockDiffer.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockInBill/_PrintPartial.cshtml" publishTime="02/19/2014 15:57:40" />
-    <file relUrl="Views/Formula/_DeletePartial.cshtml" publishTime="07/04/2014 14:21:18" />
+    <file relUrl="Views/HelpContent/Index.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/tag-p.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/DirectProduct.gif" publishTime="12/30/2005 20:53:18" />
     <file relUrl="Content/Scripts/xheditor1.1.14/jquery/jquery-1.4.4.min.js" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/16.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/tag-p.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/waiting.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/angry.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tabs_active.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Shared/_CancelPartial.cshtml" publishTime="04/04/2014 13:40:28" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/sleep.gif" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Views/Sampling/_AntiTrialPartial.cshtml" publishTime="09/25/2013 14:19:40" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.linkbutton.js" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/diy/6.png" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/iframe.css" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="bin/System.Web.Abstractions.dll" publishTime="03/18/2010 19:31:26" />
-    <file relUrl="Content/themes/base/icons/2Son_HelpEdit.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Authority.DbModel.dll" publishTime="09/25/2014 13:44:55" />
-    <file relUrl="Views/BillType/Index.cshtml" publishTime="12/09/2013 17:27:08" />
-    <file relUrl="Views/ProductOriginal/_DeletePartial.cshtml" publishTime="08/01/2013 09:27:12" />
+    <file relUrl="bin/THOK.Authority.DbModel.dll" publishTime="09/27/2014 11:07:30" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/datagrid_title_bg.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/tag-h2.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Server/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
-    <file relUrl="Content/themes/base/icons/son_StockArea.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/ProductLedger/_SearchPartial.cshtml" publishTime="02/19/2014 16:14:00" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/blank.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/son_CheckBillWork.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/progressbar.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/SamplingWork/_CancelPartial.cshtml" publishTime="07/05/2014 10:10:20" />
     <file relUrl="Views/Server/_AddPartial.cshtml" publishTime="09/04/2013 09:58:56" />
     <file relUrl="Content/themes/base/icons/cancel.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/tag-address.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/alien.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/13.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/messager_question.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/ProudctionLine/_AddPartial.cshtml" publishTime="07/08/2014 12:24:36" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tree_folder.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Schedule2/_EditPartial.cshtml" publishTime="12/20/2013 15:44:32" />
+    <file relUrl="Content/themes/base/icons/Menu_DeliverLine.ico" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/curse.gif" publishTime="01/08/2014 11:06:56" />
-    <file relUrl="Views/Warehouse2/_PrintPartial.cshtml" publishTime="12/09/2013 10:23:06" />
+    <file relUrl="Views/PalletStockOut/_SearchPartial.cshtml" publishTime="02/19/2014 16:10:18" />
     <file relUrl="Views/ProductMonthly/_AntiTrialPartial.cshtml" publishTime="11/06/2013 17:07:30" />
     <file relUrl="Views/WorkSearch/Index.cshtml" publishTime="07/26/2014 16:23:07" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/splitbutton.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/struggle.gif" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Views/DirectProductSearch/Index.cshtml" publishTime="01/03/2014 14:03:24" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/wordimg.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-fr.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/son_StockIntoBill.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Inventory/_AddPartial.cshtml" publishTime="07/04/2014 14:18:22" />
     <file relUrl="Content/themes/base/icons/Menu_Organization.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/undo.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/System/_AddPartial.cshtml" publishTime="09/04/2013 09:58:56" />
+    <file relUrl="Views/Home/_ProductWarningPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/search.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/SamplingWork/Index.cshtml" publishTime="09/25/2013 14:47:58" />
     <file relUrl="Views/Unit/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/slider_handle.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/Menu_Research.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/System/_AddPartial.cshtml" publishTime="09/04/2013 09:58:56" />
+    <file relUrl="Views/ScheduleSearch/Index.cshtml" publishTime="12/18/2013 16:59:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/wmp.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/tag-pre.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/20.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-fr.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/accept.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/StoreSearch/_SearchPartial.cshtml" publishTime="05/22/2014 11:11:40" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/tag-p.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/StoreSearch/_SearchPartial.cshtml" publishTime="09/27/2014 10:58:46" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/31.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Module/_FunctionAdd.cshtml" publishTime="09/04/2013 09:58:58" />
-    <file relUrl="Content/themes/base/jquery-ui.css" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.spinner.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/Son_ProductWarning.jpg" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="favicon.ico" publishTime="02/19/2014 11:02:30" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/swfupload/swfupload.swf" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Warehouse2/_EditPartial.cshtml" publishTime="09/04/2013 09:58:56" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/smile.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/tag-p.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/swfupload/swfupload.js" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Inventory/_CellPartial.cshtml" publishTime="09/24/2013 15:51:30" />
@@ -895,50 +894,48 @@
     <file relUrl="Views/StockDiffer/_SearchPartial.cshtml" publishTime="02/19/2014 16:09:12" />
     <file relUrl="Views/ParameterSet/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/son_CigaretteInfo.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Schedule/Index.cshtml" publishTime="07/17/2013 14:21:08" />
-    <file relUrl="Content/themes/base/icons/son_StockOldAll.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="ContentReport/Report/stockoutprint.frx" publishTime="01/21/2014 09:41:20" />
     <file relUrl="Views/Prepareplan/Index.cshtml" publishTime="08/26/2014 17:42:06" />
     <file relUrl="Views/FillBill/_AntiTrialPartial.cshtml" publishTime="07/04/2014 14:10:10" />
     <file relUrl="Views/ProductLedger/Index.cshtml" publishTime="11/13/2013 10:29:26" />
-    <file relUrl="Views/FeedingSearch/Index.cshtml" publishTime="01/04/2014 16:18:02" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/35.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/datebox.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/son_CigaretteBrand.jpg" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/tag-h5.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/images/Menu_CheckBill.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/PalletStockOut/_SearchPartial.cshtml" publishTime="02/19/2014 16:10:18" />
-    <file relUrl="Content/themes/base/icons/mini_edit.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/mykeyboardshortcuts.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/2.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/diy/8.png" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/tag-h4.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Schedule2/_PrintPartial.cshtml" publishTime="02/19/2014 15:54:24" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/tag-h1.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/datagrid_sort_desc.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/flag.png" publishTime="10/15/2013 08:55:28" />
-    <file relUrl="Content/themes/base/images/tip.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/loading.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/img/bg2.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/tag-h6.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/Menu_Sort.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/joyful.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Site.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockInBill/_AddPartial.cshtml" publishTime="08/27/2014 14:40:50" />
     <file relUrl="Content/themes/base/icons/2Son_HelpIndex.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/wmp.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/Son_deliveryDis.ico" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/City/Index.cshtml" publishTime="08/07/2013 09:20:12" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/8.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/Prepareplan/_SearchPartial.cshtml" publishTime="08/26/2014 18:39:08" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/menu.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Cigarette/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/tag-h6.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Sampling/_SearchPartial.cshtml" publishTime="02/19/2014 16:02:42" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/glare.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/cute.gif" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/tip.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/titlebg.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.datagrid.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/Son_CellAnalysis.jpg" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/tag-h5.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/tag-h6.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/themes/base/icons/shut_down.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/PalletStockIn/Index.cshtml" publishTime="09/22/2013 09:09:52" />
     <file relUrl="bin/THOK.Util.dll" publishTime="03/19/2013 13:32:44" />
     <file relUrl="Content/themes/base/images/son_Bill_Type.jpg" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/tag-p.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/SamplingSearch/Index.cshtml" publishTime="01/03/2014 14:01:58" />
     <file relUrl="Views/User/_PermissionAdminPartial.cshtml" publishTime="07/18/2014 11:40:08" />
     <file relUrl="Views/Feeding/_AuditPartial.cshtml" publishTime="07/08/2014 14:53:40" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/surprised.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/menu_split_downarrow.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockDiffer/_ProductPartial.cshtml" publishTime="10/09/2013 15:05:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tree_file.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/InvertedTreasury/_PrintPartial.cshtml" publishTime="02/18/2014 16:58:38" />
@@ -948,68 +945,68 @@
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/sum.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/messager_info.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icon.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor-1.1.14-en.min.js" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Views/Feeding/_PrintPartial.cshtml" publishTime="02/19/2014 16:09:12" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/searchbox_button.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/help.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/mini_edit.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/son_StockPlace.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/PalletStockIn/_AuditPartial.cshtml" publishTime="08/30/2013 16:17:58" />
-    <file relUrl="Views/Feeding/_AddPartial.cshtml" publishTime="09/05/2014 09:08:52" />
+    <file relUrl="bin/THOK.Wms.Repository.pdb" publishTime="09/27/2014 11:07:31" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/calendar.css" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/FillBill/_TaskPartial.cshtml" publishTime="09/10/2013 15:09:00" />
     <file relUrl="Content/themes/base/images/down.png" publishTime="11/05/2013 15:22:18" />
     <file relUrl="Views/Replace/_AuditPartial.cshtml" publishTime="04/24/2014 15:43:24" />
     <file relUrl="Content/themes/base/images/2Son_ModuleJurisdiction.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockInWork/_SearchPartial.cshtml" publishTime="02/19/2014 15:58:48" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/bandit.gif" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Content/themes/base/icons/allsearch.png" publishTime="04/12/2006 10:18:06" />
     <file relUrl="Views/MoveStockWork/_TaskPartial.cshtml" publishTime="09/27/2013 17:05:10" />
     <file relUrl="Views/StockIntoSearch/_CheckPartial.cshtml" publishTime="07/13/2014 14:18:20" />
-    <file relUrl="Content/themes/base/images/filesave.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/menu_downarrow.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Images/login_bg.jpg" publishTime="07/01/2013 10:16:50" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/victory.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/tag-p.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/search.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="ContentReport/Report/errorreport.frx" publishTime="12/19/2013 09:26:30" />
+    <file relUrl="Views/StockOutWork/_SearchPartial.cshtml" publishTime="08/27/2013 16:53:48" />
     <file relUrl="Views/User/Index.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/icons/Menu_WarehouseM.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StoreSearch/Index.cshtml" publishTime="09/25/2014 13:35:05" />
     <file relUrl="Views/LoginLog/_PrintPartial.cshtml" publishTime="03/04/2014 08:43:54" />
     <file relUrl="Views/Shared/_SearchPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/zTreeStandard.gif" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Views/Module/Index.cshtml" publishTime="09/22/2013 11:24:26" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/validatebox_pointer.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/StockIntoSearch/_SearchPartial.cshtml" publishTime="09/25/2014 13:42:49" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/flash.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/son_MoveBillAllot.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="bin/System.Web.Helpers.dll" publishTime="01/05/2011 15:45:38" />
     <file relUrl="Content/themes/base/images/bg.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/datagrid_header_bg.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/cool.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/Car/_AddPartial.cshtml" publishTime="01/07/2014 11:01:28" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/7.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.resizable.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/pagination_last.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-de.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/ui-icons_222222_256x240.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Common.WEBUtil.dll" publishTime="09/25/2014 13:44:53" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/22.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="bin/THOK.Common.WEBUtil.dll" publishTime="09/27/2014 11:07:28" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/datebox_arrow.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/menu_rightarrow.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/2Son_SysJurisdiction.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Feeding/_AntiTrialPartial.cshtml" publishTime="07/08/2014 14:53:40" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/loading.gif" publishTime="07/01/2013 10:16:50" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/flash.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/menu.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/SystemEventLog/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/anchor.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/HelpContent/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="bin/FastReport.Editor.dll" publishTime="09/18/2013 14:46:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/tag-div.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/themes/base/images/Son_ProductWarning.jpg" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/25.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/System/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Unit/_PrintPartial.cshtml" publishTime="12/16/2013 13:49:58" />
     <file relUrl="Views/Schedule2/Index.cshtml" publishTime="09/22/2013 09:09:52" />
-    <file relUrl="Views/StockInBill/_AuditPartial.cshtml" publishTime="07/08/2014 14:01:26" />
+    <file relUrl="Views/Shared/_DownLoadPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.menu.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/JQuery-zTree-v3.3/jquery.ztree.all-3.3.js" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Content/themes/base/icons/son_CigaretteSupplier.jpg" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.pagination.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/calendar.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/2Son_UserJurisdiction.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/tag-h5.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="ContentReport/Report/barcodeprint.frx" publishTime="09/25/2014 13:10:26" />
     <file relUrl="Views/Module/_AddPartial.cshtml" publishTime="09/04/2013 09:58:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/pagination.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockOutBill/_DeletePartial.cshtml" publishTime="07/08/2014 14:10:30" />
@@ -1019,43 +1016,43 @@
     <file relUrl="Views/HelpEdit/_helpPartial1.cshtml" publishTime="03/06/2014 11:01:28" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/datagrid_sort_asc.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/menu_rightarrow.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/JQuery-zTree-v3.3/jquery.ztree.exhide-3.3.js" publishTime="07/01/2013 10:16:50" />
-    <file relUrl="bin/System.Web.Mvc.dll" publishTime="01/05/2011 17:42:16" />
-    <file relUrl="bin/THOK.Authority.Dal.pdb" publishTime="09/25/2014 13:44:56" />
+    <file relUrl="Content/themes/base/images/back.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="bin/THOK.Authority.Dal.pdb" publishTime="09/27/2014 11:07:31" />
     <file relUrl="Views/Shared/_PrintPartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Shared/_BalancePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/propertygrid.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/2Menu_SysLog.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/2Menu_Jurisdiction.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/StockDiffer/_AntiTrialPartial.cshtml" publishTime="10/08/2013 16:36:54" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/tag-div.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/39.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/2Son_LoginLog.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/InvertedTreasury/_SearchPartial.cshtml" publishTime="02/27/2014 17:39:02" />
     <file relUrl="Views/Schedule/_AntiTrialPartial.cshtml" publishTime="07/17/2013 17:53:10" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/combobox.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Shared/_HelpPartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/validatebox.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Home/Index.cshtml" publishTime="07/05/2014 15:23:50" />
     <file relUrl="packages.config" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/StockInWork/_ExitPartial.cshtml" publishTime="08/07/2013 10:04:46" />
+    <file relUrl="Views/SamplingWork/_CancelPartial.cshtml" publishTime="07/05/2014 10:10:20" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/tag-h4.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="bin/THOK.Common.NPOI.dll" publishTime="09/25/2014 13:44:54" />
-    <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/diy/3.png" publishTime="07/01/2013 10:16:50" />
-    <file relUrl="Content/themes/base/icons/son_SortInfo.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="bin/THOK.Common.NPOI.dll" publishTime="09/27/2014 11:07:29" />
+    <file relUrl="Content/themes/base/images/son_CheckBillMake.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tree_folder_open.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tree_elbow.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/son_StockOutBill.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/icons/accept.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/icons/blank.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/11.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/OutInSearch/Index.cshtml" publishTime="09/25/2014 12:49:11" />
+    <file relUrl="Views/OutInSearch/Index.cshtml" publishTime="09/26/2014 16:58:13" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/shy.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/close.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Sampling/_CellPartial.cshtml" publishTime="09/25/2013 14:59:44" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/icons.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tabs_rightarrow.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/MoveStock/_DeletePartial.cshtml" publishTime="12/20/2013 16:34:20" />
     <file relUrl="Views/Feeding/_EditPartial.cshtml" publishTime="07/08/2014 14:53:40" />
     <file relUrl="Views/InventorySearch/_SearchPartial.cshtml" publishTime="02/18/2014 16:19:56" />
-    <file relUrl="Views/Server/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="bin/System.Web.Mvc.dll" publishTime="01/05/2011 17:42:16" />
+    <file relUrl="Views/PalletStockIn/_AntiTrialPartial.cshtml" publishTime="08/30/2013 16:17:58" />
     <file relUrl="Views/SamplingSearch/_SearchPartial.cshtml" publishTime="02/18/2014 16:19:56" />
     <file relUrl="Content/themes/base/icons/Crane.png" publishTime="04/12/2006 10:18:22" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/tag-address.gif" publishTime="01/08/2014 11:06:58" />
@@ -1063,7 +1060,7 @@
     <file relUrl="Content/themes/base/images/son_CheckBill.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/son_MoveBill.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/UnitCategory/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
-    <file relUrl="Views/Shared/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Inventory/_EditPartial.cshtml" publishTime="12/20/2013 16:24:06" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/anchor.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/PalletStockIn/_AddPartial.cshtml" publishTime="09/26/2013 15:52:54" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/pinch.gif" publishTime="01/08/2014 11:06:58" />
@@ -1072,11 +1069,11 @@
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/validatebox_warning.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/FillBill/_BarcodePartial.cshtml" publishTime="09/11/2013 16:00:08" />
     <file relUrl="Views/Server/Index.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Wms.Dal.dll" publishTime="09/25/2014 13:44:56" />
+    <file relUrl="Content/themes/base/icons/2Son_HelpEdit.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/son_CheckBillMake.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/iframe.css" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/edit_add.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/config.txt" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Views/Shared/_OutreplacePartial.cshtml" publishTime="08/22/2014 16:48:40" />
     <file relUrl="Views/Shared/_OutstorePartial.cshtml" publishTime="07/25/2013 10:36:26" />
     <file relUrl="Views/PalletStockOut/_AddPartial.cshtml" publishTime="09/26/2013 15:52:54" />
     <file relUrl="bin/Microsoft.Practices.ServiceLocation.dll" publishTime="05/24/2013 14:08:14" />
@@ -1086,20 +1083,21 @@
     <file relUrl="Content/Scripts/jthok-ui/leftmenu.js" publishTime="02/18/2014 13:42:46" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/validatebox_pointer.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-da.js" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/images/Son_deliveryDis.ico" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/iframe.css" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/themes/base/images/son_Job.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/messager_error.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/Menu_DeliverLine.ico" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Wms.Dal.pdb" publishTime="09/25/2014 13:44:56" />
+    <file relUrl="bin/THOK.Wms.Dal.pdb" publishTime="09/27/2014 11:07:31" />
     <file relUrl="Views/PalletStockOut/_EditPartial.cshtml" publishTime="09/22/2013 09:09:52" />
     <file relUrl="Content/themes/base/images/son_DifferBill.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Inventory/_AntiTrialPartial.cshtml" publishTime="07/04/2014 14:10:10" />
     <file relUrl="Views/Home/_ChangeServerPartial.cshtml" publishTime="09/03/2013 17:56:22" />
-    <file relUrl="Content/themes/base/icons/ProductOriginal.gif" publishTime="12/30/2005 20:45:54" />
+    <file relUrl="bin/log4net.dll" publishTime="05/24/2013 14:08:14" />
     <file relUrl="Content/Scripts/xheditor1.1.14/common.css" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/Schedule2/_SearchPartial.cshtml" publishTime="02/19/2014 15:54:24" />
-    <file relUrl="Content/themes/base/images/2Son_Cities.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/5.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/pagination.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tree_dnd_yes.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/button_span_bg.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/reload.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/Menu_DeliverCustomer.ico" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Product/_EditPartial.cshtml" publishTime="08/26/2013 08:33:04" />
@@ -1111,15 +1109,16 @@
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/progress.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/datagrid.css" publishTime="08/26/2013 17:06:38" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/blink.gif" publishTime="01/08/2014 11:06:56" />
-    <file relUrl="bin/System.Web.Mvc.xml" publishTime="01/04/2011 15:29:22" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/tag-h4.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/Web.config" publishTime="07/08/2014 10:26:24" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/pagination_last.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/27.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.datetimebox.js" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/JQuery-zTree-v3.3/jquery.ztree.all-3.3.js" publishTime="07/01/2013 10:16:50" />
+    <file relUrl="favicon.ico" publishTime="02/19/2014 11:02:30" />
     <file relUrl="Views/ScheduleSearch/_SearchPartial.cshtml" publishTime="02/18/2014 16:19:56" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/panel.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/DirectProductSearch/Index.cshtml" publishTime="01/03/2014 14:03:24" />
+    <file relUrl="Views/HelpContent/_SearchPartial.cshtml" publishTime="03/06/2014 11:31:30" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/datagrid_row_collapse.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/icons/2Son_HelpContents.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/City/_AddPartial.cshtml" publishTime="09/04/2013 09:58:58" />
-    <file relUrl="Views/Schedule/_DeletePartial.cshtml" publishTime="07/17/2013 17:38:00" />
+    <file relUrl="Content/themes/base/icons/edit_remove.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Cigarette/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tree_elbow.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/diy/5.png" publishTime="07/01/2013 10:16:50" />
@@ -1131,177 +1130,178 @@
     <file relUrl="Content/themes/base/default.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockInBill/_ProductPartial.cshtml" publishTime="07/10/2014 10:47:21" />
     <file relUrl="Views/ProductMonthly/_AddPartial.cshtml" publishTime="11/11/2013 17:16:28" />
-    <file relUrl="Views/PalletStockIn/_AntiTrialPartial.cshtml" publishTime="08/30/2013 16:17:58" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/propertygrid.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Formula/_EditPartial.cshtml" publishTime="07/08/2014 14:53:40" />
     <file relUrl="Views/ParameterSet/_AddPartial.cshtml" publishTime="09/04/2013 09:58:58" />
-    <file relUrl="Views/Unit/Index.cshtml" publishTime="12/02/2013 09:19:04" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/src/xheditor-1.1.14-zh-tw.js" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/ProductOriginal/_PrintPartial.cshtml" publishTime="12/16/2013 13:49:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.treegrid.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/smile.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/StockInWork/_ExitPartial.cshtml" publishTime="08/07/2013 10:04:46" />
+    <file relUrl="Content/themes/base/jquery-ui.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/titter.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/UnitCategory/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/tongue.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/easyui.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tree_checkbox_0.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/1.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Schedule2/_OutstorePartial.cshtml" publishTime="12/04/2013 16:58:52" />
     <file relUrl="Content/themes/base/css/css.css" publishTime="08/21/2014 10:37:21" />
-    <file relUrl="Views/Unit/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/despise.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/slider_handle.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/12.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/images/son_Department.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/PalletStockIn/Index.cshtml" publishTime="09/22/2013 09:09:52" />
+    <file relUrl="Content/themes/base/images/onebit_24.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/reload.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/ProductGrade/_AddPartial.cshtml" publishTime="09/04/2013 09:58:56" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/progressbar.css" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/sad.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/DirectProduct/_AntiTrialPartial.cshtml" publishTime="08/13/2013 15:34:38" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/datagrid_sort_asc.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/cry.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/Shared/_BalancePartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/panel_tool_expand.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/tabs_close.gif" publishTime="02/19/2014 09:39:50" />
     <file relUrl="Content/themes/base/icons/son_StockNow.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/PalletStockOut/Index.cshtml" publishTime="09/22/2013 09:09:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/progress.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/themes/base/icons/Formula.gif" publishTime="12/30/2005 21:11:20" />
+    <file relUrl="Content/themes/base/images/Menu_StockInto.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/2Son_LoginLog.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/User/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/Son_deliveryDis.ico" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/HelpContent/Index.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/flash.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/17.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/18.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/Shared/_AllotPartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="bin/THOK.Authority.DbModel.pdb" publishTime="09/27/2014 11:07:30" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/redo.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockInBill/_SearchPartial.cshtml" publishTime="02/19/2014 15:57:38" />
-    <file relUrl="Views/StockOutWork/_SearchPartial.cshtml" publishTime="08/27/2013 16:53:48" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/changelog.txt" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/cry.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/images/2Son_ServerComputer.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/accordion.css" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/bye.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/themes/base/icons/son_MoveBillWork.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/ProductCategory/Index.cshtml" publishTime="08/07/2013 09:23:10" />
+    <file relUrl="Content/themes/base/images/ok.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/messager_info.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/son_Company.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/shut_down.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/upload.aspx" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Views/ProductCategory/_PrintPartial.cshtml" publishTime="12/16/2013 13:49:58" />
     <file relUrl="Content/themes/base/images/son_SortOrder.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/wub.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/tabs_active.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/InventorySearch/Index.cshtml" publishTime="01/03/2014 14:01:58" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/dialog.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/StockDiffer/_AntiTrialPartial.cshtml" publishTime="10/08/2013 16:36:54" />
+    <file relUrl="Content/themes/base/images/Son_ProductWarning.jpg" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/FillBill/_AuditPartial.cshtml" publishTime="07/04/2014 14:10:10" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/proud.gif" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/filesave.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.combotree.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/2Menu_Help.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/ProductLedger/_PrintPartial.cshtml" publishTime="02/18/2014 16:59:46" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/easyui.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="ContentReport/Report/formulaprint.frx" publishTime="01/21/2014 09:14:24" />
+    <file relUrl="Content/themes/base/icons/son_DifferBill.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/24.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/json2.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/devil.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/son_StockOutBillAllot.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Sampling/_AntiTrialPartial.cshtml" publishTime="09/25/2013 14:19:40" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/layout.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/tree.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/ProductOriginal/_EditPartial.cshtml" publishTime="08/01/2013 09:07:34" />
+    <file relUrl="Content/themes/base/icons/son_Company.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/layout.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/wmp.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/StockInBill/_wflootPartial.cshtml" publishTime="05/27/2014 14:41:38" />
-    <file relUrl="Content/themes/base/images/ui-icons_454545_256x240.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/6.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor-1.1.14-zh-tw.min.js" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/UnitCategory/Index.cshtml" publishTime="08/07/2013 09:23:10" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.numberspinner.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Server/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Common.NPOI.pdb" publishTime="09/25/2014 13:44:54" />
+    <file relUrl="bin/THOK.Common.NPOI.pdb" publishTime="09/27/2014 11:07:29" />
     <file relUrl="Views/Product/_CopyPartial.cshtml" publishTime="08/27/2013 14:40:44" />
     <file relUrl="Views/HelpEdit/_SearchPartial.cshtml" publishTime="03/06/2014 15:44:04" />
     <file relUrl="Views/StockInWork/_WbarcodePartial.cshtml" publishTime="08/21/2014 09:29:18" />
-    <file relUrl="Content/themes/base/icons/warehouse.png" publishTime="04/12/2006 10:18:10" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.panel.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/onebit_23.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/blush.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/tag-address.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/themes/base/icons/son_DifferBill.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/icons/Menu_WarehouseM.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="bin/Ionic.Zip.dll" publishTime="07/01/2013 10:16:50" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/20.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/StockOutSearch/Index.cshtml" publishTime="09/25/2014 13:37:02" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/multiupload.css" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/ui.css" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/Car/_EditPartial.cshtml" publishTime="01/07/2014 11:01:28" />
+    <file relUrl="Views/ProductGrade/_SearchPartial.cshtml" publishTime="09/05/2013 11:04:48" />
+    <file relUrl="Content/themes/base/icons/son_StockOldAll.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/tag-h1.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/themes/base/images/son_SortOrderc.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/flash.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Crane/_AddPartial.cshtml" publishTime="01/07/2014 11:03:36" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/tag-pre.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/Replace/_BillPartial.cshtml" publishTime="07/12/2014 13:31:38" />
-    <file relUrl="Views/Shared/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/images/Son_CellAnalysis.jpg" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/search.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/icons/mini_edit.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Shared/_CheckPartial.cshtml" publishTime="07/13/2014 09:25:53" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/tag-div.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/images/2Son_SysJurisdiction.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/combo.css" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/datebox.css" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-tr.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Common.Entity.pdb" publishTime="09/25/2014 13:44:53" />
-    <file relUrl="Content/themes/base/images/2Menu_Help.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/mini_edit.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="bin/THOK.Common.Entity.pdb" publishTime="09/27/2014 11:07:29" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/6.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/themes/base/icons/filesave.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/9.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/images/son_StockOutBillAllot.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/Sampling/Index.cshtml" publishTime="09/30/2013 16:48:14" />
     <file relUrl="Content/Scripts/jthok-ui/JDiv.js" publishTime="09/03/2013 17:28:48" />
-    <file relUrl="Views/StockDifferSearch/_SearchPartial.cshtml" publishTime="02/18/2014 16:19:56" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/pencil.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/icons/Menu_Warehouse.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/ExceptionalLog/_PrintPartial.cshtml" publishTime="03/04/2014 08:52:08" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/34.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/Home/Unauthorized.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/vista/img/tag-h2.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/themes/base/icons/son_CheckBillAllot.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/jquery.ztree.exhide-3.3.min.js" publishTime="07/01/2013 10:16:50" />
-    <file relUrl="Views/Shared/_ScriptPartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/panel_loading.gif" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_plugins/multiupload/img/btnbgr.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/ProductDetails/_SearchPartial.cshtml" publishTime="02/19/2014 14:26:56" />
+    <file relUrl="Views/Replace/_SearchPartial.cshtml" publishTime="04/15/2014 14:43:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/tree_dnd_yes.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/music.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/Images/login_bg02.jpg" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Views/Home/_MenuPartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/PalletStockOut/Index.cshtml" publishTime="09/22/2013 09:09:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor-1.1.14-zh-cn.min.js" publishTime="01/08/2014 11:06:56" />
+    <file relUrl="Content/themes/base/icons/warehouse.png" publishTime="04/12/2006 10:18:10" />
+    <file relUrl="Views/Shared/_CancelPartial.cshtml" publishTime="04/04/2014 13:40:28" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/default/quiet.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/themes/base/images/son_StockIntoBill.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/datagrid_row_collapse.gif" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Schedule/_DeletePartial.cshtml" publishTime="07/17/2013 17:38:00" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/flash.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/img/buttonbg.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/sad.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/Shared/_SettlePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/29.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/nostyle/img/icons.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Views/StockOutBill/_EditPartial.cshtml" publishTime="12/23/2013 09:17:16" />
+    <file relUrl="Views/ProductOriginal/_EditPartial.cshtml" publishTime="08/01/2013 09:07:34" />
     <file relUrl="Content/themes/base/images/print.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Schedule/_AddPartial.cshtml" publishTime="02/18/2014 16:19:56" />
+    <file relUrl="Views/StockIntoSearch/_SearchPartial.cshtml" publishTime="09/25/2014 13:42:49" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/easyloader.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/StockOutBill/_CancereplacePartial.cshtml" publishTime="08/26/2014 14:36:40" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/biglaugh.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/3.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Car/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/FillBill/_AddPartial.cshtml" publishTime="07/04/2014 14:18:22" />
+    <file relUrl="bin/System.Web.WebPages.dll" publishTime="01/05/2011 15:45:38" />
     <file relUrl="Views/Cigarette/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.messager.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/MoveStockWork/_SearchPartial.cshtml" publishTime="02/19/2014 16:04:46" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/tag-div.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Shared/_AddPartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/waiting.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/themes/base/images/cancel.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/sleep.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/calendar.css" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/StockInWork/_CancelPartial.cshtml" publishTime="07/12/2014 17:25:42" />
-    <file relUrl="Views/SystemEventLog/_PrintPartial.cshtml" publishTime="03/04/2014 08:47:46" />
-    <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/diy/7.png" publishTime="07/01/2013 10:16:50" />
+    <file relUrl="bin/System.Web.Abstractions.dll" publishTime="03/18/2010 19:31:26" />
+    <file relUrl="Content/themes/base/images/son_SortWork.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Warehouse2/_PrintPartial.cshtml" publishTime="12/09/2013 10:23:06" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/blush.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Content/Scripts/JQuery-zTree-v3.3/jquery.ztree.all-3.3.min.js" publishTime="07/01/2013 10:16:50" />
     <file relUrl="Views/MoveStock/_AntiTrialPartial.cshtml" publishTime="07/04/2014 14:10:10" />
-    <file relUrl="Views/ProductCategory/_EditPartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/cry.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/themes/base/images/2Son_HelpEdit.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/tag-h4.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/Sampling/_EditPartial.cshtml" publishTime="12/20/2013 16:34:20" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/15.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Content/themes/base/icons/ok.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007silver/img/wordimg.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="bin/NPOI.dll" publishTime="07/01/2013 10:16:50" />
-    <file relUrl="Views/Home/_ChangePasswordPartial.cshtml" publishTime="09/03/2013 17:55:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/default/images/pagination_loading.gif" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-en.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/ExceptionalLog/Index.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/themes/base/icons/Menu_StockMove.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/4.gif" publishTime="01/08/2014 11:06:58" />
     <file relUrl="Views/Product/Index.cshtml" publishTime="08/07/2013 09:20:12" />
     <file relUrl="Views/Formula/_AddPartial.cshtml" publishTime="07/04/2014 14:21:10" />
     <file relUrl="Views/DirectProduct/_SearchPartial.cshtml" publishTime="02/19/2014 15:55:40" />
-    <file relUrl="Content/Scripts/json2.js" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/Home/_ProductWarningPartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="bin/THOK.Wms.Bll.dll" publishTime="09/25/2014 13:45:38" />
-    <file relUrl="Views/MoveStock/_EditPartial.cshtml" publishTime="12/20/2013 16:34:20" />
-    <file relUrl="Views/SystemEventLog/Index.cshtml" publishTime="03/04/2014 15:51:24" />
+    <file relUrl="Views/Sampling/_AddPartial.cshtml" publishTime="07/04/2014 14:22:50" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/icons/undo.png" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/locale/easyui-lang-zh_CN.js" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Views/Product/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/themes/base/images/edit_add.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/node.png" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Views/HelpContent/_SearchPartial.cshtml" publishTime="03/06/2014 11:31:30" />
+    <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.form.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Views/ProductCategory/_DeletePartial.cshtml" publishTime="07/01/2013 10:16:52" />
-    <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.datetimebox.js" publishTime="07/01/2013 10:16:52" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/ipb/bandit.gif" publishTime="01/08/2014 11:06:56" />
     <file relUrl="Views/MoveStockWork/Index.cshtml" publishTime="09/27/2013 17:05:10" />
-    <file relUrl="Views/Formula/_ProductPartial.cshtml" publishTime="07/02/2014 11:27:54" />
-    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/default/img/icons.gif" publishTime="01/08/2014 11:06:58" />
+    <file relUrl="Views/Feeding/_CancelPartial.cshtml" publishTime="07/08/2014 14:29:48" />
+    <file relUrl="Content/themes/base/icons/shut_down.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/plugins/jquery.draggable.js" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/themes/base/images/Menu_Organization.png" publishTime="07/01/2013 10:16:52" />
     <file relUrl="Content/Scripts/jquery-easyui-1.3/themes/gray/images/datagrid_header_bg.gif" publishTime="07/01/2013 10:16:52" />
@@ -1309,6 +1309,6 @@
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_skin/o2007blue/iframe.css" publishTime="01/08/2014 11:06:58" />
     <file relUrl="bin/FastReport.Bars.dll" publishTime="04/11/2013 21:03:06" />
     <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/pidgin/rose.gif" publishTime="01/08/2014 11:06:58" />
-    <file relUrl="Content/Scripts/JQuery-zTree-v3.3/zTreeStyle/img/diy/6.png" publishTime="07/01/2013 10:16:50" />
+    <file relUrl="Content/Scripts/xheditor1.1.14/xheditor_emot/msn/26.gif" publishTime="01/08/2014 11:06:58" />
   </publishProfile>
 </publishData>

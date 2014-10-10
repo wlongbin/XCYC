@@ -15,7 +15,7 @@
     //        });
     //    }
     function outreplaceClick() {
-        $('#CHANNEL_NO').val("");
+        $('#CHANNEL_NO').val("请选择");
         $('#dlg-select').dialog('open').dialog('setTitle', '选择');
 
     }
@@ -33,7 +33,7 @@
         });
         $('#dlg-select').dialog('close');
         $('#dlg-select').datagrid('reload');
-
+        $('#CHANNEL_NO').val("请选择");
     }
 </script>
 
